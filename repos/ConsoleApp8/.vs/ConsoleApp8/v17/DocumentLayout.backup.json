@@ -1,0 +1,60 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Denis\\source\\repos\\ConsoleApp8\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5242EB74-61A8-4425-B4F3-09F405FDB9BC}|ConsoleApp8\\ConsoleApp8.csproj|c:\\users\\denis\\source\\repos\\consoleapp8\\consoleapp8\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5242EB74-61A8-4425-B4F3-09F405FDB9BC}|ConsoleApp8\\ConsoleApp8.csproj|solutionrelative:consoleapp8\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5242EB74-61A8-4425-B4F3-09F405FDB9BC}|ConsoleApp8\\ConsoleApp8.csproj|c:\\users\\denis\\source\\repos\\consoleapp8\\consoleapp8\\consoleapp8.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{5242EB74-61A8-4425-B4F3-09F405FDB9BC}|ConsoleApp8\\ConsoleApp8.csproj|solutionrelative:consoleapp8\\consoleapp8.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ConsoleApp8",
+              "DocumentMoniker": "C:\\Users\\Denis\\source\\repos\\ConsoleApp8\\ConsoleApp8\\ConsoleApp8.csproj",
+              "RelativeDocumentMoniker": "ConsoleApp8\\ConsoleApp8.csproj",
+              "ToolTip": "C:\\Users\\Denis\\source\\repos\\ConsoleApp8\\ConsoleApp8\\ConsoleApp8.csproj",
+              "RelativeToolTip": "ConsoleApp8\\ConsoleApp8.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-09-23T18:13:07.215Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Denis\\source\\repos\\ConsoleApp8\\ConsoleApp8\\Program.cs",
+              "RelativeDocumentMoniker": "ConsoleApp8\\Program.cs",
+              "ToolTip": "C:\\Users\\Denis\\source\\repos\\ConsoleApp8\\ConsoleApp8\\Program.cs*",
+              "RelativeToolTip": "ConsoleApp8\\Program.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-19T13:42:41.354Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
