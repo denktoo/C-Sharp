@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Denis\\source\\repos\\ConsoleApp10\\ConsoleApp10\\ConsoleApp10.csproj",
+      "projectUniqueName": "C:\\Users\\Denis\\source\\C-Sharp\\repos\\ConsoleApp10\\ConsoleApp10\\ConsoleApp10.csproj",
       "projectName": "ConsoleApp10",
-      "projectPath": "C:\\Users\\Denis\\source\\repos\\ConsoleApp10\\ConsoleApp10\\ConsoleApp10.csproj",
+      "projectPath": "C:\\Users\\Denis\\source\\C-Sharp\\repos\\ConsoleApp10\\ConsoleApp10\\ConsoleApp10.csproj",
       "packagesPath": "C:\\Users\\Denis\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Denis\\source\\repos\\ConsoleApp10\\ConsoleApp10\\obj\\",
+      "outputPath": "C:\\Users\\Denis\\source\\C-Sharp\\repos\\ConsoleApp10\\ConsoleApp10\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Denis\\AppData\\Roaming\\NuGet\\NuGet.Config",

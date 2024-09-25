@@ -1,0 +1,15 @@
+C:\Users\Denis\source\C-Sharp\repos\ConsoleApp11\ConsoleApp11\obj\Debug\net8.0\ConsoleApp11.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Denis\source\C-Sharp\repos\ConsoleApp11\ConsoleApp11\obj\Debug\net8.0\ConsoleApp11.AssemblyInfoInputs.cache
+C:\Users\Denis\source\C-Sharp\repos\ConsoleApp11\ConsoleApp11\obj\Debug\net8.0\ConsoleApp11.AssemblyInfo.cs
+C:\Users\Denis\source\C-Sharp\repos\ConsoleApp11\ConsoleApp11\obj\Debug\net8.0\ConsoleApp11.csproj.CoreCompileInputs.cache
+C:\Users\Denis\source\C-Sharp\repos\ConsoleApp11\ConsoleApp11\obj\Debug\net8.0\ConsoleApp11.sourcelink.json
+C:\Users\Denis\source\C-Sharp\repos\ConsoleApp11\ConsoleApp11\bin\Debug\net8.0\ConsoleApp11.exe
+C:\Users\Denis\source\C-Sharp\repos\ConsoleApp11\ConsoleApp11\bin\Debug\net8.0\ConsoleApp11.deps.json
+C:\Users\Denis\source\C-Sharp\repos\ConsoleApp11\ConsoleApp11\bin\Debug\net8.0\ConsoleApp11.runtimeconfig.json
+C:\Users\Denis\source\C-Sharp\repos\ConsoleApp11\ConsoleApp11\bin\Debug\net8.0\ConsoleApp11.dll
+C:\Users\Denis\source\C-Sharp\repos\ConsoleApp11\ConsoleApp11\bin\Debug\net8.0\ConsoleApp11.pdb
+C:\Users\Denis\source\C-Sharp\repos\ConsoleApp11\ConsoleApp11\obj\Debug\net8.0\ConsoleApp11.dll
+C:\Users\Denis\source\C-Sharp\repos\ConsoleApp11\ConsoleApp11\obj\Debug\net8.0\refint\ConsoleApp11.dll
+C:\Users\Denis\source\C-Sharp\repos\ConsoleApp11\ConsoleApp11\obj\Debug\net8.0\ConsoleApp11.pdb
+C:\Users\Denis\source\C-Sharp\repos\ConsoleApp11\ConsoleApp11\obj\Debug\net8.0\ConsoleApp11.genruntimeconfig.cache
+C:\Users\Denis\source\C-Sharp\repos\ConsoleApp11\ConsoleApp11\obj\Debug\net8.0\ref\ConsoleApp11.dll
