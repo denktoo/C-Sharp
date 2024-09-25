@@ -25,8 +25,6 @@
     //This Method is used to return the Actual Gender Based on the Enum Gender Value
     public static string GetGender(int gender)
     {
-        // The switch case here is now more readable and maintainable because 
-        // of replacing the integral numbers with Gender Enum
         switch (gender)
         {
             case (int)Gender.Unknown:
