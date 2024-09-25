@@ -4,11 +4,14 @@
     {
         Shape rectangle = new Rectangle(10, 6);
         Shape square = new Square(6);
+        Shape circle = new Circle(7);
         rectangle.Area();
         rectangle.Perimeter();
         square.Area();
         square.Perimeter();
-
+        circle.Area();
+        circle.Perimeter();
+        
         Console.ReadKey();
     }
 }
@@ -56,3 +59,20 @@ public class Square : Shape
     }
 }
 
+class Circle : Shape
+{
+    const double pi = Math.PI;
+    int radius;
+    public Circle(int r)
+    {
+        this.radius = r;
+    }
+    public override void Area()
+    {
+        Console.WriteLine($"The area of the Circle is: {pi * radius * radius}");
+    }
+    public override void Perimeter()
+    {
+        Console.WriteLine($"The Perimeter of the Circle is: {pi * (radius + radius)}");
+    }
+}
