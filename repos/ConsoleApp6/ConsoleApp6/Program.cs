@@ -5,10 +5,13 @@
         Shape rectangle = new Rectangle(10, 6);
         Shape square = new Square(6);
         Shape circle = new Circle(7);
+        
         rectangle.Area();
         rectangle.Perimeter();
+        
         square.Area();
         square.Perimeter();
+        
         circle.Area();
         circle.Perimeter();
         
