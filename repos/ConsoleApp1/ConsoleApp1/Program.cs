@@ -31,7 +31,7 @@ class Program
         //Loop through Each Employees and Print the Name and Gender
         foreach (Employee emp in empList)
         {
-            Console.WriteLine($"Name is {emp.name} and {emp.gender} gender.");
+            Console.WriteLine($"Name: {emp.name}, Gender: {emp.gender}.");
         }
 
         Console.ReadKey();
