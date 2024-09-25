@@ -22,16 +22,16 @@ class Program
         //Create a collection to store list of employees
         List<Employee> empList = new List<Employee>
         {
-            new Employee() { name = "Anurag", gender = "Male" },
-            new Employee() { name = "Pranaya", gender = "Female" },
-            new Employee() { name = "Priyanka", gender = "Female" },
-            new Employee() { name = "Sambit", gender = "Male" }
+            new Employee() { Name = "Anurag", Gender = "Male" },
+            new Employee() { Name = "Pranaya", Gender = "Female" },
+            new Employee() { Name = "Priyanka", Gender = "Female" },
+            new Employee() { Name = "Sambit", Gender = "Male" }
         };
 
         //Loop through Each Employees and Print the Name and Gender
         foreach (Employee emp in empList)
         {
-            Console.WriteLine($"Name: {emp.name}, Gender: {emp.gender}.");
+            Console.WriteLine($"Name: {emp.Name}, Gender: {emp.Gender}.");
         }
 
         Console.ReadKey();
@@ -39,6 +39,6 @@ class Program
 }
 public class Employee
 {
-    public string name { get; set; }
-    public string gender { get; set; }
+    public string Name { get; set; }
+    public string Gender { get; set; }
 }
