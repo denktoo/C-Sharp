@@ -4,7 +4,6 @@
     {
         //Creating the Employee instance
         Employee emp = new Employee(101, "Pranaya", "SSE", 10000, "Mumbai", "IT", "Male");
-
         //Accessing Employee Properties using Indexers i.e. using Index positions
         Console.WriteLine($"EID = {emp[0]}");
         Console.WriteLine($"Name = {emp[1]}");
