@@ -59,8 +59,7 @@ public class Program
             }
         }
 
-
-
+        // Deserialize JSON into a Person object
         var personData = JsonSerializer.Deserialize<Person>(data2);
 
         // Display the names of the people
