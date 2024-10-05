@@ -62,11 +62,11 @@ public class Program
         // Deserialize JSON into a Person object
         var personData = JsonSerializer.Deserialize<Person>(data2);
 
-        // Display the names of the people
-        Console.WriteLine("\n\nNames of the People:");
+        // Display the names of the Character
+        Console.WriteLine("\n\nNames of the Character:");
         if (personData?.results != null)
         {
-            foreach (var  people in personData.results)
+            foreach (var people in personData.results)
             {
                 Console.WriteLine(people.name);
             }
