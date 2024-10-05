@@ -43,9 +43,6 @@ public class Program
         string data1 = await task1;
         string data2 = await task2;
 
-        //Console.WriteLine("Planet Name: " + data1);
-        //Console.WriteLine("Person Name: " + data2);
-
         // Deserialize JSON into a Planet object
         var planetData = JsonSerializer.Deserialize<Planet>(data1);
 
