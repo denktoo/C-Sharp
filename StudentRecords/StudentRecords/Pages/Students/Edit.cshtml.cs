@@ -22,21 +22,33 @@ namespace StudentRecords.Pages.Students
 
         [BindProperty]
         public Student Student { get; set; } = default!;
+        public string? SearchString { get; private set; }
 
-        public async Task<IActionResult> OnGetAsync(int? id)
+        //public async Task<IActionResult> OnGetAsync(int? id)
+        //{
+        //    if (id == null)
+        //    {
+        //        return NotFound();
+        //    }
+
+        //    var student =  await _context.Student.FirstOrDefaultAsync(m => m.Id == id);
+        //    if (student == null)
+        //    {
+        //        return NotFound();
+        //    }
+        //    Student = student;
+        //    return Page();
+        //}
+        public async Task OnGetAsync()
         {
-            if (id == null)
+            var students = from m in _context.Student
+                         select m;
+            if (!string.IsNullOrEmpty(SearchString))
             {
-                return NotFound();
+                students = students.Where(s => s.StudentRegNumber.Contains(SearchString));
             }
 
-            var student = await _context.Student.FirstOrDefaultAsync(m => m.Id == id);
-            if (student == null)
-            {
-                return NotFound();
-            }
-            Student = student;
-            return Page();
+            Student = await students.ToListAsync();
         }
 
         // To protect from overposting attacks, enable the specific properties you want to bind to.

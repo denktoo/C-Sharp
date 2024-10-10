@@ -12,7 +12,7 @@ using StudentRecords.Data;
 namespace StudentRecords.Migrations
 {
     [DbContext(typeof(StudentRecordsContext))]
-    [Migration("20241010111605_InitialCreate")]
+    [Migration("20241010162511_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -40,22 +40,28 @@ namespace StudentRecords.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Email")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Gender")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("PhoneNumber")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Status")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("StudentRegNumber")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
 
                     b.HasKey("Id");
 
