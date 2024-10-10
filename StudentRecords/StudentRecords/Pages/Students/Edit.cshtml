@@ -1,0 +1,70 @@
+﻿@page
+@model StudentRecords.Pages.Students.EditModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Student</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Student.Id" />
+            <div class="form-group">
+                <label asp-for="Student.StudentRegNumber" class="control-label"></label>
+                <input asp-for="Student.StudentRegNumber" class="form-control" />
+                <span asp-validation-for="Student.StudentRegNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Student.Name" class="control-label"></label>
+                <input asp-for="Student.Name" class="form-control" />
+                <span asp-validation-for="Student.Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Student.Gender" class="control-label"></label>
+                <input asp-for="Student.Gender" class="form-control" />
+                <span asp-validation-for="Student.Gender" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Student.Email" class="control-label"></label>
+                <input asp-for="Student.Email" class="form-control" />
+                <span asp-validation-for="Student.Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Student.DateOfBirth" class="control-label"></label>
+                <input asp-for="Student.DateOfBirth" class="form-control" />
+                <span asp-validation-for="Student.DateOfBirth" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Student.DateOfAdmission" class="control-label"></label>
+                <input asp-for="Student.DateOfAdmission" class="form-control" />
+                <span asp-validation-for="Student.DateOfAdmission" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Student.Status" class="control-label"></label>
+                <input asp-for="Student.Status" class="form-control" />
+                <span asp-validation-for="Student.Status" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Student.PhoneNumber" class="control-label"></label>
+                <input asp-for="Student.PhoneNumber" class="form-control" />
+                <span asp-validation-for="Student.PhoneNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
