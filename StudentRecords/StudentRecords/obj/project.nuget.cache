@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "gbQaTqVJifY=",
+  "dgSpecHash": "5Aoot9kfbAM=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Denis\\source\\repos\\StudentRecords\\StudentRecords\\StudentRecords.csproj",
+  "projectFilePath": "C:\\Users\\Denis\\source\\C-Sharp\\StudentRecords\\StudentRecords\\StudentRecords.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Denis\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\Denis\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

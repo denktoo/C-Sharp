@@ -11,6 +11,9 @@ namespace StudentRecords.Models
         [Required]
         [Display(Name = "Student Reg Number")]
         public string? StudentRegNumber { get; set; }
+
+        [StringLength(60, MinimumLength = 3)]
+        [Required]
         public string? Name { get; set; }
 
         [Required(ErrorMessage = "Gender is required.")]
