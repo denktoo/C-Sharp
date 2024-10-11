@@ -26,7 +26,14 @@ namespace StudentRecords.Pages.Students
 
         public async Task OnGetAsync()
         {
-            Student = await _context.Student.ToListAsync();
+            var students = from m in _context.Student
+                         select m;
+            if (!string.IsNullOrEmpty(SearchString))
+            {
+                students = students.Where(s => s.StudentRegNumber.Contains(SearchString));
+            }
+
+            Student = await students.ToListAsync();
         }
     }
 }

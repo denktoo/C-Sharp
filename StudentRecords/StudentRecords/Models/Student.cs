@@ -37,10 +37,5 @@ namespace StudentRecords.Models
         [Required]
         [Display(Name = "Phone Number")]
         public string? PhoneNumber { get; set; }
-
-        public static implicit operator Student(List<Student> v)
-        {
-            throw new NotImplementedException();
-        }
     }
 }
