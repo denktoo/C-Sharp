@@ -12,7 +12,7 @@ namespace StudentRecords.Models
         [Display(Name = "Student Reg Number")]
         public string? StudentRegNumber { get; set; }
 
-        [StringLength(60, MinimumLength = 3)]
+        [StringLength(30, MinimumLength = 3)]
         [Required]
         public string? Name { get; set; }
 
