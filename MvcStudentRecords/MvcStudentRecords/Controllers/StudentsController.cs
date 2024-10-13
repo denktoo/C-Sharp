@@ -30,6 +30,7 @@ namespace MvcStudentRecords.Controllers
         {
             return "From [HttpPost]Index: filter on " + searchString;
         }
+        
         public async Task<IActionResult> Index(string searchString)
         {
             if (_context.Student == null)
