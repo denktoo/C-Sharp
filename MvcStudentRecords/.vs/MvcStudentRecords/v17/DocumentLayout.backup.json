@@ -3,24 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\Denis\\source\\repos\\MvcStudentRecords\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3C642F0D-F31F-4CE5-A0E9-E66128B9ADDA}|MvcStudentRecords\\MvcStudentRecords.csproj|c:\\users\\denis\\source\\repos\\mvcstudentrecords\\mvcstudentrecords\\views\\students\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3C642F0D-F31F-4CE5-A0E9-E66128B9ADDA}|MvcStudentRecords\\MvcStudentRecords.csproj|solutionrelative:mvcstudentrecords\\views\\students\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{EDA4D31E-616E-4962-BCFA-90C97D1639D1}|MvcStudentRecords\\MvcStudentRecords.csproj|c:\\users\\denis\\source\\repos\\mvcstudentrecords\\mvcstudentrecords\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDA4D31E-616E-4962-BCFA-90C97D1639D1}|MvcStudentRecords\\MvcStudentRecords.csproj|solutionrelative:mvcstudentrecords\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3C642F0D-F31F-4CE5-A0E9-E66128B9ADDA}|MvcStudentRecords\\MvcStudentRecords.csproj|c:\\users\\denis\\source\\repos\\mvcstudentrecords\\mvcstudentrecords\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3C642F0D-F31F-4CE5-A0E9-E66128B9ADDA}|MvcStudentRecords\\MvcStudentRecords.csproj|solutionrelative:mvcstudentrecords\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EDA4D31E-616E-4962-BCFA-90C97D1639D1}|MvcStudentRecords\\MvcStudentRecords.csproj|c:\\users\\denis\\source\\repos\\mvcstudentrecords\\mvcstudentrecords\\views\\students\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EDA4D31E-616E-4962-BCFA-90C97D1639D1}|MvcStudentRecords\\MvcStudentRecords.csproj|solutionrelative:mvcstudentrecords\\views\\students\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3C642F0D-F31F-4CE5-A0E9-E66128B9ADDA}|MvcStudentRecords\\MvcStudentRecords.csproj|c:\\users\\denis\\source\\repos\\mvcstudentrecords\\mvcstudentrecords\\controllers\\studentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3C642F0D-F31F-4CE5-A0E9-E66128B9ADDA}|MvcStudentRecords\\MvcStudentRecords.csproj|solutionrelative:mvcstudentrecords\\controllers\\studentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EDA4D31E-616E-4962-BCFA-90C97D1639D1}|MvcStudentRecords\\MvcStudentRecords.csproj|c:\\users\\denis\\source\\repos\\mvcstudentrecords\\mvcstudentrecords\\controllers\\studentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDA4D31E-616E-4962-BCFA-90C97D1639D1}|MvcStudentRecords\\MvcStudentRecords.csproj|solutionrelative:mvcstudentrecords\\controllers\\studentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3C642F0D-F31F-4CE5-A0E9-E66128B9ADDA}|MvcStudentRecords\\MvcStudentRecords.csproj|c:\\users\\denis\\source\\repos\\mvcstudentrecords\\mvcstudentrecords\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3C642F0D-F31F-4CE5-A0E9-E66128B9ADDA}|MvcStudentRecords\\MvcStudentRecords.csproj|solutionrelative:mvcstudentrecords\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Denis\\source\\repos\\MvcStudentRecords\\MvcStudentRecords\\Migrations\\20241014111722_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MvcStudentRecords\\Migrations\\20241014111722_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3C642F0D-F31F-4CE5-A0E9-E66128B9ADDA}|MvcStudentRecords\\MvcStudentRecords.csproj|c:\\users\\denis\\source\\repos\\mvcstudentrecords\\mvcstudentrecords\\migrations\\20241014095443_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3C642F0D-F31F-4CE5-A0E9-E66128B9ADDA}|MvcStudentRecords\\MvcStudentRecords.csproj|solutionrelative:mvcstudentrecords\\migrations\\20241014095443_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EDA4D31E-616E-4962-BCFA-90C97D1639D1}|MvcStudentRecords\\MvcStudentRecords.csproj|c:\\users\\denis\\source\\repos\\mvcstudentrecords\\mvcstudentrecords\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDA4D31E-616E-4962-BCFA-90C97D1639D1}|MvcStudentRecords\\MvcStudentRecords.csproj|solutionrelative:mvcstudentrecords\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,49 +30,57 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Denis\\source\\repos\\MvcStudentRecords\\MvcStudentRecords\\Views\\Students\\Index.cshtml",
-              "RelativeDocumentMoniker": "MvcStudentRecords\\Views\\Students\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Denis\\source\\repos\\MvcStudentRecords\\MvcStudentRecords\\Views\\Students\\Index.cshtml",
-              "RelativeToolTip": "MvcStudentRecords\\Views\\Students\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA/AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-14T10:18:05.123Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Denis\\source\\repos\\MvcStudentRecords\\MvcStudentRecords\\Program.cs",
               "RelativeDocumentMoniker": "MvcStudentRecords\\Program.cs",
               "ToolTip": "C:\\Users\\Denis\\source\\repos\\MvcStudentRecords\\MvcStudentRecords\\Program.cs",
               "RelativeToolTip": "MvcStudentRecords\\Program.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABcAAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAB0AAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-14T09:55:54.152Z",
+              "WhenOpened": "2024-10-14T11:18:25.492Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Denis\\source\\repos\\MvcStudentRecords\\MvcStudentRecords\\Views\\Students\\Index.cshtml",
+              "RelativeDocumentMoniker": "MvcStudentRecords\\Views\\Students\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Denis\\source\\repos\\MvcStudentRecords\\MvcStudentRecords\\Views\\Students\\Index.cshtml",
+              "RelativeToolTip": "MvcStudentRecords\\Views\\Students\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-14T11:23:08.077Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "20241014095443_InitialCreate.cs",
-              "DocumentMoniker": "C:\\Users\\Denis\\source\\repos\\MvcStudentRecords\\MvcStudentRecords\\Migrations\\20241014095443_InitialCreate.cs",
-              "RelativeDocumentMoniker": "MvcStudentRecords\\Migrations\\20241014095443_InitialCreate.cs",
-              "ToolTip": "C:\\Users\\Denis\\source\\repos\\MvcStudentRecords\\MvcStudentRecords\\Migrations\\20241014095443_InitialCreate.cs",
-              "RelativeToolTip": "MvcStudentRecords\\Migrations\\20241014095443_InitialCreate.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "20241014111722_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\Denis\\source\\repos\\MvcStudentRecords\\MvcStudentRecords\\Migrations\\20241014111722_InitialCreate.cs",
+              "RelativeDocumentMoniker": "MvcStudentRecords\\Migrations\\20241014111722_InitialCreate.cs",
+              "ToolTip": "C:\\Users\\Denis\\source\\repos\\MvcStudentRecords\\MvcStudentRecords\\Migrations\\20241014111722_InitialCreate.cs",
+              "RelativeToolTip": "MvcStudentRecords\\Migrations\\20241014111722_InitialCreate.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-14T09:54:43.763Z",
+              "WhenOpened": "2024-10-14T11:17:22.866Z",
               "EditorCaption": ""
             },
             {
@@ -83,31 +91,23 @@
               "RelativeDocumentMoniker": "MvcStudentRecords\\Controllers\\StudentsController.cs",
               "ToolTip": "C:\\Users\\Denis\\source\\repos\\MvcStudentRecords\\MvcStudentRecords\\Controllers\\StudentsController.cs",
               "RelativeToolTip": "MvcStudentRecords\\Controllers\\StudentsController.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAQwCYAAABiAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAUwB8AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-14T09:54:01.069Z",
+              "WhenOpened": "2024-10-14T11:16:21.538Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Student.cs",
               "DocumentMoniker": "C:\\Users\\Denis\\source\\repos\\MvcStudentRecords\\MvcStudentRecords\\Models\\Student.cs",
               "RelativeDocumentMoniker": "MvcStudentRecords\\Models\\Student.cs",
               "ToolTip": "C:\\Users\\Denis\\source\\repos\\MvcStudentRecords\\MvcStudentRecords\\Models\\Student.cs",
               "RelativeToolTip": "MvcStudentRecords\\Models\\Student.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAuAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAowB4AAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-14T09:47:59.923Z",
+              "WhenOpened": "2024-10-14T11:13:32.834Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:1:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             }
           ]
         }

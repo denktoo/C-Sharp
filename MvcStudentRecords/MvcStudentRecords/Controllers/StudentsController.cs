@@ -24,11 +24,17 @@ namespace MvcStudentRecords.Controllers
         //{
         //    return View(await _context.Student.ToListAsync());
         //}
+
+        [HttpPost]
+        public string Index(string searchString, bool notUsed)
+        {
+            return "From [HttpPost]Index: filter on " + searchString;
+        }
         public async Task<IActionResult> Index(string searchString)
         {
             if (_context.Student == null)
             {
-                return Problem("Entity set MvcStudentRecordsContext.Student is null.");
+                return Problem("Entity set 'MvcMovieContext.Movie'  is null.");
             }
 
             var students = from m in _context.Student

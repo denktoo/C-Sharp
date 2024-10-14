@@ -12,7 +12,7 @@ using MvcStudentRecords.Data;
 namespace MvcStudentRecords.Migrations
 {
     [DbContext(typeof(MvcStudentRecordsContext))]
-    [Migration("20241014095443_InitialCreate")]
+    [Migration("20241014111722_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />

@@ -1,8 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using MvcStudentRecords.Data;
-using MvcStudentRecords.Models;
-
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<MvcStudentRecordsContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("MvcStudentRecordsContext") ?? throw new InvalidOperationException("Connection string 'MvcStudentRecordsContext' not found.")));
@@ -29,6 +27,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=id}/{id?}");
+    pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();

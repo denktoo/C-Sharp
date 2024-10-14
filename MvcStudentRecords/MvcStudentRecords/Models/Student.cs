@@ -1,5 +1,4 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
 
 namespace MvcStudentRecords.Models
 {
@@ -42,5 +41,3 @@ namespace MvcStudentRecords.Models
         public string? PhoneNumber { get; set; }
     }
 }
-
-
