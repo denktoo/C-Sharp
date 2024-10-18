@@ -1,50 +1,109 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Denis\\source\\repos\\JkuatUniversity\\",
+  "WorkspaceRootPath": "C:\\Users\\Denis\\source\\C-Sharp\\JkuatUniversity\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1EA251E3-A122-47C1-B79E-044242CE4A00}|JkuatUniversity\\JkuatUniversity.csproj|c:\\users\\denis\\source\\repos\\jkuatuniversity\\jkuatuniversity\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1EA251E3-A122-47C1-B79E-044242CE4A00}|JkuatUniversity\\JkuatUniversity.csproj|solutionrelative:jkuatuniversity\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1EA251E3-A122-47C1-B79E-044242CE4A00}|JkuatUniversity\\JkuatUniversity.csproj|c:\\users\\denis\\source\\repos\\jkuatuniversity\\jkuatuniversity\\views\\students\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1EA251E3-A122-47C1-B79E-044242CE4A00}|JkuatUniversity\\JkuatUniversity.csproj|solutionrelative:jkuatuniversity\\views\\students\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1EA251E3-A122-47C1-B79E-044242CE4A00}|JkuatUniversity\\JkuatUniversity.csproj|c:\\users\\denis\\source\\repos\\jkuatuniversity\\jkuatuniversity\\views\\students\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1EA251E3-A122-47C1-B79E-044242CE4A00}|JkuatUniversity\\JkuatUniversity.csproj|solutionrelative:jkuatuniversity\\views\\students\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1EA251E3-A122-47C1-B79E-044242CE4A00}|JkuatUniversity\\JkuatUniversity.csproj|c:\\users\\denis\\source\\repos\\jkuatuniversity\\jkuatuniversity\\controllers\\studentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1EA251E3-A122-47C1-B79E-044242CE4A00}|JkuatUniversity\\JkuatUniversity.csproj|c:\\users\\denis\\source\\c-sharp\\jkuatuniversity\\jkuatuniversity\\controllers\\studentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1EA251E3-A122-47C1-B79E-044242CE4A00}|JkuatUniversity\\JkuatUniversity.csproj|solutionrelative:jkuatuniversity\\controllers\\studentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1EA251E3-A122-47C1-B79E-044242CE4A00}|JkuatUniversity\\JkuatUniversity.csproj|c:\\users\\denis\\source\\repos\\jkuatuniversity\\jkuatuniversity\\data\\jkuatcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1EA251E3-A122-47C1-B79E-044242CE4A00}|JkuatUniversity\\JkuatUniversity.csproj|c:\\users\\denis\\source\\c-sharp\\jkuatuniversity\\jkuatuniversity\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1EA251E3-A122-47C1-B79E-044242CE4A00}|JkuatUniversity\\JkuatUniversity.csproj|solutionrelative:jkuatuniversity\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1EA251E3-A122-47C1-B79E-044242CE4A00}|JkuatUniversity\\JkuatUniversity.csproj|c:\\users\\denis\\source\\c-sharp\\jkuatuniversity\\jkuatuniversity\\views\\students\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1EA251E3-A122-47C1-B79E-044242CE4A00}|JkuatUniversity\\JkuatUniversity.csproj|solutionrelative:jkuatuniversity\\views\\students\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1EA251E3-A122-47C1-B79E-044242CE4A00}|JkuatUniversity\\JkuatUniversity.csproj|c:\\users\\denis\\source\\c-sharp\\jkuatuniversity\\jkuatuniversity\\views\\students\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1EA251E3-A122-47C1-B79E-044242CE4A00}|JkuatUniversity\\JkuatUniversity.csproj|solutionrelative:jkuatuniversity\\views\\students\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1EA251E3-A122-47C1-B79E-044242CE4A00}|JkuatUniversity\\JkuatUniversity.csproj|c:\\users\\denis\\source\\c-sharp\\jkuatuniversity\\jkuatuniversity\\views\\students\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1EA251E3-A122-47C1-B79E-044242CE4A00}|JkuatUniversity\\JkuatUniversity.csproj|solutionrelative:jkuatuniversity\\views\\students\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1EA251E3-A122-47C1-B79E-044242CE4A00}|JkuatUniversity\\JkuatUniversity.csproj|c:\\users\\denis\\source\\c-sharp\\jkuatuniversity\\jkuatuniversity\\views\\students\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1EA251E3-A122-47C1-B79E-044242CE4A00}|JkuatUniversity\\JkuatUniversity.csproj|solutionrelative:jkuatuniversity\\views\\students\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1EA251E3-A122-47C1-B79E-044242CE4A00}|JkuatUniversity\\JkuatUniversity.csproj|c:\\users\\denis\\source\\c-sharp\\jkuatuniversity\\jkuatuniversity\\views\\students\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1EA251E3-A122-47C1-B79E-044242CE4A00}|JkuatUniversity\\JkuatUniversity.csproj|solutionrelative:jkuatuniversity\\views\\students\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1EA251E3-A122-47C1-B79E-044242CE4A00}|JkuatUniversity\\JkuatUniversity.csproj|c:\\users\\denis\\source\\c-sharp\\jkuatuniversity\\jkuatuniversity\\views\\enrollments\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1EA251E3-A122-47C1-B79E-044242CE4A00}|JkuatUniversity\\JkuatUniversity.csproj|solutionrelative:jkuatuniversity\\views\\enrollments\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1EA251E3-A122-47C1-B79E-044242CE4A00}|JkuatUniversity\\JkuatUniversity.csproj|c:\\users\\denis\\source\\c-sharp\\jkuatuniversity\\jkuatuniversity\\views\\enrollments\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1EA251E3-A122-47C1-B79E-044242CE4A00}|JkuatUniversity\\JkuatUniversity.csproj|solutionrelative:jkuatuniversity\\views\\enrollments\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1EA251E3-A122-47C1-B79E-044242CE4A00}|JkuatUniversity\\JkuatUniversity.csproj|c:\\users\\denis\\source\\c-sharp\\jkuatuniversity\\jkuatuniversity\\views\\enrollments\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1EA251E3-A122-47C1-B79E-044242CE4A00}|JkuatUniversity\\JkuatUniversity.csproj|solutionrelative:jkuatuniversity\\views\\enrollments\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1EA251E3-A122-47C1-B79E-044242CE4A00}|JkuatUniversity\\JkuatUniversity.csproj|c:\\users\\denis\\source\\c-sharp\\jkuatuniversity\\jkuatuniversity\\views\\enrollments\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1EA251E3-A122-47C1-B79E-044242CE4A00}|JkuatUniversity\\JkuatUniversity.csproj|solutionrelative:jkuatuniversity\\views\\enrollments\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1EA251E3-A122-47C1-B79E-044242CE4A00}|JkuatUniversity\\JkuatUniversity.csproj|c:\\users\\denis\\source\\c-sharp\\jkuatuniversity\\jkuatuniversity\\views\\enrollments\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1EA251E3-A122-47C1-B79E-044242CE4A00}|JkuatUniversity\\JkuatUniversity.csproj|solutionrelative:jkuatuniversity\\views\\enrollments\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1EA251E3-A122-47C1-B79E-044242CE4A00}|JkuatUniversity\\JkuatUniversity.csproj|c:\\users\\denis\\source\\c-sharp\\jkuatuniversity\\jkuatuniversity\\views\\courses\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1EA251E3-A122-47C1-B79E-044242CE4A00}|JkuatUniversity\\JkuatUniversity.csproj|solutionrelative:jkuatuniversity\\views\\courses\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1EA251E3-A122-47C1-B79E-044242CE4A00}|JkuatUniversity\\JkuatUniversity.csproj|c:\\users\\denis\\source\\c-sharp\\jkuatuniversity\\jkuatuniversity\\views\\courses\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1EA251E3-A122-47C1-B79E-044242CE4A00}|JkuatUniversity\\JkuatUniversity.csproj|solutionrelative:jkuatuniversity\\views\\courses\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1EA251E3-A122-47C1-B79E-044242CE4A00}|JkuatUniversity\\JkuatUniversity.csproj|c:\\users\\denis\\source\\c-sharp\\jkuatuniversity\\jkuatuniversity\\views\\courses\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1EA251E3-A122-47C1-B79E-044242CE4A00}|JkuatUniversity\\JkuatUniversity.csproj|solutionrelative:jkuatuniversity\\views\\courses\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1EA251E3-A122-47C1-B79E-044242CE4A00}|JkuatUniversity\\JkuatUniversity.csproj|c:\\users\\denis\\source\\c-sharp\\jkuatuniversity\\jkuatuniversity\\views\\courses\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1EA251E3-A122-47C1-B79E-044242CE4A00}|JkuatUniversity\\JkuatUniversity.csproj|solutionrelative:jkuatuniversity\\views\\courses\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1EA251E3-A122-47C1-B79E-044242CE4A00}|JkuatUniversity\\JkuatUniversity.csproj|c:\\users\\denis\\source\\c-sharp\\jkuatuniversity\\jkuatuniversity\\views\\courses\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1EA251E3-A122-47C1-B79E-044242CE4A00}|JkuatUniversity\\JkuatUniversity.csproj|solutionrelative:jkuatuniversity\\views\\courses\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1EA251E3-A122-47C1-B79E-044242CE4A00}|JkuatUniversity\\JkuatUniversity.csproj|c:\\users\\denis\\source\\c-sharp\\jkuatuniversity\\jkuatuniversity\\controllers\\enrollmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1EA251E3-A122-47C1-B79E-044242CE4A00}|JkuatUniversity\\JkuatUniversity.csproj|solutionrelative:jkuatuniversity\\controllers\\enrollmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1EA251E3-A122-47C1-B79E-044242CE4A00}|JkuatUniversity\\JkuatUniversity.csproj|c:\\users\\denis\\source\\c-sharp\\jkuatuniversity\\jkuatuniversity\\controllers\\coursescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1EA251E3-A122-47C1-B79E-044242CE4A00}|JkuatUniversity\\JkuatUniversity.csproj|solutionrelative:jkuatuniversity\\controllers\\coursescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1EA251E3-A122-47C1-B79E-044242CE4A00}|JkuatUniversity\\JkuatUniversity.csproj|c:\\users\\denis\\source\\c-sharp\\jkuatuniversity\\jkuatuniversity\\data\\jkuatcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1EA251E3-A122-47C1-B79E-044242CE4A00}|JkuatUniversity\\JkuatUniversity.csproj|solutionrelative:jkuatuniversity\\data\\jkuatcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Denis\\source\\repos\\JkuatUniversity\\JkuatUniversity\\Migrations\\20241018171313_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:JkuatUniversity\\Migrations\\20241018171313_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1EA251E3-A122-47C1-B79E-044242CE4A00}|JkuatUniversity\\JkuatUniversity.csproj|c:\\users\\denis\\source\\repos\\jkuatuniversity\\jkuatuniversity\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1EA251E3-A122-47C1-B79E-044242CE4A00}|JkuatUniversity\\JkuatUniversity.csproj|c:\\users\\denis\\source\\c-sharp\\jkuatuniversity\\jkuatuniversity\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1EA251E3-A122-47C1-B79E-044242CE4A00}|JkuatUniversity\\JkuatUniversity.csproj|solutionrelative:jkuatuniversity\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1EA251E3-A122-47C1-B79E-044242CE4A00}|JkuatUniversity\\JkuatUniversity.csproj|c:\\users\\denis\\source\\repos\\jkuatuniversity\\jkuatuniversity\\models\\enrollment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1EA251E3-A122-47C1-B79E-044242CE4A00}|JkuatUniversity\\JkuatUniversity.csproj|c:\\users\\denis\\source\\c-sharp\\jkuatuniversity\\jkuatuniversity\\models\\enrollment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1EA251E3-A122-47C1-B79E-044242CE4A00}|JkuatUniversity\\JkuatUniversity.csproj|solutionrelative:jkuatuniversity\\models\\enrollment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1EA251E3-A122-47C1-B79E-044242CE4A00}|JkuatUniversity\\JkuatUniversity.csproj|c:\\users\\denis\\source\\repos\\jkuatuniversity\\jkuatuniversity\\models\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1EA251E3-A122-47C1-B79E-044242CE4A00}|JkuatUniversity\\JkuatUniversity.csproj|c:\\users\\denis\\source\\c-sharp\\jkuatuniversity\\jkuatuniversity\\models\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1EA251E3-A122-47C1-B79E-044242CE4A00}|JkuatUniversity\\JkuatUniversity.csproj|solutionrelative:jkuatuniversity\\models\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Denis\\source\\repos\\JkuatUniversity\\JkuatUniversity\\Migrations\\20241018170543_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:JkuatUniversity\\Migrations\\20241018170543_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Denis\\source\\repos\\JkuatUniversity\\JkuatUniversity\\Migrations\\20241018170543_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1EA251E3-A122-47C1-B79E-044242CE4A00}|JkuatUniversity\\JkuatUniversity.csproj|c:\\users\\denis\\source\\repos\\jkuatuniversity\\jkuatuniversity\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{1EA251E3-A122-47C1-B79E-044242CE4A00}|JkuatUniversity\\JkuatUniversity.csproj|c:\\users\\denis\\source\\c-sharp\\jkuatuniversity\\jkuatuniversity\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{1EA251E3-A122-47C1-B79E-044242CE4A00}|JkuatUniversity\\JkuatUniversity.csproj|solutionrelative:jkuatuniversity\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1EA251E3-A122-47C1-B79E-044242CE4A00}|JkuatUniversity\\JkuatUniversity.csproj|c:\\users\\denis\\source\\c-sharp\\jkuatuniversity\\jkuatuniversity\\migrations\\20241018171313_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1EA251E3-A122-47C1-B79E-044242CE4A00}|JkuatUniversity\\JkuatUniversity.csproj|solutionrelative:jkuatuniversity\\migrations\\20241018171313_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,17 +113,216 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 18,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Denis\\source\\C-Sharp\\JkuatUniversity\\JkuatUniversity\\Views\\Enrollments\\Index.cshtml",
+              "RelativeDocumentMoniker": "JkuatUniversity\\Views\\Enrollments\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Denis\\source\\C-Sharp\\JkuatUniversity\\JkuatUniversity\\Views\\Enrollments\\Index.cshtml",
+              "RelativeToolTip": "JkuatUniversity\\Views\\Enrollments\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-18T19:31:25.913Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Denis\\source\\C-Sharp\\JkuatUniversity\\JkuatUniversity\\Views\\Enrollments\\Edit.cshtml",
+              "RelativeDocumentMoniker": "JkuatUniversity\\Views\\Enrollments\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Denis\\source\\C-Sharp\\JkuatUniversity\\JkuatUniversity\\Views\\Enrollments\\Edit.cshtml",
+              "RelativeToolTip": "JkuatUniversity\\Views\\Enrollments\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-18T19:31:13.366Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\Denis\\source\\C-Sharp\\JkuatUniversity\\JkuatUniversity\\Views\\Enrollments\\Details.cshtml",
+              "RelativeDocumentMoniker": "JkuatUniversity\\Views\\Enrollments\\Details.cshtml",
+              "ToolTip": "C:\\Users\\Denis\\source\\C-Sharp\\JkuatUniversity\\JkuatUniversity\\Views\\Enrollments\\Details.cshtml",
+              "RelativeToolTip": "JkuatUniversity\\Views\\Enrollments\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-18T19:31:01.664Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\Denis\\source\\C-Sharp\\JkuatUniversity\\JkuatUniversity\\Views\\Enrollments\\Delete.cshtml",
+              "RelativeDocumentMoniker": "JkuatUniversity\\Views\\Enrollments\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\Denis\\source\\C-Sharp\\JkuatUniversity\\JkuatUniversity\\Views\\Enrollments\\Delete.cshtml",
+              "RelativeToolTip": "JkuatUniversity\\Views\\Enrollments\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-18T19:30:46.65Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\Denis\\source\\repos\\JkuatUniversity\\JkuatUniversity\\Views\\Students\\Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Denis\\source\\C-Sharp\\JkuatUniversity\\JkuatUniversity\\Views\\Enrollments\\Create.cshtml",
+              "RelativeDocumentMoniker": "JkuatUniversity\\Views\\Enrollments\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Denis\\source\\C-Sharp\\JkuatUniversity\\JkuatUniversity\\Views\\Enrollments\\Create.cshtml",
+              "RelativeToolTip": "JkuatUniversity\\Views\\Enrollments\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-18T19:29:50.728Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Denis\\source\\C-Sharp\\JkuatUniversity\\JkuatUniversity\\Views\\Courses\\Index.cshtml",
+              "RelativeDocumentMoniker": "JkuatUniversity\\Views\\Courses\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Denis\\source\\C-Sharp\\JkuatUniversity\\JkuatUniversity\\Views\\Courses\\Index.cshtml",
+              "RelativeToolTip": "JkuatUniversity\\Views\\Courses\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-18T19:29:10.366Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Denis\\source\\C-Sharp\\JkuatUniversity\\JkuatUniversity\\Views\\Courses\\Edit.cshtml",
+              "RelativeDocumentMoniker": "JkuatUniversity\\Views\\Courses\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Denis\\source\\C-Sharp\\JkuatUniversity\\JkuatUniversity\\Views\\Courses\\Edit.cshtml",
+              "RelativeToolTip": "JkuatUniversity\\Views\\Courses\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-18T19:28:52.805Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\Denis\\source\\C-Sharp\\JkuatUniversity\\JkuatUniversity\\Views\\Courses\\Details.cshtml",
+              "RelativeDocumentMoniker": "JkuatUniversity\\Views\\Courses\\Details.cshtml",
+              "ToolTip": "C:\\Users\\Denis\\source\\C-Sharp\\JkuatUniversity\\JkuatUniversity\\Views\\Courses\\Details.cshtml",
+              "RelativeToolTip": "JkuatUniversity\\Views\\Courses\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-18T19:28:36.946Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\Denis\\source\\C-Sharp\\JkuatUniversity\\JkuatUniversity\\Views\\Courses\\Delete.cshtml",
+              "RelativeDocumentMoniker": "JkuatUniversity\\Views\\Courses\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\Denis\\source\\C-Sharp\\JkuatUniversity\\JkuatUniversity\\Views\\Courses\\Delete.cshtml",
+              "RelativeToolTip": "JkuatUniversity\\Views\\Courses\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-18T19:27:56.604Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Denis\\source\\C-Sharp\\JkuatUniversity\\JkuatUniversity\\Views\\Courses\\Create.cshtml",
+              "RelativeDocumentMoniker": "JkuatUniversity\\Views\\Courses\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Denis\\source\\C-Sharp\\JkuatUniversity\\JkuatUniversity\\Views\\Courses\\Create.cshtml",
+              "RelativeToolTip": "JkuatUniversity\\Views\\Courses\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-18T19:27:43.47Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "CoursesController.cs",
+              "DocumentMoniker": "C:\\Users\\Denis\\source\\C-Sharp\\JkuatUniversity\\JkuatUniversity\\Controllers\\CoursesController.cs",
+              "RelativeDocumentMoniker": "JkuatUniversity\\Controllers\\CoursesController.cs",
+              "ToolTip": "C:\\Users\\Denis\\source\\C-Sharp\\JkuatUniversity\\JkuatUniversity\\Controllers\\CoursesController.cs",
+              "RelativeToolTip": "JkuatUniversity\\Controllers\\CoursesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T19:26:57.693Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "EnrollmentsController.cs",
+              "DocumentMoniker": "C:\\Users\\Denis\\source\\C-Sharp\\JkuatUniversity\\JkuatUniversity\\Controllers\\EnrollmentsController.cs",
+              "RelativeDocumentMoniker": "JkuatUniversity\\Controllers\\EnrollmentsController.cs",
+              "ToolTip": "C:\\Users\\Denis\\source\\C-Sharp\\JkuatUniversity\\JkuatUniversity\\Controllers\\EnrollmentsController.cs",
+              "RelativeToolTip": "JkuatUniversity\\Controllers\\EnrollmentsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T19:26:13.226Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\Denis\\source\\C-Sharp\\JkuatUniversity\\JkuatUniversity\\Views\\Students\\Delete.cshtml",
+              "RelativeDocumentMoniker": "JkuatUniversity\\Views\\Students\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\Denis\\source\\C-Sharp\\JkuatUniversity\\JkuatUniversity\\Views\\Students\\Delete.cshtml",
+              "RelativeToolTip": "JkuatUniversity\\Views\\Students\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-18T19:21:23.651Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\Denis\\source\\C-Sharp\\JkuatUniversity\\JkuatUniversity\\Views\\Students\\Details.cshtml",
+              "RelativeDocumentMoniker": "JkuatUniversity\\Views\\Students\\Details.cshtml",
+              "ToolTip": "C:\\Users\\Denis\\source\\C-Sharp\\JkuatUniversity\\JkuatUniversity\\Views\\Students\\Details.cshtml",
+              "RelativeToolTip": "JkuatUniversity\\Views\\Students\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-18T19:19:42.679Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Denis\\source\\C-Sharp\\JkuatUniversity\\JkuatUniversity\\Views\\Students\\Edit.cshtml",
+              "RelativeDocumentMoniker": "JkuatUniversity\\Views\\Students\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Denis\\source\\C-Sharp\\JkuatUniversity\\JkuatUniversity\\Views\\Students\\Edit.cshtml",
+              "RelativeToolTip": "JkuatUniversity\\Views\\Students\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-18T19:17:03.435Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Denis\\source\\C-Sharp\\JkuatUniversity\\JkuatUniversity\\Views\\Students\\Create.cshtml",
               "RelativeDocumentMoniker": "JkuatUniversity\\Views\\Students\\Create.cshtml",
-              "ToolTip": "C:\\Users\\Denis\\source\\repos\\JkuatUniversity\\JkuatUniversity\\Views\\Students\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Denis\\source\\C-Sharp\\JkuatUniversity\\JkuatUniversity\\Views\\Students\\Create.cshtml",
               "RelativeToolTip": "JkuatUniversity\\Views\\Students\\Create.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-10-18T17:25:56.847Z",
               "EditorCaption": ""
@@ -73,139 +331,128 @@
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Denis\\source\\repos\\JkuatUniversity\\JkuatUniversity\\Views\\Students\\Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Denis\\source\\C-Sharp\\JkuatUniversity\\JkuatUniversity\\Views\\Students\\Index.cshtml",
               "RelativeDocumentMoniker": "JkuatUniversity\\Views\\Students\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Denis\\source\\repos\\JkuatUniversity\\JkuatUniversity\\Views\\Students\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Denis\\source\\C-Sharp\\JkuatUniversity\\JkuatUniversity\\Views\\Students\\Index.cshtml",
               "RelativeToolTip": "JkuatUniversity\\Views\\Students\\Index.cshtml",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAACEAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-10-18T17:24:59.208Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "StudentsController.cs",
-              "DocumentMoniker": "C:\\Users\\Denis\\source\\repos\\JkuatUniversity\\JkuatUniversity\\Controllers\\StudentsController.cs",
+              "DocumentMoniker": "C:\\Users\\Denis\\source\\C-Sharp\\JkuatUniversity\\JkuatUniversity\\Controllers\\StudentsController.cs",
               "RelativeDocumentMoniker": "JkuatUniversity\\Controllers\\StudentsController.cs",
-              "ToolTip": "C:\\Users\\Denis\\source\\repos\\JkuatUniversity\\JkuatUniversity\\Controllers\\StudentsController.cs",
+              "ToolTip": "C:\\Users\\Denis\\source\\C-Sharp\\JkuatUniversity\\JkuatUniversity\\Controllers\\StudentsController.cs",
               "RelativeToolTip": "JkuatUniversity\\Controllers\\StudentsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAABcAAAAAAAAAAAA9wAAAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-18T17:21:31.848Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 25,
               "Title": "20241018171313_InitialCreate.cs",
-              "DocumentMoniker": "C:\\Users\\Denis\\source\\repos\\JkuatUniversity\\JkuatUniversity\\Migrations\\20241018171313_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\Denis\\source\\C-Sharp\\JkuatUniversity\\JkuatUniversity\\Migrations\\20241018171313_InitialCreate.cs",
               "RelativeDocumentMoniker": "JkuatUniversity\\Migrations\\20241018171313_InitialCreate.cs",
-              "ToolTip": "C:\\Users\\Denis\\source\\repos\\JkuatUniversity\\JkuatUniversity\\Migrations\\20241018171313_InitialCreate.cs",
+              "ToolTip": "C:\\Users\\Denis\\source\\C-Sharp\\JkuatUniversity\\JkuatUniversity\\Migrations\\20241018171313_InitialCreate.cs",
               "RelativeToolTip": "JkuatUniversity\\Migrations\\20241018171313_InitialCreate.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T17:13:13.822Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-18T17:13:13.822Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 23,
               "Title": "20241018170543_InitialCreate.cs",
               "DocumentMoniker": "C:\\Users\\Denis\\source\\repos\\JkuatUniversity\\JkuatUniversity\\Migrations\\20241018170543_InitialCreate.cs",
-              "RelativeDocumentMoniker": "JkuatUniversity\\Migrations\\20241018170543_InitialCreate.cs",
+              "RelativeDocumentMoniker": "..\\..\\repos\\JkuatUniversity\\JkuatUniversity\\Migrations\\20241018170543_InitialCreate.cs",
               "ToolTip": "C:\\Users\\Denis\\source\\repos\\JkuatUniversity\\JkuatUniversity\\Migrations\\20241018170543_InitialCreate.cs",
-              "RelativeToolTip": "JkuatUniversity\\Migrations\\20241018170543_InitialCreate.cs",
+              "RelativeToolTip": "..\\..\\repos\\JkuatUniversity\\JkuatUniversity\\Migrations\\20241018170543_InitialCreate.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T17:05:43.6Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-18T17:05:43.6Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Denis\\source\\repos\\JkuatUniversity\\JkuatUniversity\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\Denis\\source\\C-Sharp\\JkuatUniversity\\JkuatUniversity\\Program.cs",
               "RelativeDocumentMoniker": "JkuatUniversity\\Program.cs",
-              "ToolTip": "C:\\Users\\Denis\\source\\repos\\JkuatUniversity\\JkuatUniversity\\Program.cs",
+              "ToolTip": "C:\\Users\\Denis\\source\\C-Sharp\\JkuatUniversity\\JkuatUniversity\\Program.cs",
               "RelativeToolTip": "JkuatUniversity\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-18T16:40:55.256Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 24,
               "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Denis\\source\\repos\\JkuatUniversity\\JkuatUniversity\\appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Denis\\source\\C-Sharp\\JkuatUniversity\\JkuatUniversity\\appsettings.json",
               "RelativeDocumentMoniker": "JkuatUniversity\\appsettings.json",
-              "ToolTip": "C:\\Users\\Denis\\source\\repos\\JkuatUniversity\\JkuatUniversity\\appsettings.json",
+              "ToolTip": "C:\\Users\\Denis\\source\\C-Sharp\\JkuatUniversity\\JkuatUniversity\\appsettings.json",
               "RelativeToolTip": "JkuatUniversity\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-10-18T16:40:04.463Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-18T16:40:04.463Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 21,
               "Title": "Enrollment.cs",
-              "DocumentMoniker": "C:\\Users\\Denis\\source\\repos\\JkuatUniversity\\JkuatUniversity\\Models\\Enrollment.cs",
+              "DocumentMoniker": "C:\\Users\\Denis\\source\\C-Sharp\\JkuatUniversity\\JkuatUniversity\\Models\\Enrollment.cs",
               "RelativeDocumentMoniker": "JkuatUniversity\\Models\\Enrollment.cs",
-              "ToolTip": "C:\\Users\\Denis\\source\\repos\\JkuatUniversity\\JkuatUniversity\\Models\\Enrollment.cs",
+              "ToolTip": "C:\\Users\\Denis\\source\\C-Sharp\\JkuatUniversity\\JkuatUniversity\\Models\\Enrollment.cs",
               "RelativeToolTip": "JkuatUniversity\\Models\\Enrollment.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T16:39:34.661Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-18T16:39:34.661Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 22,
               "Title": "Course.cs",
-              "DocumentMoniker": "C:\\Users\\Denis\\source\\repos\\JkuatUniversity\\JkuatUniversity\\Models\\Course.cs",
+              "DocumentMoniker": "C:\\Users\\Denis\\source\\C-Sharp\\JkuatUniversity\\JkuatUniversity\\Models\\Course.cs",
               "RelativeDocumentMoniker": "JkuatUniversity\\Models\\Course.cs",
-              "ToolTip": "C:\\Users\\Denis\\source\\repos\\JkuatUniversity\\JkuatUniversity\\Models\\Course.cs",
+              "ToolTip": "C:\\Users\\Denis\\source\\C-Sharp\\JkuatUniversity\\JkuatUniversity\\Models\\Course.cs",
               "RelativeToolTip": "JkuatUniversity\\Models\\Course.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T16:39:00.118Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-18T16:39:00.118Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 20,
               "Title": "Student.cs",
-              "DocumentMoniker": "C:\\Users\\Denis\\source\\repos\\JkuatUniversity\\JkuatUniversity\\Models\\Student.cs",
+              "DocumentMoniker": "C:\\Users\\Denis\\source\\C-Sharp\\JkuatUniversity\\JkuatUniversity\\Models\\Student.cs",
               "RelativeDocumentMoniker": "JkuatUniversity\\Models\\Student.cs",
-              "ToolTip": "C:\\Users\\Denis\\source\\repos\\JkuatUniversity\\JkuatUniversity\\Models\\Student.cs",
+              "ToolTip": "C:\\Users\\Denis\\source\\C-Sharp\\JkuatUniversity\\JkuatUniversity\\Models\\Student.cs",
               "RelativeToolTip": "JkuatUniversity\\Models\\Student.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T16:38:28.44Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-18T16:38:28.44Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 19,
               "Title": "JkuatContext.cs",
-              "DocumentMoniker": "C:\\Users\\Denis\\source\\repos\\JkuatUniversity\\JkuatUniversity\\Data\\JkuatContext.cs",
+              "DocumentMoniker": "C:\\Users\\Denis\\source\\C-Sharp\\JkuatUniversity\\JkuatUniversity\\Data\\JkuatContext.cs",
               "RelativeDocumentMoniker": "JkuatUniversity\\Data\\JkuatContext.cs",
-              "ToolTip": "C:\\Users\\Denis\\source\\repos\\JkuatUniversity\\JkuatUniversity\\Data\\JkuatContext.cs",
+              "ToolTip": "C:\\Users\\Denis\\source\\C-Sharp\\JkuatUniversity\\JkuatUniversity\\Data\\JkuatContext.cs",
               "RelativeToolTip": "JkuatUniversity\\Data\\JkuatContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T16:37:33.114Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-18T16:37:33.114Z"
             },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Bookmark",

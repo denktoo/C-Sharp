@@ -1,46 +1,31 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using JkuatUniversity.Data;
 using JkuatUniversity.Models;
 
-namespace JkuatUniversity.Controllers
+namespace ContosoUniversity.Controllers
 {
-    public class StudentsController : Controller
+    public class CoursesController : Controller
     {
         private readonly JkuatContext _context;
 
-        public StudentsController(JkuatContext context)
+        public CoursesController(JkuatContext context)
         {
             _context = context;
         }
 
-        // GET: Students
+        // GET: Courses
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Students.ToListAsync());
+            return View(await _context.Courses.ToListAsync());
         }
 
-        // GET: Students/Create
-        public IActionResult Create()
-        {
-            return View();
-        }
-
-        // POST: Students/Create
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ID,FirstMidName,LastName,EnrollmentDate")] Student student)
-        {
-            if (ModelState.IsValid)
-            {
-                _context.Add(student);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
-            }
-            return View(student);
-        }
-
-        // GET: Students/Details/5
+        // GET: Courses/Details/5
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -48,17 +33,39 @@ namespace JkuatUniversity.Controllers
                 return NotFound();
             }
 
-            var student = await _context.Students
-                .FirstOrDefaultAsync(m => m.ID == id);
-            if (student == null)
+            var course = await _context.Courses
+                .FirstOrDefaultAsync(m => m.CourseID == id);
+            if (course == null)
             {
                 return NotFound();
             }
 
-            return View(student);
+            return View(course);
         }
 
-        // GET: Students/Edit/5
+        // GET: Courses/Create
+        public IActionResult Create()
+        {
+            return View();
+        }
+
+        // POST: Courses/Create
+        // To protect from overposting attacks, enable the specific properties you want to bind to.
+        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Create([Bind("CourseID,Title,Credits")] Course course)
+        {
+            if (ModelState.IsValid)
+            {
+                _context.Add(course);
+                await _context.SaveChangesAsync();
+                return RedirectToAction(nameof(Index));
+            }
+            return View(course);
+        }
+
+        // GET: Courses/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -66,22 +73,22 @@ namespace JkuatUniversity.Controllers
                 return NotFound();
             }
 
-            var student = await _context.Students.FindAsync(id);
-            if (student == null)
+            var course = await _context.Courses.FindAsync(id);
+            if (course == null)
             {
                 return NotFound();
             }
-            return View(student);
+            return View(course);
         }
 
-        // POST: Students/Edit/5
+        // POST: Courses/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ID,LastName,FirstMidName,EnrollmentDate")] Student student)
+        public async Task<IActionResult> Edit(int id, [Bind("CourseID,Title,Credits")] Course course)
         {
-            if (id != student.ID)
+            if (id != course.CourseID)
             {
                 return NotFound();
             }
@@ -90,12 +97,12 @@ namespace JkuatUniversity.Controllers
             {
                 try
                 {
-                    _context.Update(student);
+                    _context.Update(course);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!StudentExists(student.ID))
+                    if (!CourseExists(course.CourseID))
                     {
                         return NotFound();
                     }
@@ -106,10 +113,10 @@ namespace JkuatUniversity.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            return View(student);
+            return View(course);
         }
 
-        // GET: Students/Delete/5
+        // GET: Courses/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -117,34 +124,34 @@ namespace JkuatUniversity.Controllers
                 return NotFound();
             }
 
-            var student = await _context.Students
-                .FirstOrDefaultAsync(m => m.ID == id);
-            if (student == null)
+            var course = await _context.Courses
+                .FirstOrDefaultAsync(m => m.CourseID == id);
+            if (course == null)
             {
                 return NotFound();
             }
 
-            return View(student);
+            return View(course);
         }
 
-        // POST: Students/Delete/5
+        // POST: Courses/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var student = await _context.Students.FindAsync(id);
-            if (student != null)
+            var course = await _context.Courses.FindAsync(id);
+            if (course != null)
             {
-                _context.Students.Remove(student);
+                _context.Courses.Remove(course);
             }
 
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
-        private bool StudentExists(int id)
+        private bool CourseExists(int id)
         {
-            return _context.Students.Any(e => e.ID == id);
+            return _context.Courses.Any(e => e.CourseID == id);
         }
     }
 }

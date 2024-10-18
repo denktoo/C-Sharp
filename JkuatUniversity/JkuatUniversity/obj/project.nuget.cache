@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "TpZ/WOkoyyc=",
+  "dgSpecHash": "6bPAV34euJM=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Denis\\source\\repos\\JkuatUniversity\\JkuatUniversity\\JkuatUniversity.csproj",
+  "projectFilePath": "C:\\Users\\Denis\\source\\C-Sharp\\JkuatUniversity\\JkuatUniversity\\JkuatUniversity.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Denis\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\Denis\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
