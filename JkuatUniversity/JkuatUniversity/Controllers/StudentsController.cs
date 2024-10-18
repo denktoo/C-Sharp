@@ -39,7 +39,5 @@ namespace JkuatUniversity.Controllers
             }
             return View(student);
         }
-
-        // Additional actions like Edit, Delete...
     }
 }
