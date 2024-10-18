@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "F7OTfjm6zA8=",
+  "dgSpecHash": "vK+AQaXW7pM=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Denis\\source\\repos\\ContosoUniversity\\ContosoUniversity\\ContosoUniversity.csproj",
+  "projectFilePath": "C:\\Users\\Denis\\source\\C-Sharp\\ContosoUniversity\\ContosoUniversity\\ContosoUniversity.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Denis\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\Denis\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

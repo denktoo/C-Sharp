@@ -7719,11 +7719,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Denis\\source\\repos\\ContosoUniversity\\ContosoUniversity\\ContosoUniversity.csproj",
+      "projectUniqueName": "C:\\Users\\Denis\\source\\C-Sharp\\ContosoUniversity\\ContosoUniversity\\ContosoUniversity.csproj",
       "projectName": "ContosoUniversity",
-      "projectPath": "C:\\Users\\Denis\\source\\repos\\ContosoUniversity\\ContosoUniversity\\ContosoUniversity.csproj",
+      "projectPath": "C:\\Users\\Denis\\source\\C-Sharp\\ContosoUniversity\\ContosoUniversity\\ContosoUniversity.csproj",
       "packagesPath": "C:\\Users\\Denis\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Denis\\source\\repos\\ContosoUniversity\\ContosoUniversity\\obj\\",
+      "outputPath": "C:\\Users\\Denis\\source\\C-Sharp\\ContosoUniversity\\ContosoUniversity\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Denis\\AppData\\Roaming\\NuGet\\NuGet.Config",
