@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using JkuatUniversity.Data;
 using JkuatUniversity.Models;
 
-namespace ContosoUniversity.Controllers
+namespace JkuatUniversity.Controllers
 {
     public class EnrollmentsController : Controller
     {
