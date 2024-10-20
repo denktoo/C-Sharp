@@ -1,0 +1,31 @@
+﻿@model IEnumerable<JkuatUniversity.ViewModels.EnrollmentDateGroup>
+
+@{
+    ViewData["Title"] = "About";
+}
+
+<h1>Jkuat University</h1>
+
+<h2>Enrollment Statistics</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Enrollment Date</th>
+            <th>Student Count</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.EnrollmentDate?.ToString("d")</td>
+                <td>@item.StudentCount</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<p>
+    <a asp-action="Index">Back to Home</a>
+</p>

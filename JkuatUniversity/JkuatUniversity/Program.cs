@@ -6,6 +6,9 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
+// Add logging services if needed
+builder.Services.AddLogging();
+
 // Registering the DbContext with MySQL configuration
 builder.Services.AddDbContext<JkuatContext>(options =>
     options.UseMySql(builder.Configuration.GetConnectionString("JkuatContext"),
