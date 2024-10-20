@@ -519,3 +519,8 @@ C:\Users\Denis\source\C-Sharp\JkuatUniversity\JkuatUniversity\obj\Debug\net8.0\r
 C:\Users\Denis\source\C-Sharp\JkuatUniversity\JkuatUniversity\obj\Debug\net8.0\JkuatUniversity.pdb
 C:\Users\Denis\source\C-Sharp\JkuatUniversity\JkuatUniversity\obj\Debug\net8.0\JkuatUniversity.genruntimeconfig.cache
 C:\Users\Denis\source\C-Sharp\JkuatUniversity\JkuatUniversity\obj\Debug\net8.0\ref\JkuatUniversity.dll
+C:\Users\Denis\source\repos\JkuatUniversity\JkuatUniversity\bin\Debug\net8.0\PagedList.dll
+C:\Users\Denis\source\repos\JkuatUniversity\JkuatUniversity\bin\Debug\net8.0\PagedList.Mvc.dll
+C:\Users\Denis\source\repos\JkuatUniversity\JkuatUniversity\bin\Debug\net8.0\X.PagedList.dll
+C:\Users\Denis\source\repos\JkuatUniversity\JkuatUniversity\bin\Debug\net8.0\X.PagedList.Mvc.Core.dll
+C:\Users\Denis\source\repos\JkuatUniversity\JkuatUniversity\obj\Debug\net8.0\JkuatUniversity.MvcApplicationPartsAssemblyInfo.cs

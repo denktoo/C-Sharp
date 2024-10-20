@@ -27,8 +27,17 @@ app.UseRouting();
 
 app.UseAuthorization();
 
+// Map controller routes
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
+
+// Initialize the database with seed data
+using (var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+    var context = services.GetRequiredService<JkuatContext>();
+    JkuatInitializer.Initialize(context);
+}
 
 app.Run();

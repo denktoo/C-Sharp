@@ -2,6 +2,8 @@
 using Microsoft.EntityFrameworkCore;
 using JkuatUniversity.Data;
 using JkuatUniversity.Models;
+using X.PagedList;
+using X.PagedList.Extensions;
 
 namespace JkuatUniversity.Controllers
 {
@@ -15,9 +17,58 @@ namespace JkuatUniversity.Controllers
         }
 
         // GET: Students
-        public async Task<IActionResult> Index()
+        //public async Task<IActionResult> Index()
+        //{
+        //    return View(await _context.Students.ToListAsync());
+        //}
+        public ViewResult Index(string sortOrder, string currentFilter, string searchString, int? page)
         {
-            return View(await _context.Students.ToListAsync());
+            ViewBag.CurrentSort = sortOrder;
+            ViewBag.NameSortParm = string.IsNullOrEmpty(sortOrder) ? "name_desc" : "";
+            ViewBag.DateSortParm = sortOrder == "Date" ? "date_desc" : "Date";
+
+            if (searchString != null)
+            {
+                page = 1; // Reset page number when searching
+            }
+            else
+            {
+                searchString = currentFilter; // Use current filter if no new search
+            }
+
+            ViewBag.CurrentFilter = searchString; // Set current filter for view
+
+            var students = from s in _context.Students
+                           select s;
+
+            // Filter based on search string
+            if (!string.IsNullOrEmpty(searchString))
+            {
+                students = students.Where(s => s.LastName.Contains(searchString) || s.FirstMidName.Contains(searchString));
+            }
+
+            // Sorting logic
+            switch (sortOrder)
+            {
+                case "name_desc":
+                    students = students.OrderByDescending(s => s.LastName);
+                    break;
+                case "Date":
+                    students = students.OrderBy(s => s.EnrollmentDate);
+                    break;
+                case "date_desc":
+                    students = students.OrderByDescending(s => s.EnrollmentDate);
+                    break;
+                default:  // Default sorting by name ascending 
+                    students = students.OrderBy(s => s.LastName);
+                    break;
+            }
+
+            // Pagination settings
+            int pageSize = 3; // Number of records per page
+            int pageNumber = (page ?? 1); // Current page number
+
+            return View(students.ToPagedList(pageNumber, pageSize)); // Return paginated list to the view
         }
 
         // GET: Students/Create
