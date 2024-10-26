@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("JkuatUniversity")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c3b53cd830257a873b2012c3510268a328ffa23f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a6227f67eeb708689e511e98f32536c86a80fa60")]
 [assembly: System.Reflection.AssemblyProductAttribute("JkuatUniversity")]
 [assembly: System.Reflection.AssemblyTitleAttribute("JkuatUniversity")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

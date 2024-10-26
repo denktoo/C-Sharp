@@ -7916,11 +7916,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Denis\\source\\repos\\JkuatUniversity\\JkuatUniversity\\JkuatUniversity.csproj",
+      "projectUniqueName": "C:\\Users\\Denis\\source\\C-Sharp\\JkuatUniversity\\JkuatUniversity\\JkuatUniversity.csproj",
       "projectName": "JkuatUniversity",
-      "projectPath": "C:\\Users\\Denis\\source\\repos\\JkuatUniversity\\JkuatUniversity\\JkuatUniversity.csproj",
+      "projectPath": "C:\\Users\\Denis\\source\\C-Sharp\\JkuatUniversity\\JkuatUniversity\\JkuatUniversity.csproj",
       "packagesPath": "C:\\Users\\Denis\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Denis\\source\\repos\\JkuatUniversity\\JkuatUniversity\\obj\\",
+      "outputPath": "C:\\Users\\Denis\\source\\C-Sharp\\JkuatUniversity\\JkuatUniversity\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Denis\\AppData\\Roaming\\NuGet\\NuGet.Config",
