@@ -56,7 +56,7 @@ namespace JKUATUniversity.Controllers
                     await _context.SaveChangesAsync();
 
                     await _signInManager.SignInAsync(user, isPersistent: false);
-                    return RedirectToAction("Index", "Home");
+                    return RedirectToAction("Login", "Account");
                 }
 
                 foreach (var error in result.Errors)

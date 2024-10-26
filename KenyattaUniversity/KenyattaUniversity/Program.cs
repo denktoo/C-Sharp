@@ -65,7 +65,7 @@ else
     app.UseExceptionHandler("/Home/Error");
     app.UseHsts();
 }
-
+ 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 
@@ -77,5 +77,11 @@ app.UseAuthorization();  // Add this line for authorization.
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
+
+//// Map route for Account/Login
+//app.MapControllerRoute(
+//    name: "login",
+//    pattern: "Account/Login",
+//    defaults: new { controller = "Account", action = "Login" });
 
 app.Run();
