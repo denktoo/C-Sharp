@@ -1,0 +1,31 @@
+﻿@model IEnumerable<JKUATUniversity.Models.Enrollment>
+
+<h1>Your Dashboard</h1>
+
+@if (Model.Any())
+{
+    <h3>Your Enrolled Courses</h3>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Course Title</th>
+                <th>Credits</th>
+                <th>Grade</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var enrollment in Model)
+            {
+                <tr>
+                    <td>@enrollment.Course.Title</td>
+                    <td>@enrollment.Course.Credits</td>
+                    <td>@enrollment.Grade ?? "Not Graded"</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>You are not enrolled in any courses.</p>
+}
