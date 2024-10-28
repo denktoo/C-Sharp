@@ -5,8 +5,15 @@ namespace KenyattaUniversity.ViewModels
 {
     public class AdminDashboardViewModel
     {
-        public List<ApplicationUser> Students { get; set; }
-        public List<Course> Courses { get; set; }
-        public List<Enrollment> Enrollments { get; set; }
+        public IEnumerable<ApplicationUser> Students { get; set; } // List of students
+        public IEnumerable<Course> Courses { get; set; } // List of courses
+        public IEnumerable<Enrollment> Enrollments { get; set; } // List of enrollments
+
+        public AdminDashboardViewModel()
+        {
+            Students = new List<ApplicationUser>();
+            Courses = new List<Course>();
+            Enrollments = new List<Enrollment>();
+        }
     }
 }

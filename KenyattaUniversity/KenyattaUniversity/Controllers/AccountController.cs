@@ -14,18 +14,17 @@ namespace KenyattaUniversity.Controllers
     {
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly SignInManager<ApplicationUser> _signInManager;
+        private readonly IConfiguration _configuration;
 
-        public AccountController(UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signInManager)
+        public AccountController(UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signInManager, IConfiguration configuration)
         {
             _userManager = userManager;
             _signInManager = signInManager;
+            _configuration = configuration;
         }
 
         [HttpGet]
-        public IActionResult Login()
-        {
-            return View();
-        }
+        public IActionResult Login() => View();
 
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -33,25 +32,26 @@ namespace KenyattaUniversity.Controllers
         {
             if (ModelState.IsValid)
             {
+                // Attempt to sign in the user
                 var result = await _signInManager.PasswordSignInAsync(model.Email, model.Password, model.RememberMe, lockoutOnFailure: false);
 
                 if (result.Succeeded)
                 {
+                    // Find the user by email
                     var user = await _userManager.FindByEmailAsync(model.Email);
                     if (user != null)
                     {
                         // Generate JWT token
                         var tokenHandler = new JwtSecurityTokenHandler();
-                        var key = Encoding.UTF8.GetBytes("YourSuperSecretKeyHereShouldBeAtLeast32BytesLong!"); // Use a secure key
+                        var key = Encoding.UTF8.GetBytes(_configuration["Jwt:Key"]);
 
-                        // Get roles for the user
                         var roles = await _userManager.GetRolesAsync(user);
                         var claims = new List<Claim>
-                        {
-                            new Claim(ClaimTypes.NameIdentifier, user.Id),
-                            new Claim(ClaimTypes.Email, user.Email),
-                            new Claim(ClaimTypes.Role, roles.FirstOrDefault() ?? "User") // Default to "User" if no roles found
-                        };
+                {
+                    new Claim(ClaimTypes.NameIdentifier, user.Id),
+                    new Claim(ClaimTypes.Email, user.Email),
+                    new Claim(ClaimTypes.Role, roles.FirstOrDefault() ?? "User")
+                };
 
                         var tokenDescriptor = new SecurityTokenDescriptor
                         {
@@ -60,23 +60,37 @@ namespace KenyattaUniversity.Controllers
                             SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
                         };
 
-                        var token = tokenHandler.CreateToken(tokenDescriptor); // Create the token
-                        var tokenString = tokenHandler.WriteToken(token); // Convert to string
+                        var token = tokenHandler.CreateToken(tokenDescriptor);
+                        var tokenString = tokenHandler.WriteToken(token);
 
-                        return Ok(new { Token = tokenString }); // Return the actual token string to the client
+                        // Redirect based on roles
+                        if (roles.Contains("Admin"))
+                        {
+                            return RedirectToAction("Dashboard", "Admin");
+                        }
+                            
+                        else if (roles.Contains("Student"))
+                        {
+                            return RedirectToAction("Dashboard", "Student");
+                        }
+
+                        return Ok(new { Token = tokenString });
                     }
                 }
+                else
+                {
+                    // Log the failed login attempt for debugging
+                    Console.WriteLine($"Failed login attempt for email: {model.Email}");
+                }
+
                 ModelState.AddModelError(string.Empty, "Invalid login attempt.");
             }
 
-            return View(model); // Return model to retain input values on error
+            return View(model);
         }
 
         [HttpGet]
-        public IActionResult Register()
-        {
-            return View();
-        }
+        public IActionResult Register() => View();
 
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -84,19 +98,26 @@ namespace KenyattaUniversity.Controllers
         {
             if (ModelState.IsValid)
             {
-                var user = new ApplicationUser { UserName = model.Email, Email = model.Email };
+                var user = new ApplicationUser
+                {
+                    UserName = model.Email,
+                    Email = model.Email
+                };
+
                 var result = await _userManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)
                 {
                     await _userManager.AddToRoleAsync(user, "Student"); // Assign default role
                     await _signInManager.SignInAsync(user, isPersistent: false);
-                    return RedirectToAction("Index", "Home");
+                    return RedirectToAction("Dashboard", "Student");
                 }
+
                 foreach (var error in result.Errors)
                 {
                     ModelState.AddModelError(string.Empty, error.Description);
                 }
             }
+
             return View(model);
         }
 

@@ -1,14 +1,21 @@
 ﻿@model KenyattaUniversity.ViewModels.AdminDashboardViewModel
 
-<h1>Admin Dashboard</h1>
+<h2>Admin Dashboard</h2>
 
-<h2>Students</h2>
+<div>
+    <h3>Overview</h3>
+    <p>Total Students: @Model.Students.Count()</p>
+    <p>Total Courses: @Model.Courses.Count()</p>
+    <p>Total Enrollments: @Model.Enrollments.Count()</p>
+</div>
+
+<h3>Students</h3>
 <table class="table">
     <thead>
         <tr>
             <th>Email</th>
             <th>Full Name</th>
-            <th>Display Name</th>
+            <th>Actions</th>
         </tr>
     </thead>
     <tbody>
@@ -17,18 +24,23 @@
             <tr>
                 <td>@student.Email</td>
                 <td>@student.FullName</td>
-                <td>@student.DisplayName</td>
+                <td>
+                    <!-- Actions for managing students can be added here -->
+                    <a asp-action="EditStudent" asp-route-id="@student.Id">Edit</a> |
+                    <a asp-action="DeleteStudent" asp-route-id="@student.Id">Delete</a>
+                </td>
             </tr>
         }
     </tbody>
 </table>
 
-<h2>Courses</h2>
+<h3>Courses</h3>
 <table class="table">
     <thead>
         <tr>
             <th>Course Title</th>
             <th>Credits</th>
+            <th>Actions</th>
         </tr>
     </thead>
     <tbody>
@@ -37,31 +49,41 @@
             <tr>
                 <td>@course.Title</td>
                 <td>@course.Credits</td>
+                <td>
+                    <!-- Actions for managing courses can be added here -->
+                    <a asp-action="EditCourse" asp-route-id="@course.CourseID">Edit</a> |
+                    <a asp-action="DeleteCourse" asp-route-id="@course.CourseID">Delete</a>
+                </td>
             </tr>
         }
     </tbody>
 </table>
 
-<h2>Enrollments</h2>
+<h3>Enrollments</h3>
 <table class="table">
     <thead>
         <tr>
             <th>Student Email</th>
             <th>Course Title</th>
+            <th>Grade</th>
+            <th>Actions</th>
         </tr>
     </thead>
     <tbody>
         @foreach (var enrollment in Model.Enrollments)
         {
-            var studentEmail = enrollment.Student.Email; // Assuming Enrollment has a reference to Student
-            var courseTitle = enrollment.Course.Title; // Assuming Enrollment has a reference to Course
+            var student = Model.Students.FirstOrDefault(s => s.Id == enrollment.StudentID);
+            var course = Model.Courses.FirstOrDefault(c => c.CourseID == enrollment.CourseID);
 
-            <tr>
-                <td>@studentEmail</td>
-                <td>@courseTitle</td>
-            </tr>
+            if (student != null && course != null)
+            {
+                <tr>
+                    <td>@student.Email</td>
+                    <td>@course.Title</td>
+                    <td>@enrollment.Grade ?? "N/A"</td> <!-- Display N/A if no grade -->
+                    <td><a asp-action="EditEnrollment" asp-route-id="@enrollment.EnrollmentID">Edit Grade</a></td>
+                </tr>
+            }
         }
     </tbody>
 </table>
-
-<!-- Add buttons or links for editing or managing records as needed -->

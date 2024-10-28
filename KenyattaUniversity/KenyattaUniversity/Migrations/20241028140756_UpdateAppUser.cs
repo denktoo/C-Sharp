@@ -5,32 +5,42 @@
 namespace KenyattaUniversity.Migrations
 {
     /// <inheritdoc />
-    public partial class UpdateLogins : Migration
+    public partial class UpdateAppUser : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.AlterColumn<string>(
-                name: "FullName",
+                name: "DisplayName",
                 table: "AspNetUsers",
                 type: "longtext",
                 nullable: true,
                 oldClrType: typeof(string),
-                oldType: "longtext");
+                oldType: "longtext")
+                .Annotation("MySql:CharSet", "utf8mb4")
+                .OldAnnotation("MySql:CharSet", "utf8mb4");
         }
 
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.UpdateData(
+                table: "AspNetUsers",
+                keyColumn: "DisplayName",
+                keyValue: null,
+                column: "DisplayName",
+                value: "");
+
             migrationBuilder.AlterColumn<string>(
-                name: "FullName",
+                name: "DisplayName",
                 table: "AspNetUsers",
                 type: "longtext",
                 nullable: false,
-                defaultValue: "",
                 oldClrType: typeof(string),
                 oldType: "longtext",
-                oldNullable: true);
+                oldNullable: true)
+                .Annotation("MySql:CharSet", "utf8mb4")
+                .OldAnnotation("MySql:CharSet", "utf8mb4");
         }
     }
 }

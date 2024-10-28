@@ -3,6 +3,7 @@ using System;
 using KenyattaUniversity.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
@@ -11,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace KenyattaUniversity.Migrations
 {
     [DbContext(typeof(KUContext))]
-    [Migration("20241026165223_UpdateSeedRoles")]
-    partial class UpdateSeedRoles
+    [Migration("20241028140508_InitialCreates")]
+    partial class InitialCreates
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -21,6 +22,8 @@ namespace KenyattaUniversity.Migrations
             modelBuilder
                 .HasAnnotation("ProductVersion", "8.0.10")
                 .HasAnnotation("Relational:MaxIdentifierLength", 64);
+
+            MySqlModelBuilderExtensions.AutoIncrementColumns(modelBuilder);
 
             modelBuilder.Entity("KenyattaUniversity.Models.ApplicationUser", b =>
                 {
@@ -34,10 +37,8 @@ namespace KenyattaUniversity.Migrations
                         .IsConcurrencyToken()
                         .HasColumnType("longtext");
 
-                    b.Property<DateTime?>("DateOfBirth")
-                        .HasColumnType("datetime(6)");
-
                     b.Property<string>("DisplayName")
+                        .IsRequired()
                         .HasColumnType("longtext");
 
                     b.Property<string>("Email")
@@ -51,14 +52,11 @@ namespace KenyattaUniversity.Migrations
                         .IsRequired()
                         .HasColumnType("longtext");
 
-                    b.Property<DateTime?>("LastLoginDateTime")
-                        .HasColumnType("datetime(6)");
-
                     b.Property<bool>("LockoutEnabled")
                         .HasColumnType("tinyint(1)");
 
                     b.Property<DateTimeOffset?>("LockoutEnd")
-                        .HasColumnType("datetime");
+                        .HasColumnType("datetime(6)");
 
                     b.Property<string>("NormalizedEmail")
                         .HasMaxLength(256)
@@ -76,9 +74,6 @@ namespace KenyattaUniversity.Migrations
 
                     b.Property<bool>("PhoneNumberConfirmed")
                         .HasColumnType("tinyint(1)");
-
-                    b.Property<string>("ProfilePictureUrl")
-                        .HasColumnType("longtext");
 
                     b.Property<string>("SecurityStamp")
                         .HasColumnType("longtext");
@@ -108,6 +103,8 @@ namespace KenyattaUniversity.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("CourseID"));
+
                     b.Property<int>("Credits")
                         .HasColumnType("int");
 
@@ -126,13 +123,20 @@ namespace KenyattaUniversity.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("EnrollmentID"));
+
                     b.Property<int>("CourseID")
                         .HasColumnType("int");
 
                     b.Property<string>("Grade")
+                        .IsRequired()
                         .HasColumnType("longtext");
 
-                    b.Property<int>("StudentID")
+                    b.Property<string>("StudentID")
+                        .IsRequired()
+                        .HasColumnType("varchar(255)");
+
+                    b.Property<int?>("StudentID1")
                         .HasColumnType("int");
 
                     b.HasKey("EnrollmentID");
@@ -140,6 +144,8 @@ namespace KenyattaUniversity.Migrations
                     b.HasIndex("CourseID");
 
                     b.HasIndex("StudentID");
+
+                    b.HasIndex("StudentID1");
 
                     b.ToTable("Enrollments");
                 });
@@ -149,6 +155,8 @@ namespace KenyattaUniversity.Migrations
                     b.Property<int>("StudentID")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
+
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("StudentID"));
 
                     b.Property<string>("Email")
                         .IsRequired()
@@ -199,6 +207,8 @@ namespace KenyattaUniversity.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
+
                     b.Property<string>("ClaimType")
                         .HasColumnType("longtext");
 
@@ -221,6 +231,8 @@ namespace KenyattaUniversity.Migrations
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
+
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("ClaimType")
                         .HasColumnType("longtext");
@@ -303,11 +315,15 @@ namespace KenyattaUniversity.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("KenyattaUniversity.Models.Student", "Student")
-                        .WithMany("Enrollments")
+                    b.HasOne("KenyattaUniversity.Models.ApplicationUser", "Student")
+                        .WithMany()
                         .HasForeignKey("StudentID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.HasOne("KenyattaUniversity.Models.Student", null)
+                        .WithMany("Enrollments")
+                        .HasForeignKey("StudentID1");
 
                     b.Navigation("Course");
 

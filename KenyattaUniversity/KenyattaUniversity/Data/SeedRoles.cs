@@ -1,4 +1,4 @@
-﻿using KenyattaUniversity.Models;
+﻿using KenyattaUniversity.Models; // Ensure to include your ApplicationUser model
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.DependencyInjection;
 using System.Threading.Tasks;
@@ -12,7 +12,7 @@ namespace KenyattaUniversity.Data
             var roleManager = serviceProvider.GetRequiredService<RoleManager<IdentityRole>>();
             var userManager = serviceProvider.GetRequiredService<UserManager<ApplicationUser>>();
 
-            // Seed roles if they do not exist
+            // Seed roles
             string[] roleNames = { "Admin", "Student" };
             foreach (var roleName in roleNames)
             {
@@ -23,7 +23,7 @@ namespace KenyattaUniversity.Data
                 }
             }
 
-            // Seed admin user if it does not exist
+            // Seed admin user
             var adminEmail = "admin@gmail.com";
             var adminPassword = "admin123";
 
@@ -44,6 +44,14 @@ namespace KenyattaUniversity.Data
                 if (createAdminResult.Succeeded)
                 {
                     await userManager.AddToRoleAsync(adminUser, "Admin"); // Assign Admin role
+                }
+                else
+                {
+                    // Log errors if user creation fails
+                    foreach (var error in createAdminResult.Errors)
+                    {
+                        Console.WriteLine($"Error creating admin user: {error.Description}");
+                    }
                 }
             }
         }

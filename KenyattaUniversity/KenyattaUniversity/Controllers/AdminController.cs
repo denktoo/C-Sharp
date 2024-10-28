@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using KenyattaUniversity.Data;
+using KenyattaUniversity.Data; // Ensure you have the correct using directive for your context
 using KenyattaUniversity.Models;
 using KenyattaUniversity.ViewModels;
 using System.Linq;
@@ -31,7 +31,7 @@ namespace KenyattaUniversity.Controllers
                 Enrollments = enrollments
             };
 
-            return View(viewModel);
+            return View(viewModel); // Pass view model to view for rendering data
         }
     }
 }

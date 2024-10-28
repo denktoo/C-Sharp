@@ -1,7 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using KenyattaUniversity.Models;
-using Microsoft.AspNetCore.Identity;
 
 namespace KenyattaUniversity.Data
 {
@@ -12,44 +11,23 @@ namespace KenyattaUniversity.Data
         {
         }
 
-        public DbSet<Student> Students { get; set; }
-        public DbSet<Course> Courses { get; set; }
-        public DbSet<Enrollment> Enrollments { get; set; }
+        public DbSet<Course> Courses { get; set; } // DbSet for Course entity
+        public DbSet<Enrollment> Enrollments { get; set; } // DbSet for Enrollment entity
+        public DbSet<Student> Students { get; set; } // DbSet for Student entity
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
 
-            // Customize table names if necessary
-            modelBuilder.Entity<ApplicationUser>(b =>
-            {
-                b.ToTable("AspNetUsers"); // Ensure this matches your MySQL table name
-            });
+            modelBuilder.Entity<Enrollment>()
+                .HasOne(e => e.Course)
+                .WithMany(c => c.Enrollments)
+                .HasForeignKey(e => e.CourseID);
 
-            modelBuilder.Entity<IdentityRole>(b =>
-            {
-                b.ToTable("AspNetRoles");
-            });
-
-            modelBuilder.Entity<IdentityUserRole<string>>(b =>
-            {
-                b.ToTable("AspNetUserRoles");
-            });
-
-            modelBuilder.Entity<IdentityUserClaim<string>>(b =>
-            {
-                b.ToTable("AspNetUserClaims");
-            });
-
-            modelBuilder.Entity<IdentityUserLogin<string>>(b =>
-            {
-                b.ToTable("AspNetUserLogins");
-            });
-
-            modelBuilder.Entity<IdentityRoleClaim<string>>(b =>
-            {
-                b.ToTable("AspNetRoleClaims");
-            });
+            modelBuilder.Entity<Enrollment>()
+                .HasOne(e => e.Student)
+                .WithMany() // Assuming ApplicationUser has no navigation property back to Enrollment
+                .HasForeignKey(e => e.StudentID);
         }
     }
 }

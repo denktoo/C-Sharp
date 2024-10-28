@@ -1,0 +1,24 @@
+﻿@model KenyattaUniversity.Models.Enrollment
+
+<h2>Edit Grade for @Model.Course.Title</h2>
+
+<form asp-action="UpdateGrade" method="post">
+    @Html.HiddenFor(m => m.EnrollmentID)
+
+    <div class="form-group">
+        <label asp-for="Grade"></label>
+        <input asp-for="Grade" class="form-control" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Update Grade</button>
+</form>
+
+<div class="mt-3">
+    <a asp-action="Dashboard">Back to Dashboard</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

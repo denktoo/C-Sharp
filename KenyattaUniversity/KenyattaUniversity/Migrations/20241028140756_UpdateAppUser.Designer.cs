@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace KenyattaUniversity.Migrations
 {
     [DbContext(typeof(KUContext))]
-    [Migration("20241028005210_UpdateAdminLogin")]
-    partial class UpdateAdminLogin
+    [Migration("20241028140756_UpdateAppUser")]
+    partial class UpdateAppUser
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -48,6 +48,7 @@ namespace KenyattaUniversity.Migrations
                         .HasColumnType("tinyint(1)");
 
                     b.Property<string>("FullName")
+                        .IsRequired()
                         .HasColumnType("longtext");
 
                     b.Property<bool>("LockoutEnabled")
@@ -127,9 +128,14 @@ namespace KenyattaUniversity.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Grade")
+                        .IsRequired()
                         .HasColumnType("longtext");
 
-                    b.Property<int>("StudentID")
+                    b.Property<string>("StudentID")
+                        .IsRequired()
+                        .HasColumnType("varchar(255)");
+
+                    b.Property<int?>("StudentID1")
                         .HasColumnType("int");
 
                     b.HasKey("EnrollmentID");
@@ -137,6 +143,8 @@ namespace KenyattaUniversity.Migrations
                     b.HasIndex("CourseID");
 
                     b.HasIndex("StudentID");
+
+                    b.HasIndex("StudentID1");
 
                     b.ToTable("Enrollments");
                 });
@@ -306,11 +314,15 @@ namespace KenyattaUniversity.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("KenyattaUniversity.Models.Student", "Student")
-                        .WithMany("Enrollments")
+                    b.HasOne("KenyattaUniversity.Models.ApplicationUser", "Student")
+                        .WithMany()
                         .HasForeignKey("StudentID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.HasOne("KenyattaUniversity.Models.Student", null)
+                        .WithMany("Enrollments")
+                        .HasForeignKey("StudentID1");
 
                     b.Navigation("Course");
 

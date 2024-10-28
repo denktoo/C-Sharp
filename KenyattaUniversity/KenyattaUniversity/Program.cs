@@ -11,7 +11,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddDbContext<KUContext>(options =>
     options.UseMySql(builder.Configuration.GetConnectionString("DefaultConnection"),
-    new MySqlServerVersion(new Version(8, 0, 10)))); // Ensure you're using UseMySql here with proper versioning
+    new MySqlServerVersion(new Version(8, 0, 10))));
 
 builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
     .AddEntityFrameworkStores<KUContext>()
@@ -67,7 +67,7 @@ using (var scope = app.Services.CreateScope())
     var services = scope.ServiceProvider;
     try
     {
-        await SeedRoles.Initialize(services);
+        await SeedRoles.Initialize(services); // Call the method to seed roles and admin user
     }
     catch (Exception ex)
     {
