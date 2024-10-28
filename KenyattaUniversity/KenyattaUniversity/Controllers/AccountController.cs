@@ -7,6 +7,7 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
+using KenyattaUniversity.Data;
 
 namespace KenyattaUniversity.Controllers
 {
@@ -15,12 +16,17 @@ namespace KenyattaUniversity.Controllers
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly SignInManager<ApplicationUser> _signInManager;
         private readonly IConfiguration _configuration;
+        private readonly IServiceProvider _serviceProvider;
 
-        public AccountController(UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signInManager, IConfiguration configuration)
+        public AccountController(UserManager<ApplicationUser> userManager,
+                                 SignInManager<ApplicationUser> signInManager,
+                                 IConfiguration configuration,
+                                 IServiceProvider serviceProvider)
         {
             _userManager = userManager;
             _signInManager = signInManager;
             _configuration = configuration;
+            _serviceProvider = serviceProvider;
         }
 
         [HttpGet]
@@ -105,11 +111,28 @@ namespace KenyattaUniversity.Controllers
                 };
 
                 var result = await _userManager.CreateAsync(user, model.Password);
+
                 if (result.Succeeded)
                 {
                     await _userManager.AddToRoleAsync(user, "Student"); // Assign default role
+
+                    // Create a new Student record
+                    var student = new Student
+                    {
+                        Email = model.Email,
+                        Fname = model.Fname,
+                        Lname = model.Lname
+                    };
+
+                    using (var scope = _serviceProvider.CreateScope())
+                    {
+                        var context = scope.ServiceProvider.GetRequiredService<KUContext>();
+                        context.Students.Add(student);
+                        await context.SaveChangesAsync(); // Save changes to the database
+                    }
+
                     await _signInManager.SignInAsync(user, isPersistent: false);
-                    return RedirectToAction("Dashboard", "Student");
+                    return RedirectToAction("Login", "Account");
                 }
 
                 foreach (var error in result.Errors)
