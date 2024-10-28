@@ -139,3 +139,5 @@ C:\Users\Denis\source\C-Sharp\KenyattaUniversity\KenyattaUniversity\obj\Debug\ne
 C:\Users\Denis\source\C-Sharp\KenyattaUniversity\KenyattaUniversity\obj\Debug\net8.0\KenyattaUniversity.pdb
 C:\Users\Denis\source\C-Sharp\KenyattaUniversity\KenyattaUniversity\obj\Debug\net8.0\KenyattaUniversity.genruntimeconfig.cache
 C:\Users\Denis\source\C-Sharp\KenyattaUniversity\KenyattaUniversity\obj\Debug\net8.0\ref\KenyattaUniversity.dll
+C:\Users\Denis\source\C-Sharp\KenyattaUniversity\KenyattaUniversity\bin\Debug\net8.0\MySqlConnector.dll
+C:\Users\Denis\source\C-Sharp\KenyattaUniversity\KenyattaUniversity\bin\Debug\net8.0\Pomelo.EntityFrameworkCore.MySql.dll

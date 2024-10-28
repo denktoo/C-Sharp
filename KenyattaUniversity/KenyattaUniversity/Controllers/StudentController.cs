@@ -3,38 +3,75 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using KenyattaUniversity.Data;
 using KenyattaUniversity.Models;
+using KenyattaUniversity.ViewModels;
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
 
 namespace KenyattaUniversity.Controllers
 {
-    [Authorize] // Ensure only authenticated users can access this controller
-    public class StudentController : Controller
+    [Authorize(Roles = "Student")]
+    public class StudentControllers : Controller
     {
         private readonly KUContext _context;
         private readonly UserManager<ApplicationUser> _userManager;
 
-        public StudentController(KUContext context, UserManager<ApplicationUser> userManager)
+        public StudentControllers(KUContext context, UserManager<ApplicationUser> userManager)
         {
             _context = context;
             _userManager = userManager;
         }
 
-        // Dashboard action to show enrolled courses.
+        // GET: Student/Dashboard
         public IActionResult Dashboard()
         {
             var userId = _userManager.GetUserId(User); // Get current user's ID
-            if (string.IsNullOrEmpty(userId))
+
+            // Fetch the student's enrollments using the correct foreign key relationship
+            var enrollments = _context.Enrollments
+                .Where(e => e.StudentID == int.Parse(userId)) // Ensure this matches your data type (int or string)
+                .Include(e => e.Course) // Include course details if needed
+                .ToList();
+
+            return View(enrollments); // Return enrollments to view
+        }
+
+        // GET: Student/Enroll
+        [HttpGet]
+        public IActionResult Enroll()
+        {
+            var courses = _context.Courses.ToList(); // Fetch all available courses
+            var viewModel = new EnrollViewModel
             {
-                return Unauthorized(); // Return 401 if not authenticated
+                Courses = courses
+            };
+            return View(viewModel);
+        }
+
+        // POST: Student/Enroll
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Enroll(EnrollViewModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                var userId = _userManager.GetUserId(User);
+
+                var enrollment = new Enrollment
+                {
+                    CourseID = model.SelectedCourseId,
+                    StudentID = int.Parse(userId) // Ensure this matches your data type (int or string)
+                };
+
+                _context.Enrollments.Add(enrollment);
+                await _context.SaveChangesAsync();
+
+                return RedirectToAction("Dashboard"); // Redirect to the dashboard after enrollment
             }
 
-            var studentCourses = _context.Enrollments
-                .Where(e => e.StudentID == Convert.ToInt32(userId)) // Ensure correct type comparison
-                .Include(e => e.Course) // Include course details if needed
-                .ToList(); // Fetch courses for the logged-in student
+            var courses = _context.Courses.ToList();
+            model.Courses = courses; // Re-populate courses in case of error
 
-            return View(studentCourses); // Return courses to view
+            return View(model); // Return the view with the model to show validation errors
         }
     }
 }

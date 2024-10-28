@@ -12,7 +12,7 @@ namespace KenyattaUniversity.Data
             var roleManager = serviceProvider.GetRequiredService<RoleManager<IdentityRole>>();
             var userManager = serviceProvider.GetRequiredService<UserManager<ApplicationUser>>();
 
-            // Create roles if they do not exist
+            // Seed roles if they do not exist
             string[] roleNames = { "Admin", "Student" };
             foreach (var roleName in roleNames)
             {
@@ -23,7 +23,7 @@ namespace KenyattaUniversity.Data
                 }
             }
 
-            // Create an admin user if it does not exist
+            // Seed admin user if it does not exist
             var adminEmail = "admin@gmail.com";
             var adminPassword = "admin123";
 
