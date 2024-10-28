@@ -33,7 +33,5 @@ namespace KenyattaUniversity.Controllers
 
             return View(viewModel);
         }
-
-        // Additional methods for managing students, courses, and enrollments can be added here...
     }
 }
