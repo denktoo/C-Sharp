@@ -60,10 +60,6 @@
               "target": "Package",
               "version": "[8.0.10, )"
             },
-            "MySql.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[8.0.8, )"
-            },
             "Pomelo.EntityFrameworkCore.MySql": {
               "target": "Package",
               "version": "[8.0.2, )"

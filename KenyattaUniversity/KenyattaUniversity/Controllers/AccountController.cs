@@ -8,6 +8,7 @@ using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
 using KenyattaUniversity.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace KenyattaUniversity.Controllers
 {
@@ -17,16 +18,20 @@ namespace KenyattaUniversity.Controllers
         private readonly SignInManager<ApplicationUser> _signInManager;
         private readonly IConfiguration _configuration;
         private readonly IServiceProvider _serviceProvider;
+        private readonly KUContext _context;
 
         public AccountController(UserManager<ApplicationUser> userManager,
                                  SignInManager<ApplicationUser> signInManager,
                                  IConfiguration configuration,
-                                 IServiceProvider serviceProvider)
+                                 IServiceProvider serviceProvider,
+                                 KUContext context)
         {
             _userManager = userManager;
             _signInManager = signInManager;
             _configuration = configuration;
             _serviceProvider = serviceProvider;
+            _context = context;
+            _context = context;
         }
 
         [HttpGet]
@@ -53,11 +58,12 @@ namespace KenyattaUniversity.Controllers
 
                         var roles = await _userManager.GetRolesAsync(user);
                         var claims = new List<Claim>
-                {
-                    new Claim(ClaimTypes.NameIdentifier, user.Id),
-                    new Claim(ClaimTypes.Email, user.Email),
-                    new Claim(ClaimTypes.Role, roles.FirstOrDefault() ?? "User")
-                };
+                        {
+                            new Claim(ClaimTypes.NameIdentifier, user.Id),
+                            new Claim(ClaimTypes.Email, user.Email),
+                            new Claim("FullName", user.FullName),
+                            new Claim(ClaimTypes.Role, roles.FirstOrDefault() ?? "User")
+                        };
 
                         var tokenDescriptor = new SecurityTokenDescriptor
                         {
@@ -96,7 +102,10 @@ namespace KenyattaUniversity.Controllers
         }
 
         [HttpGet]
-        public IActionResult Register() => View();
+        public IActionResult Register()
+        {
+            return View(new RegisterViewModel());
+        }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -107,35 +116,36 @@ namespace KenyattaUniversity.Controllers
                 var user = new ApplicationUser
                 {
                     UserName = model.Email,
-                    Email = model.Email
+                    Email = model.Email,
+                    FullName = $"{model.Fname} {model.Lname}" // Store full name if needed
                 };
 
                 var result = await _userManager.CreateAsync(user, model.Password);
-
                 if (result.Succeeded)
                 {
-                    await _userManager.AddToRoleAsync(user, "Student"); // Assign default role
-
-                    // Create a new Student record
-                    var student = new Student
+                    // Assign selected role
+                    if (!string.IsNullOrEmpty(model.SelectedRole))
                     {
-                        StudentID = model.StudentID,
-                        Email = model.Email,
-                        Fname = model.Fname,
-                        Lname = model.Lname
-                    };
-
-                    using (var scope = _serviceProvider.CreateScope())
-                    {
-                        var context = scope.ServiceProvider.GetRequiredService<KUContext>();
-                        context.Students.Add(student);
-                        await context.SaveChangesAsync(); // Save changes to the database
+                        await _userManager.AddToRoleAsync(user, model.SelectedRole);
                     }
 
-                    await _signInManager.SignInAsync(user, isPersistent: false);
+                    // If the user is a student, create an entry in the students table
+                    if (model.SelectedRole == "Student")
+                    {
+                        var student = new Student
+                        {
+                            StudentID = model.StudentID, // Ensure this is provided in your RegisterViewModel
+                            Fname = model.Fname,
+                            Lname = model.Lname,
+                            Email = model.Email // You can store email here as well if needed
+                        };
+
+                        _context.Students.Add(student); // Add to context
+                        await _context.SaveChangesAsync(); // Save changes to students table
+                    }
+
                     return RedirectToAction("Login", "Account");
                 }
-
                 foreach (var error in result.Errors)
                 {
                     ModelState.AddModelError(string.Empty, error.Description);

@@ -4,16 +4,20 @@ namespace KenyattaUniversity.ViewModels
 {
     public class RegisterViewModel
     {
-        [Required(ErrorMessage = "Student ID is required.")]
-        public string StudentID { get; set; }
+        public string? StudentID { get; set; }
 
-        [Required(ErrorMessage = "Email is required.")]
-        [EmailAddress(ErrorMessage = "Invalid email address.")]
+        [Required]
+        public string Fname { get; set; }
+
+        [Required]
+        public string Lname { get; set; }
+
+        [Required]
+        [EmailAddress]
         public string Email { get; set; }
 
-        [Required(ErrorMessage = "Password is required.")]
+        [Required]
         [DataType(DataType.Password)]
-        [StringLength(100, ErrorMessage = "Password must be at least {2} characters long.", MinimumLength = 6)]
         public string Password { get; set; }
 
         [DataType(DataType.Password)]
@@ -21,10 +25,7 @@ namespace KenyattaUniversity.ViewModels
         [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
         public string ConfirmPassword { get; set; }
 
-        [Required(ErrorMessage = "First name is required.")]
-        public string Fname { get; set; } // Student's first name
-
-        [Required(ErrorMessage = "Last name is required.")]
-        public string Lname { get; set; } // Student's last name
+        // Property for role selection
+        public string SelectedRole { get; set; }
     }
 }

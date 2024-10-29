@@ -72,7 +72,7 @@
     <tbody>
         @foreach (var enrollment in Model.Enrollments)
         {
-            var student = Model.Students.FirstOrDefault(s => s.Id == enrollment.StudentID);
+            var student = Model.Students.FirstOrDefault(s => s.StudentID == enrollment.StudentID);
             var course = Model.Courses.FirstOrDefault(c => c.CourseID == enrollment.CourseID);
 
             if (student != null && course != null)

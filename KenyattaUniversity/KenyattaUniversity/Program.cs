@@ -61,13 +61,13 @@ app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
-// Seed roles and users
+// Initialize the database with seed data
 using (var scope = app.Services.CreateScope())
 {
     var services = scope.ServiceProvider;
     try
     {
-        await SeedRoles.Initialize(services); // Call the method to seed roles and admin user
+        await SeedRoles.Initialize(services); // Call the method to seed roles
     }
     catch (Exception ex)
     {

@@ -34,9 +34,6 @@ namespace KenyattaUniversity.Migrations
                         .IsConcurrencyToken()
                         .HasColumnType("longtext");
 
-                    b.Property<string>("DisplayName")
-                        .HasColumnType("longtext");
-
                     b.Property<string>("Email")
                         .HasMaxLength(256)
                         .HasColumnType("varchar(256)");
@@ -71,6 +68,9 @@ namespace KenyattaUniversity.Migrations
                         .HasColumnType("tinyint(1)");
 
                     b.Property<string>("SecurityStamp")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("StudentID")
                         .HasColumnType("longtext");
 
                     b.Property<bool>("TwoFactorEnabled")

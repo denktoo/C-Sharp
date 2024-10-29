@@ -8,7 +8,7 @@
         public string Grade { get; set; } // Nullable Grade
 
         // Navigation properties
-        public Course Course { get; set; } // The course associated with this enrollment
-        public Student Student { get; set; } // The student associated with this enrollment
+        public virtual Course Course { get; set; } // The course associated with this enrollment
+        public virtual Student Student { get; set; } // The student associated with this enrollment
     }
 }

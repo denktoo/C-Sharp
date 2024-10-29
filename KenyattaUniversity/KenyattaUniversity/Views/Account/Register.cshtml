@@ -10,12 +10,6 @@
     <div asp-validation-summary="All" class="text-danger"></div>
 
     <div class="form-group">
-        <label asp-for="StudentID"></label>
-        <input asp-for="StudentID" class="form-control" />
-        <span asp-validation-for="StudentID" class="text-danger"></span>
-    </div>
-
-    <div class="form-group">
         <label asp-for="Fname"></label>
         <input asp-for="Fname" class="form-control" />
         <span asp-validation-for="Fname" class="text-danger"></span>
@@ -45,6 +39,23 @@
         <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
     </div>
 
+    <!-- Dropdown for Role Selection -->
+    <div class="form-group">
+        <label>Select Role:</label>
+        <select asp-for="SelectedRole" class="form-control" id="roleSelect">
+            <option value="">Select a role</option>
+            <option value="Admin">Admin</option>
+            <option value="Student">Student</option>
+        </select>
+    </div>
+
+    <!-- Student ID Input -->
+    <div class="form-group" id="studentIdDiv" style="display:none;">
+        <label asp-for="StudentID"></label>
+        <input asp-for="StudentID" class="form-control" />
+        <span asp-validation-for="StudentID" class="text-danger"></span>
+    </div>
+
     <button type="submit" class="btn btn-primary">Register</button>
 </form>
 
@@ -56,4 +67,17 @@
     @{
         await Html.RenderPartialAsync("_ValidationScriptsPartial");
     }
+
+    <script>
+        document.getElementById('roleSelect').addEventListener('change', function () {
+            var selectedRole = this.value;
+            var studentIdDiv = document.getElementById('studentIdDiv');
+            if (selectedRole === 'Student') {
+                studentIdDiv.style.display = 'block';
+            } else {
+                studentIdDiv.style.display = 'none';
+                document.getElementById('StudentID').value = ''; // Clear value if not a student
+            }
+        });
+    </script>
 }
