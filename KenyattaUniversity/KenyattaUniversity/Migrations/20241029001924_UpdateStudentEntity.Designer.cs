@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace KenyattaUniversity.Migrations
 {
     [DbContext(typeof(KUContext))]
-    [Migration("20241028140508_InitialCreates")]
-    partial class InitialCreates
+    [Migration("20241029001924_UpdateStudentEntity")]
+    partial class UpdateStudentEntity
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -38,7 +38,6 @@ namespace KenyattaUniversity.Migrations
                         .HasColumnType("longtext");
 
                     b.Property<string>("DisplayName")
-                        .IsRequired()
                         .HasColumnType("longtext");
 
                     b.Property<string>("Email")
@@ -49,7 +48,6 @@ namespace KenyattaUniversity.Migrations
                         .HasColumnType("tinyint(1)");
 
                     b.Property<string>("FullName")
-                        .IsRequired()
                         .HasColumnType("longtext");
 
                     b.Property<bool>("LockoutEnabled")
@@ -136,8 +134,9 @@ namespace KenyattaUniversity.Migrations
                         .IsRequired()
                         .HasColumnType("varchar(255)");
 
-                    b.Property<int?>("StudentID1")
-                        .HasColumnType("int");
+                    b.Property<string>("StudentID1")
+                        .IsRequired()
+                        .HasColumnType("varchar(255)");
 
                     b.HasKey("EnrollmentID");
 
@@ -152,11 +151,8 @@ namespace KenyattaUniversity.Migrations
 
             modelBuilder.Entity("KenyattaUniversity.Models.Student", b =>
                 {
-                    b.Property<int>("StudentID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("StudentID"));
+                    b.Property<string>("StudentID")
+                        .HasColumnType("varchar(255)");
 
                     b.Property<string>("Email")
                         .IsRequired()
@@ -323,7 +319,9 @@ namespace KenyattaUniversity.Migrations
 
                     b.HasOne("KenyattaUniversity.Models.Student", null)
                         .WithMany("Enrollments")
-                        .HasForeignKey("StudentID1");
+                        .HasForeignKey("StudentID1")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Course");
 

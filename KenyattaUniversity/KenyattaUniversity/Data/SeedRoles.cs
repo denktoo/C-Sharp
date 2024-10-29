@@ -1,4 +1,4 @@
-﻿using KenyattaUniversity.Models; // Ensure to include your ApplicationUser model
+﻿using KenyattaUniversity.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.DependencyInjection;
 using System.Threading.Tasks;

@@ -131,8 +131,9 @@ namespace KenyattaUniversity.Migrations
                         .IsRequired()
                         .HasColumnType("varchar(255)");
 
-                    b.Property<int?>("StudentID1")
-                        .HasColumnType("int");
+                    b.Property<string>("StudentID1")
+                        .IsRequired()
+                        .HasColumnType("varchar(255)");
 
                     b.HasKey("EnrollmentID");
 
@@ -147,11 +148,8 @@ namespace KenyattaUniversity.Migrations
 
             modelBuilder.Entity("KenyattaUniversity.Models.Student", b =>
                 {
-                    b.Property<int>("StudentID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("StudentID"));
+                    b.Property<string>("StudentID")
+                        .HasColumnType("varchar(255)");
 
                     b.Property<string>("Email")
                         .IsRequired()
@@ -318,7 +316,9 @@ namespace KenyattaUniversity.Migrations
 
                     b.HasOne("KenyattaUniversity.Models.Student", null)
                         .WithMany("Enrollments")
-                        .HasForeignKey("StudentID1");
+                        .HasForeignKey("StudentID1")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Course");
 

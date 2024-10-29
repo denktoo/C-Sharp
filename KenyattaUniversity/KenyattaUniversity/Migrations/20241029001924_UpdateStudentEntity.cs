@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace KenyattaUniversity.Migrations
 {
     /// <inheritdoc />
-    public partial class InitialCreates : Migration
+    public partial class UpdateStudentEntity : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -40,9 +40,9 @@ namespace KenyattaUniversity.Migrations
                 {
                     Id = table.Column<string>(type: "varchar(255)", nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
-                    FullName = table.Column<string>(type: "longtext", nullable: false)
+                    FullName = table.Column<string>(type: "longtext", nullable: true)
                         .Annotation("MySql:CharSet", "utf8mb4"),
-                    DisplayName = table.Column<string>(type: "longtext", nullable: false)
+                    DisplayName = table.Column<string>(type: "longtext", nullable: true)
                         .Annotation("MySql:CharSet", "utf8mb4"),
                     UserName = table.Column<string>(type: "varchar(256)", maxLength: 256, nullable: true)
                         .Annotation("MySql:CharSet", "utf8mb4"),
@@ -93,8 +93,8 @@ namespace KenyattaUniversity.Migrations
                 name: "Students",
                 columns: table => new
                 {
-                    StudentID = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
+                    StudentID = table.Column<string>(type: "varchar(255)", nullable: false)
+                        .Annotation("MySql:CharSet", "utf8mb4"),
                     Fname = table.Column<string>(type: "longtext", nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
                     Lname = table.Column<string>(type: "longtext", nullable: false)
@@ -246,7 +246,8 @@ namespace KenyattaUniversity.Migrations
                         .Annotation("MySql:CharSet", "utf8mb4"),
                     Grade = table.Column<string>(type: "longtext", nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
-                    StudentID1 = table.Column<int>(type: "int", nullable: true)
+                    StudentID1 = table.Column<string>(type: "varchar(255)", nullable: false)
+                        .Annotation("MySql:CharSet", "utf8mb4")
                 },
                 constraints: table =>
                 {
@@ -267,7 +268,8 @@ namespace KenyattaUniversity.Migrations
                         name: "FK_Enrollments_Students_StudentID1",
                         column: x => x.StudentID1,
                         principalTable: "Students",
-                        principalColumn: "StudentID");
+                        principalColumn: "StudentID",
+                        onDelete: ReferentialAction.Cascade);
                 })
                 .Annotation("MySql:CharSet", "utf8mb4");
 

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("KenyattaUniversity")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cd9cde0b78f5be119f1f0c9b9ea6f9766246a3c6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7f9200173c79a3bbc87ab7d961248cd25af9e035")]
 [assembly: System.Reflection.AssemblyProductAttribute("KenyattaUniversity")]
 [assembly: System.Reflection.AssemblyTitleAttribute("KenyattaUniversity")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

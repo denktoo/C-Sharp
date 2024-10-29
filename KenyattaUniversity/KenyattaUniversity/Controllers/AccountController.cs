@@ -119,6 +119,7 @@ namespace KenyattaUniversity.Controllers
                     // Create a new Student record
                     var student = new Student
                     {
+                        StudentID = model.StudentID,
                         Email = model.Email,
                         Fname = model.Fname,
                         Lname = model.Lname

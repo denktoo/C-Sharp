@@ -4,6 +4,9 @@ namespace KenyattaUniversity.ViewModels
 {
     public class RegisterViewModel
     {
+        [Required(ErrorMessage = "Student ID is required.")]
+        public string StudentID { get; set; }
+
         [Required(ErrorMessage = "Email is required.")]
         [EmailAddress(ErrorMessage = "Invalid email address.")]
         public string Email { get; set; }
