@@ -10,6 +10,7 @@ namespace KenyattaUniversity.Models
         public string Email { get; set; } // Email address of the student
 
         // Navigation property
-        public ICollection<Enrollment> Enrollments { get; set; } // Enrollments associated with this student
+        //public ICollection<Enrollment> Enrollments { get; set; } // Enrollments associated with this student
+        public ICollection<Enrollment> Enrollments { get; set; } = new List<Enrollment>(); // Enrollments associated with this student
     }
 }

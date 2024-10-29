@@ -9,6 +9,6 @@
 
         // Navigation properties
         public Course Course { get; set; } // The course associated with this enrollment
-        public ApplicationUser Student { get; set; } // The student associated with this enrollment
+        public Student Student { get; set; } // The student associated with this enrollment
     }
 }

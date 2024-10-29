@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace KenyattaUniversity.Migrations
 {
     [DbContext(typeof(KUContext))]
-    [Migration("20241029001924_UpdateStudentEntity")]
-    partial class UpdateStudentEntity
+    [Migration("20241029100329_FixEnrollmentRelationships")]
+    partial class FixEnrollmentRelationships
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -134,17 +134,11 @@ namespace KenyattaUniversity.Migrations
                         .IsRequired()
                         .HasColumnType("varchar(255)");
 
-                    b.Property<string>("StudentID1")
-                        .IsRequired()
-                        .HasColumnType("varchar(255)");
-
                     b.HasKey("EnrollmentID");
 
                     b.HasIndex("CourseID");
 
                     b.HasIndex("StudentID");
-
-                    b.HasIndex("StudentID1");
 
                     b.ToTable("Enrollments");
                 });
@@ -311,15 +305,9 @@ namespace KenyattaUniversity.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("KenyattaUniversity.Models.ApplicationUser", "Student")
-                        .WithMany()
-                        .HasForeignKey("StudentID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("KenyattaUniversity.Models.Student", null)
+                    b.HasOne("KenyattaUniversity.Models.Student", "Student")
                         .WithMany("Enrollments")
-                        .HasForeignKey("StudentID1")
+                        .HasForeignKey("StudentID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 

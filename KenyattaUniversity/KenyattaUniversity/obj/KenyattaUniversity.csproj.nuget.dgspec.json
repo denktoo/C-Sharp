@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Denis\\source\\C-Sharp\\KenyattaUniversity\\KenyattaUniversity\\KenyattaUniversity.csproj": {}
+    "C:\\Users\\Denis\\source\\repos\\KenyattaUniversity\\KenyattaUniversity\\KenyattaUniversity.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Denis\\source\\C-Sharp\\KenyattaUniversity\\KenyattaUniversity\\KenyattaUniversity.csproj": {
+    "C:\\Users\\Denis\\source\\repos\\KenyattaUniversity\\KenyattaUniversity\\KenyattaUniversity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Denis\\source\\C-Sharp\\KenyattaUniversity\\KenyattaUniversity\\KenyattaUniversity.csproj",
+        "projectUniqueName": "C:\\Users\\Denis\\source\\repos\\KenyattaUniversity\\KenyattaUniversity\\KenyattaUniversity.csproj",
         "projectName": "KenyattaUniversity",
-        "projectPath": "C:\\Users\\Denis\\source\\C-Sharp\\KenyattaUniversity\\KenyattaUniversity\\KenyattaUniversity.csproj",
+        "projectPath": "C:\\Users\\Denis\\source\\repos\\KenyattaUniversity\\KenyattaUniversity\\KenyattaUniversity.csproj",
         "packagesPath": "C:\\Users\\Denis\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Denis\\source\\C-Sharp\\KenyattaUniversity\\KenyattaUniversity\\obj\\",
+        "outputPath": "C:\\Users\\Denis\\source\\repos\\KenyattaUniversity\\KenyattaUniversity\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Denis\\AppData\\Roaming\\NuGet\\NuGet.Config",

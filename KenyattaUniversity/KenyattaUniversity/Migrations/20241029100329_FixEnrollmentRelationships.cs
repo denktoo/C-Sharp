@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace KenyattaUniversity.Migrations
 {
     /// <inheritdoc />
-    public partial class UpdateStudentEntity : Migration
+    public partial class FixEnrollmentRelationships : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -245,19 +245,11 @@ namespace KenyattaUniversity.Migrations
                     StudentID = table.Column<string>(type: "varchar(255)", nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
                     Grade = table.Column<string>(type: "longtext", nullable: false)
-                        .Annotation("MySql:CharSet", "utf8mb4"),
-                    StudentID1 = table.Column<string>(type: "varchar(255)", nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4")
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Enrollments", x => x.EnrollmentID);
-                    table.ForeignKey(
-                        name: "FK_Enrollments_AspNetUsers_StudentID",
-                        column: x => x.StudentID,
-                        principalTable: "AspNetUsers",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_Enrollments_Courses_CourseID",
                         column: x => x.CourseID,
@@ -265,8 +257,8 @@ namespace KenyattaUniversity.Migrations
                         principalColumn: "CourseID",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_Enrollments_Students_StudentID1",
-                        column: x => x.StudentID1,
+                        name: "FK_Enrollments_Students_StudentID",
+                        column: x => x.StudentID,
                         principalTable: "Students",
                         principalColumn: "StudentID",
                         onDelete: ReferentialAction.Cascade);
@@ -319,11 +311,6 @@ namespace KenyattaUniversity.Migrations
                 name: "IX_Enrollments_StudentID",
                 table: "Enrollments",
                 column: "StudentID");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Enrollments_StudentID1",
-                table: "Enrollments",
-                column: "StudentID1");
         }
 
         /// <inheritdoc />

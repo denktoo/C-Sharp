@@ -20,14 +20,17 @@ namespace KenyattaUniversity.Data
             base.OnModelCreating(modelBuilder);
 
             modelBuilder.Entity<Enrollment>()
+                .HasKey(e => e.EnrollmentID);
+
+            modelBuilder.Entity<Enrollment>()
                 .HasOne(e => e.Course)
                 .WithMany(c => c.Enrollments)
                 .HasForeignKey(e => e.CourseID);
 
             modelBuilder.Entity<Enrollment>()
                 .HasOne(e => e.Student)
-                .WithMany() // Assuming ApplicationUser has no navigation property back to Enrollment
-                .HasForeignKey(e => e.StudentID);
+                .WithMany(s => s.Enrollments) // Assuming Student has a collection of Enrollments
+                .HasForeignKey(e => e.StudentID); // Ensure this matches the type of primary key in Student
         }
     }
 }
