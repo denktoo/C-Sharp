@@ -10,11 +10,16 @@
 </div>
 
 <h3>Students</h3>
+
+<!-- Button to create a new student -->
+<a asp-controller="Admin" asp-action="CreateStudent" class="btn btn-success">Add New Student</a>
+
 <table class="table">
     <thead>
         <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
             <th>Email</th>
-            <th>Full Name</th>
             <th>Actions</th>
         </tr>
     </thead>
@@ -22,12 +27,14 @@
         @foreach (var student in Model.Students)
         {
             <tr>
+                <td>@student.Fname</td>
+                <td>@student.Lname</td>
                 <td>@student.Email</td>
-                <td>@student.FullName</td>
                 <td>
-                    <!-- Actions for managing students can be added here -->
-                    <a asp-action="EditStudent" asp-route-id="@student.Id">Edit</a> |
-                    <a asp-action="DeleteStudent" asp-route-id="@student.Id">Delete</a>
+                    <!-- Edit link -->
+                    <a asp-controller="Admin" asp-action="EditStudent" asp-route-id="@student.StudentID">Edit</a> |
+                    <!-- Delete Link -->
+                    <a asp-controller="Admin" asp-action="DeleteStudent" asp-route-id="@student.StudentID">Delete</a>
                 </td>
             </tr>
         }
@@ -35,6 +42,11 @@
 </table>
 
 <h3>Courses</h3>
+
+<!-- Button to create a Course -->
+<a asp-controller="Admin" asp-action="CreateCourse" class="btn btn-success">Create New Course</a>
+
+
 <table class="table">
     <thead>
         <tr>
@@ -50,9 +62,10 @@
                 <td>@course.Title</td>
                 <td>@course.Credits</td>
                 <td>
-                    <!-- Actions for managing courses can be added here -->
-                    <a asp-action="EditCourse" asp-route-id="@course.CourseID">Edit</a> |
-                    <a asp-action="DeleteCourse" asp-route-id="@course.CourseID">Delete</a>
+                    <!-- Edit link -->
+                    <a asp-controller="Admin" asp-action="EditCourse" asp-route-id="@course.CourseID">Edit</a> | 
+                    <!-- Delete Link -->
+                    <a asp-controller="Admin" asp-action="DeleteCourse" asp-route-id="@course.CourseID">Delete</a>
                 </td>
             </tr>
         }
@@ -63,7 +76,8 @@
 <table class="table">
     <thead>
         <tr>
-            <th>Student Email</th>
+            <th>First Name</th>
+            <th>Last Name</th>
             <th>Course Title</th>
             <th>Grade</th>
             <th>Actions</th>
@@ -78,9 +92,10 @@
             if (student != null && course != null)
             {
                 <tr>
-                    <td>@student.Email</td>
+                    <td>@student.Fname</td>
+                    <td>@student.Lname</td>
                     <td>@course.Title</td>
-                    <td>@enrollment.Grade ?? "N/A"</td> <!-- Display N/A if no grade -->
+                    <td>@(enrollment.Grade ?? "N/A")</td> <!-- Display N/A if no grade -->
                     <td><a asp-action="EditEnrollment" asp-route-id="@enrollment.EnrollmentID">Edit Grade</a></td>
                 </tr>
             }

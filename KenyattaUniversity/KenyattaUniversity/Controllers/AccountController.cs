@@ -35,7 +35,10 @@ namespace KenyattaUniversity.Controllers
         }
 
         [HttpGet]
-        public IActionResult Login() => View();
+        public IActionResult Login()
+        {
+            return View(new LoginViewModel());
+        }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -56,14 +59,22 @@ namespace KenyattaUniversity.Controllers
                         var tokenHandler = new JwtSecurityTokenHandler();
                         var key = Encoding.UTF8.GetBytes(_configuration["Jwt:Key"]);
 
+                        // Retrieve all roles for the user
                         var roles = await _userManager.GetRolesAsync(user);
                         var claims = new List<Claim>
                         {
                             new Claim(ClaimTypes.NameIdentifier, user.Id),
+                            new Claim(JwtRegisteredClaimNames.Iss, "KenyattaUniversity"),
+                            new Claim(JwtRegisteredClaimNames.Aud, "KenyattaUniversityUsers"),
                             new Claim(ClaimTypes.Email, user.Email),
-                            new Claim("FullName", user.FullName),
-                            new Claim(ClaimTypes.Role, roles.FirstOrDefault() ?? "User")
+                            new Claim("FullName", user.FullName)
                         };
+
+                        // Add each role as a claim
+                        foreach (var role in roles)
+                        {
+                            claims.Add(new Claim(ClaimTypes.Role, role));
+                        }
 
                         var tokenDescriptor = new SecurityTokenDescriptor
                         {
@@ -79,8 +90,9 @@ namespace KenyattaUniversity.Controllers
                         if (roles.Contains("Admin"))
                         {
                             return RedirectToAction("Dashboard", "Admin");
+                            //return RedirectToAction("Index", "Home");
                         }
-                            
+
                         else if (roles.Contains("Student"))
                         {
                             return RedirectToAction("Dashboard", "Student");
@@ -134,10 +146,10 @@ namespace KenyattaUniversity.Controllers
                     {
                         var student = new Student
                         {
-                            StudentID = model.StudentID, // Ensure this is provided in your RegisterViewModel
+                            StudentID = model.StudentID,
                             Fname = model.Fname,
                             Lname = model.Lname,
-                            Email = model.Email // You can store email here as well if needed
+                            Email = model.Email
                         };
 
                         _context.Students.Add(student); // Add to context

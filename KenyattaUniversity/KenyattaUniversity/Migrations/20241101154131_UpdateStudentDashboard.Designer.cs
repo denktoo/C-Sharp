@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace KenyattaUniversity.Migrations
 {
     [DbContext(typeof(KUContext))]
-    [Migration("20241029140444_UpdateStudentDetails")]
-    partial class UpdateStudentDetails
+    [Migration("20241101154131_UpdateStudentDashboard")]
+    partial class UpdateStudentDashboard
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

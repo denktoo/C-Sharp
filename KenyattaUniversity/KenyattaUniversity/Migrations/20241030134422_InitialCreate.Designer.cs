@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace KenyattaUniversity.Migrations
 {
     [DbContext(typeof(KUContext))]
-    [Migration("20241029121809_UpdateAdminDetails")]
-    partial class UpdateAdminDetails
+    [Migration("20241030134422_InitialCreate")]
+    partial class InitialCreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

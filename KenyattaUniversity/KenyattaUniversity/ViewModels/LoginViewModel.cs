@@ -12,6 +12,6 @@ namespace KenyattaUniversity.ViewModels
         [DataType(DataType.Password)]
         public string Password { get; set; }
 
-        public bool RememberMe { get; set; } // Option to remember the user
+        public bool RememberMe { get; set; }
     }
 }

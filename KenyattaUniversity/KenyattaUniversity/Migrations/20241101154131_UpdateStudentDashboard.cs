@@ -5,7 +5,7 @@
 namespace KenyattaUniversity.Migrations
 {
     /// <inheritdoc />
-    public partial class UpdateAdminsDetails : Migration
+    public partial class UpdateStudentDashboard : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

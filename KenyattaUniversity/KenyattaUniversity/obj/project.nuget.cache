@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "igedrpvpDvk=",
+  "dgSpecHash": "QXVyMiPHkZc=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Denis\\source\\repos\\KenyattaUniversity\\KenyattaUniversity\\KenyattaUniversity.csproj",
+  "projectFilePath": "C:\\Users\\Denis\\source\\C-Sharp\\KenyattaUniversity\\KenyattaUniversity\\KenyattaUniversity.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Denis\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Denis\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\8.0.10\\microsoft.aspnetcore.authentication.jwtbearer.8.0.10.nupkg.sha512",

@@ -38,6 +38,20 @@ builder.Services.AddAuthentication(options =>
     };
 });
 
+// Add Authorization Policies
+//builder.Services.AddAuthorization(options =>
+//{
+//    options.AddPolicy("AdminOnly", policy =>
+//    {
+//        policy.RequireRole("Admin"); // Require users to be in the Admin role
+//    });
+
+//    options.AddPolicy("StudentOnly", policy =>
+//    {
+//        policy.RequireRole("Student"); // Require users to be in the Student role
+//    });
+//});
+
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();

@@ -29,8 +29,8 @@ namespace KenyattaUniversity.Data
 
             modelBuilder.Entity<Enrollment>()
                 .HasOne(e => e.Student)
-                .WithMany(s => s.Enrollments) // Assuming Student has a collection of Enrollments
-                .HasForeignKey(e => e.StudentID); // Ensure this matches the type of primary key in Student
+                .WithMany(s => s.Enrollments)
+                .HasForeignKey(e => e.StudentID);
         }
     }
 }

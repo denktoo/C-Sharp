@@ -9,6 +9,23 @@
 <form asp-action="Register" method="post" novalidate>
     <div asp-validation-summary="All" class="text-danger"></div>
 
+    <!-- Dropdown for Role Selection -->
+    <div class="form-group">
+        <label>Select Role:</label>
+        <select asp-for="SelectedRole" class="form-control" id="roleSelect">
+            <option value="">Select a role</option>
+            <option value="Admin">Admin</option>
+            <option value="Student">Student</option>
+        </select>
+    </div>
+
+    <!-- Student ID Input -->
+    <div class="form-group" id="studentIdDiv" style="display:none;">
+        <label asp-for="StudentID"></label>
+        <input asp-for="StudentID" class="form-control" />
+        <span asp-validation-for="StudentID" class="text-danger"></span>
+    </div>
+
     <div class="form-group">
         <label asp-for="Fname"></label>
         <input asp-for="Fname" class="form-control" />
@@ -37,23 +54,6 @@
         <label asp-for="ConfirmPassword"></label>
         <input asp-for="ConfirmPassword" class="form-control" />
         <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
-    </div>
-
-    <!-- Dropdown for Role Selection -->
-    <div class="form-group">
-        <label>Select Role:</label>
-        <select asp-for="SelectedRole" class="form-control" id="roleSelect">
-            <option value="">Select a role</option>
-            <option value="Admin">Admin</option>
-            <option value="Student">Student</option>
-        </select>
-    </div>
-
-    <!-- Student ID Input -->
-    <div class="form-group" id="studentIdDiv" style="display:none;">
-        <label asp-for="StudentID"></label>
-        <input asp-for="StudentID" class="form-control" />
-        <span asp-validation-for="StudentID" class="text-danger"></span>
     </div>
 
     <button type="submit" class="btn btn-primary">Register</button>
