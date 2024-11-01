@@ -75,6 +75,19 @@ app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
+//app.UseEndpoints(endpoints =>
+//{
+//    endpoints.MapControllerRoute(
+//        name: "default",
+//        pattern: "{controller=Home}/{action=Index}/{id?}");
+
+//    // Ensure this route is present for the Student controller
+//    endpoints.MapControllerRoute(
+//        name: "student",
+//        pattern: "Student/{action=Dashboard}/{id?}",
+//        defaults: new { controller = "Student", action = "Dashboard" });
+//});
+
 // Initialize the database with seed data
 using (var scope = app.Services.CreateScope())
 {

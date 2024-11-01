@@ -1,4 +1,4 @@
-﻿@model KenyattaUniversity.ViewModels.StudentDashboardViewModel
+﻿@model dynamic
 
 <h2>Welcome, @Model.Student.Fname @Model.Student.Lname</h2>
 
@@ -15,7 +15,7 @@
         </tr>
     </thead>
     <tbody>
-        @if (Model.Enrollments.Any())
+        @if (Model.Enrollments != null && Model.Enrollments.Any())
         {
             foreach (var enrollment in Model.Enrollments)
             {

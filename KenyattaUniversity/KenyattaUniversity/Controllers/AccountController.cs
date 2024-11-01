@@ -62,13 +62,21 @@ namespace KenyattaUniversity.Controllers
                         // Retrieve all roles for the user
                         var roles = await _userManager.GetRolesAsync(user);
                         var claims = new List<Claim>
+                {
+                    new Claim(ClaimTypes.NameIdentifier, user.Id), // User ID
+                    new Claim(JwtRegisteredClaimNames.Iss, "KenyattaUniversity"),
+                    new Claim(JwtRegisteredClaimNames.Aud, "KenyattaUniversityUsers"),
+                    new Claim(ClaimTypes.Email, user.Email),
+                    new Claim("FullName", user.FullName)
+                };
+
+                        // Add StudentID claim if it exists
+                        var studentIdClaim = await _userManager.GetClaimsAsync(user);
+                        var studentId = studentIdClaim.FirstOrDefault(c => c.Type == ClaimTypes.NameIdentifier)?.Value;
+                        if (!string.IsNullOrEmpty(studentId))
                         {
-                            new Claim(ClaimTypes.NameIdentifier, user.Id),
-                            new Claim(JwtRegisteredClaimNames.Iss, "KenyattaUniversity"),
-                            new Claim(JwtRegisteredClaimNames.Aud, "KenyattaUniversityUsers"),
-                            new Claim(ClaimTypes.Email, user.Email),
-                            new Claim("FullName", user.FullName)
-                        };
+                            claims.Add(new Claim("StudentID", studentId)); // Add StudentID claim if needed
+                        }
 
                         // Add each role as a claim
                         foreach (var role in roles)
@@ -92,7 +100,6 @@ namespace KenyattaUniversity.Controllers
                             return RedirectToAction("Dashboard", "Admin");
                             //return RedirectToAction("Index", "Home");
                         }
-
                         else if (roles.Contains("Student"))
                         {
                             return RedirectToAction("Dashboard", "Student");
@@ -154,6 +161,9 @@ namespace KenyattaUniversity.Controllers
 
                         _context.Students.Add(student); // Add to context
                         await _context.SaveChangesAsync(); // Save changes to students table
+
+                        // Add claim for StudentID
+                        await _userManager.AddClaimAsync(user, new Claim(ClaimTypes.NameIdentifier, model.StudentID));
                     }
 
                     return RedirectToAction("Login", "Account");

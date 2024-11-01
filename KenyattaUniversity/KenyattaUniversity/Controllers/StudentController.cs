@@ -1,17 +1,15 @@
 ﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using KenyattaUniversity.Data;
 using KenyattaUniversity.Models;
 using System.Linq;
 using System.Security.Claims;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.AspNetCore.Identity;
-using KenyattaUniversity.ViewModels;
 
 namespace KenyattaUniversity.Controllers
 {
-    //[Authorize(Roles = "Student")] // Ensure only students can access this controller
-    //[Authorize(Policy = "StudentOnly")]
+    //[Authorize(Roles = "Student")]
     public class StudentController : Controller
     {
         private readonly UserManager<ApplicationUser> _userManager;
@@ -24,31 +22,34 @@ namespace KenyattaUniversity.Controllers
         }
 
         // GET: Student/Dashboard
-        public async Task<IActionResult> Dashboard()
+        public IActionResult Dashboard()
         {
             var userId = User.FindFirstValue(ClaimTypes.NameIdentifier); // Get current user's ID
 
+            // Log the userId for debugging purposes
+            Console.WriteLine($"Current User ID: {userId}");
+
             // Retrieve student details based on StudentID
-            var student = await _context.Students.FirstOrDefaultAsync(s => s.StudentID == userId);
+            var student = _context.Students.FirstOrDefault(s => s.StudentID == userId);
             if (student == null)
             {
                 return NotFound(); // Handle case where student is not found
             }
 
             // Fetch enrollments for the current student
-            var enrollments = await _context.Enrollments
+            var enrollments = _context.Enrollments
                 .Include(e => e.Course)  // Include related Course data
                 .Where(e => e.StudentID == userId) // Ensure StudentID matches UserId from claims
-                .ToListAsync();
+                .ToList(); // Use ToList() synchronously
 
-            // Create the view model with student info and enrollments
-            var viewModel = new StudentDashboardViewModel
+            // Create an anonymous object to pass both student and enrollments to the view
+            var model = new
             {
                 Student = student,
-                Enrollments = enrollments // List of enrollments for this student
+                Enrollments = enrollments
             };
 
-            return View(viewModel); // Pass model to the view
+            return View(model); // Pass the anonymous object to the view
         }
     }
 }
