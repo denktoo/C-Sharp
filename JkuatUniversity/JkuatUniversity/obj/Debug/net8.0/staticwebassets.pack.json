@@ -2,7 +2,7 @@
   "Files": [
     {
       "Id": "C:\\Users\\Denis\\source\\C-Sharp\\JkuatUniversity\\JkuatUniversity\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\JkuatUniversity.bundle.scp.css",
-      "PackagePath": "staticwebassets\\JkuatUniversity.bundle.scp.css"
+      "PackagePath": "staticwebassets\\JkuatUniversity.2fs21s662j.bundle.scp.css"
     },
     {
       "Id": "C:\\Users\\Denis\\source\\C-Sharp\\JkuatUniversity\\JkuatUniversity\\wwwroot\\css\\site.css",
@@ -243,6 +243,10 @@
     {
       "Id": "C:\\Users\\Denis\\source\\C-Sharp\\JkuatUniversity\\JkuatUniversity\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.JkuatUniversity.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.JkuatUniversity.Microsoft.AspNetCore.StaticWebAssets.props",

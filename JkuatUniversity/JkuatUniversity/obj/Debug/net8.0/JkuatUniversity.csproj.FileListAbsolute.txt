@@ -529,3 +529,7 @@ C:\Users\Denis\source\C-Sharp\JkuatUniversity\JkuatUniversity\bin\Debug\net8.0\P
 C:\Users\Denis\source\C-Sharp\JkuatUniversity\JkuatUniversity\bin\Debug\net8.0\X.PagedList.dll
 C:\Users\Denis\source\C-Sharp\JkuatUniversity\JkuatUniversity\bin\Debug\net8.0\X.PagedList.Mvc.Core.dll
 C:\Users\Denis\source\C-Sharp\JkuatUniversity\JkuatUniversity\obj\Debug\net8.0\JkuatUniversity.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Denis\source\C-Sharp\JkuatUniversity\JkuatUniversity\bin\Debug\net8.0\JkuatUniversity.staticwebassets.endpoints.json
+C:\Users\Denis\source\C-Sharp\JkuatUniversity\JkuatUniversity\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\Denis\source\C-Sharp\JkuatUniversity\JkuatUniversity\obj\Debug\net8.0\staticwebassets\msbuild.JkuatUniversity.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\Denis\source\C-Sharp\JkuatUniversity\JkuatUniversity\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
