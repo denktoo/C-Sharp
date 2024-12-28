@@ -1,0 +1,38 @@
+﻿@model KenyattaUniversity.ViewModels.RegisterViewModel
+
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <h2 class="text-center">Add New Student</h2>
+
+            <form asp-action="CreateStudent" method="post">
+                <div class="form-group">
+                    <label asp-for="RegNo" class="control-label"></label>
+                    <input asp-for="RegNo" class="form-control" />
+                    <span asp-validation-for="RegNo" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Username" class="control-label"></label>
+                    <input asp-for="Username" class="form-control" />
+                    <span asp-validation-for="Username" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Email" class="control-label"></label>
+                    <input asp-for="Email" class="form-control" />
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+
+                <!-- Hidden field for Password, default set to RegNo -->
+                <input type="hidden" asp-for="Password" />
+
+                <div class="form-group mt-3">
+                    <input type="submit" value="Add Student" class="btn btn-primary" />
+                </div>
+            </form>
+
+            <a asp-controller="Admin" asp-action="Dashboard">Back to Dashboard</a>
+        </div>  
+    </div>   
+</div>

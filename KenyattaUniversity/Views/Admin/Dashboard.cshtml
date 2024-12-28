@@ -1,0 +1,99 @@
+﻿@model KenyattaUniversity.ViewModels.AdminDashboardViewModel
+
+<h2>Admin Dashboard</h2>
+
+<div>
+    <h3>Overview</h3>
+    <p>Total Students: @Model.Students.Count()</p>
+    <p>Total Courses: @Model.Courses.Count()</p>
+    <p>Total Enrollments: @Model.Enrollments.Count()</p>
+</div>
+
+<h3>Students</h3>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var student in Model.Students)
+        {
+            <tr>
+                <td>@student.Username</td>
+                <td>@student.Email</td>
+                <td>
+                    <!-- Edit link -->
+                    <a asp-controller="Admin" asp-action="EditStudent" asp-route-id="@student.RegNo">Edit</a> |
+                    <!-- Delete Link -->
+                    <a asp-controller="Admin" asp-action="DeleteStudent" asp-route-id="@student.RegNo">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<!-- Button to create a new student -->
+<a asp-controller="Admin" asp-action="CreateStudent" class="btn btn-success">Add New Student</a>
+
+<h3>Courses</h3>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Course Title</th>
+            <th>Credits</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var course in Model.Courses)
+        {
+            <tr>
+                <td>@course.Title</td>
+                <td>@course.Credits</td>
+                <td>
+                    <!-- Edit link -->
+                    <a asp-controller="Admin" asp-action="EditCourse" asp-route-id="@course.CourseID">Edit</a> | 
+                    <!-- Delete Link -->
+                    <a asp-controller="Admin" asp-action="DeleteCourse" asp-route-id="@course.CourseID">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<!-- Button to create a Course -->
+<a asp-controller="Admin" asp-action="CreateCourse" class="btn btn-success">Create New Course</a>
+
+<h3>Enrollments</h3>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Course Title</th>
+            <th>Grade</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var enrollment in Model.Enrollments)
+        {
+            var student = Model.Students.FirstOrDefault(s => s.RegNo == enrollment.RegNo);
+            var course = Model.Courses.FirstOrDefault(c => c.CourseID == enrollment.CourseID);
+
+            if (student != null && course != null)
+            {
+                <tr>
+                    <td>@student.Username</td>
+                    <td>@course.Title</td>
+                    <td>@(enrollment.Grade ?? "N/A")</td> <!-- Display N/A if no grade -->
+                    <td><a asp-action="EditEnrollment" asp-route-id="@enrollment.EnrollmentID">Edit Grade</a></td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>
