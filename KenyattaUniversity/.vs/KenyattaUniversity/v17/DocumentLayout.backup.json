@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Denis\\source\\C-Sharp\\KenyattaUniversity\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3C2CBCE0-19FA-401D-B132-0A04BE3F34D3}|KenyattaUniversity.csproj|c:\\users\\denis\\source\\c-sharp\\kenyattauniversity\\views\\admin\\createstudent.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3C2CBCE0-19FA-401D-B132-0A04BE3F34D3}|KenyattaUniversity.csproj|solutionrelative:views\\admin\\createstudent.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3C2CBCE0-19FA-401D-B132-0A04BE3F34D3}|KenyattaUniversity.csproj|c:\\users\\denis\\source\\c-sharp\\kenyattauniversity\\views\\student\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{3C2CBCE0-19FA-401D-B132-0A04BE3F34D3}|KenyattaUniversity.csproj|solutionrelative:views\\student\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3C2CBCE0-19FA-401D-B132-0A04BE3F34D3}|KenyattaUniversity.csproj|c:\\users\\denis\\source\\c-sharp\\kenyattauniversity\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3C2CBCE0-19FA-401D-B132-0A04BE3F34D3}|KenyattaUniversity.csproj|solutionrelative:controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C2CBCE0-19FA-401D-B132-0A04BE3F34D3}|KenyattaUniversity.csproj|c:\\users\\denis\\source\\c-sharp\\kenyattauniversity\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C2CBCE0-19FA-401D-B132-0A04BE3F34D3}|KenyattaUniversity.csproj|solutionrelative:controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C2CBCE0-19FA-401D-B132-0A04BE3F34D3}|KenyattaUniversity.csproj|c:\\users\\denis\\source\\c-sharp\\kenyattauniversity\\views\\admin\\createstudent.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3C2CBCE0-19FA-401D-B132-0A04BE3F34D3}|KenyattaUniversity.csproj|solutionrelative:views\\admin\\createstudent.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3C2CBCE0-19FA-401D-B132-0A04BE3F34D3}|KenyattaUniversity.csproj|c:\\users\\denis\\source\\c-sharp\\kenyattauniversity\\models\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -29,10 +33,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{3C2CBCE0-19FA-401D-B132-0A04BE3F34D3}|KenyattaUniversity.csproj|c:\\users\\denis\\source\\c-sharp\\kenyattauniversity\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3C2CBCE0-19FA-401D-B132-0A04BE3F34D3}|KenyattaUniversity.csproj|solutionrelative:controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3C2CBCE0-19FA-401D-B132-0A04BE3F34D3}|KenyattaUniversity.csproj|c:\\users\\denis\\source\\c-sharp\\kenyattauniversity\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3C2CBCE0-19FA-401D-B132-0A04BE3F34D3}|KenyattaUniversity.csproj|solutionrelative:controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3C2CBCE0-19FA-401D-B132-0A04BE3F34D3}|KenyattaUniversity.csproj|c:\\users\\denis\\source\\c-sharp\\kenyattauniversity\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -138,7 +138,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 25,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -166,7 +166,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "StudentDashboardViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Denis\\source\\C-Sharp\\KenyattaUniversity\\ViewModels\\StudentDashboardViewModel.cs",
               "RelativeDocumentMoniker": "ViewModels\\StudentDashboardViewModel.cs",
@@ -174,31 +174,30 @@
               "RelativeToolTip": "ViewModels\\StudentDashboardViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-29T11:23:29.609Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-29T11:23:29.609Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "StudentController.cs",
               "DocumentMoniker": "C:\\Users\\Denis\\source\\C-Sharp\\KenyattaUniversity\\Controllers\\StudentController.cs",
               "RelativeDocumentMoniker": "Controllers\\StudentController.cs",
               "ToolTip": "C:\\Users\\Denis\\source\\C-Sharp\\KenyattaUniversity\\Controllers\\StudentController.cs",
               "RelativeToolTip": "Controllers\\StudentController.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAYwCoAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAABQAAAAAAAAAAAAYwBkAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-29T09:08:02.875Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Dashboard.cshtml",
               "DocumentMoniker": "C:\\Users\\Denis\\source\\C-Sharp\\KenyattaUniversity\\Views\\Student\\Dashboard.cshtml",
               "RelativeDocumentMoniker": "Views\\Student\\Dashboard.cshtml",
               "ToolTip": "C:\\Users\\Denis\\source\\C-Sharp\\KenyattaUniversity\\Views\\Student\\Dashboard.cshtml",
               "RelativeToolTip": "Views\\Student\\Dashboard.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-12-29T09:07:39.966Z",
               "EditorCaption": ""
@@ -217,7 +216,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "AccountController.cs",
               "DocumentMoniker": "C:\\Users\\Denis\\source\\C-Sharp\\KenyattaUniversity\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
@@ -225,8 +224,7 @@
               "RelativeToolTip": "Controllers\\AccountController.cs",
               "ViewState": "AgIAAEMAAAAAAAAAAAAkwDUAAABEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-29T01:12:26.967Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-29T01:12:26.967Z"
             },
             {
               "$type": "Document",
@@ -370,18 +368,17 @@
               "RelativeToolTip": "ViewModels\\RegisterViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-28T05:01:42.352Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-28T05:01:42.352Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 2,
               "Title": "AdminController.cs",
               "DocumentMoniker": "C:\\Users\\Denis\\source\\C-Sharp\\KenyattaUniversity\\Controllers\\AdminController.cs",
               "RelativeDocumentMoniker": "Controllers\\AdminController.cs",
               "ToolTip": "C:\\Users\\Denis\\source\\C-Sharp\\KenyattaUniversity\\Controllers\\AdminController.cs",
               "RelativeToolTip": "Controllers\\AdminController.cs",
-              "ViewState": "AgIAAHcAAAAAAAAAAAAAAKEAAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAAGsAAAAAAAAAAAAuwKEAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-28T05:00:31.93Z",
               "EditorCaption": ""
@@ -400,7 +397,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "CreateStudent.cshtml",
               "DocumentMoniker": "C:\\Users\\Denis\\source\\C-Sharp\\KenyattaUniversity\\Views\\Admin\\CreateStudent.cshtml",
               "RelativeDocumentMoniker": "Views\\Admin\\CreateStudent.cshtml",
@@ -433,12 +430,11 @@
               "RelativeToolTip": "Data\\KUContext.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAAzwC8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-28T04:56:09.548Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-28T04:56:09.548Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Dashboard.cshtml",
               "DocumentMoniker": "C:\\Users\\Denis\\source\\C-Sharp\\KenyattaUniversity\\Views\\Admin\\Dashboard.cshtml",
               "RelativeDocumentMoniker": "Views\\Admin\\Dashboard.cshtml",
@@ -446,8 +442,7 @@
               "RelativeToolTip": "Views\\Admin\\Dashboard.cshtml",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAEgAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-28T04:55:45.185Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-28T04:55:45.185Z"
             },
             {
               "$type": "Document",
@@ -471,8 +466,7 @@
               "RelativeToolTip": "ViewModels\\AdminDashboardViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-27T16:09:49.26Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-27T16:09:49.26Z"
             },
             {
               "$type": "Document",
@@ -496,8 +490,7 @@
               "RelativeToolTip": "Models\\User.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-27T16:06:04.142Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-27T16:06:04.142Z"
             },
             {
               "$type": "Document",
@@ -513,7 +506,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Course.cs",
               "DocumentMoniker": "C:\\Users\\Denis\\source\\C-Sharp\\KenyattaUniversity\\Models\\Course.cs",
               "RelativeDocumentMoniker": "Models\\Course.cs",
@@ -521,8 +514,7 @@
               "RelativeToolTip": "Models\\Course.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-27T16:05:18.347Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-27T16:05:18.347Z"
             },
             {
               "$type": "Document",
@@ -558,8 +550,7 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAACIAAAAAAAAAAAAgwDgAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-27T16:03:39.524Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-27T16:03:39.524Z"
             },
             {
               "$type": "Bookmark",

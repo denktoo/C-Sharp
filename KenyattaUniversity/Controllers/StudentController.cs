@@ -23,7 +23,7 @@ namespace KenyattaUniversity.Controllers
         // GET: Student/Dashboard
         public IActionResult Dashboard()
         {
-            // Get current user's ID
+            // Get current userId
             var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
 
             // Retrieve student details based on StudentID
@@ -37,7 +37,7 @@ namespace KenyattaUniversity.Controllers
             var enrollments = _context.Enrollments
                 .Include(e => e.Course)  // Include related Course data
                 .Where(e => e.SchoolID == userId) // Ensure SchoolID matches UserId from claims
-                .ToList(); // Use ToList() synchronously
+                .ToList();
 
             // Create an anonymous object to pass both student and enrollments to the view
             var model = new StudentDashboardViewModel
