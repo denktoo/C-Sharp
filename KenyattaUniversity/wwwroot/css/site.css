@@ -20,3 +20,13 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.nav-link.btn.custom-button, btn-link {
+    padding: 0px 25px; /* Add spacing for a balanced look */
+    border: none;
+    height: 100%;
+    display: flex;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    transition: all 0.3s ease-in-out;
+}

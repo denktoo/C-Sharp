@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "49eEWi+hsW8atVLj/87npaY+EziHHi3N/y8ZXg9RSPg=",
+  "Hash": "DJqTdJ4Rs9N6o0kZkgacuZO90HLMIxjE9P4t3Ch5Xes=",
   "Source": "KenyattaUniversity",
   "BasePath": "_content/KenyattaUniversity",
   "Mode": "Default",
@@ -73,8 +73,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "c2tiyv64ts",
-      "Integrity": "pAGv4ietcJNk/EwsQZ5BN9+K4MuNYS2a9wl4Jw+q9D0=",
+      "Fingerprint": "7eypgr9vqg",
+      "Integrity": "Xybnp5ODk1te8kTnLwqB3nW9WfWBISmv8MIe3EJB768=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
@@ -1321,7 +1321,7 @@
   ],
   "Endpoints": [
     {
-      "Route": "css/site.c2tiyv64ts.css",
+      "Route": "css/site.7eypgr9vqg.css",
       "AssetFile": "C:\\Users\\Denis\\source\\C-Sharp\\KenyattaUniversity\\wwwroot\\css\\site.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -1331,7 +1331,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "362"
+          "Value": "607"
         },
         {
           "Name": "Content-Type",
@@ -1339,11 +1339,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"pAGv4ietcJNk/EwsQZ5BN9+K4MuNYS2a9wl4Jw+q9D0=\""
+          "Value": "\"Xybnp5ODk1te8kTnLwqB3nW9WfWBISmv8MIe3EJB768=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 27 Dec 2024 16:01:20 GMT"
+          "Value": "Sun, 29 Dec 2024 15:05:52 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1353,7 +1353,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "c2tiyv64ts"
+          "Value": "7eypgr9vqg"
         },
         {
           "Name": "label",
@@ -1361,7 +1361,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-pAGv4ietcJNk/EwsQZ5BN9+K4MuNYS2a9wl4Jw+q9D0="
+          "Value": "sha256-Xybnp5ODk1te8kTnLwqB3nW9WfWBISmv8MIe3EJB768="
         }
       ]
     },
@@ -1376,7 +1376,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "362"
+          "Value": "607"
         },
         {
           "Name": "Content-Type",
@@ -1384,11 +1384,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"pAGv4ietcJNk/EwsQZ5BN9+K4MuNYS2a9wl4Jw+q9D0=\""
+          "Value": "\"Xybnp5ODk1te8kTnLwqB3nW9WfWBISmv8MIe3EJB768=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 27 Dec 2024 16:01:20 GMT"
+          "Value": "Sun, 29 Dec 2024 15:05:52 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1398,7 +1398,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-pAGv4ietcJNk/EwsQZ5BN9+K4MuNYS2a9wl4Jw+q9D0="
+          "Value": "sha256-Xybnp5ODk1te8kTnLwqB3nW9WfWBISmv8MIe3EJB768="
         }
       ]
     },
