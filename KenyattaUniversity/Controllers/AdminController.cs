@@ -121,6 +121,7 @@ namespace KenyattaUniversity.Controllers
         }
 
         // GET: Admin/CreateStudent
+        [HttpGet]
         public IActionResult CreateStudent()
         {
             return View(); // Return the CreateStudent view
@@ -133,6 +134,11 @@ namespace KenyattaUniversity.Controllers
         {
             if (!ModelState.IsValid)
             {
+                var errors = ModelState.Values.SelectMany(v => v.Errors).Select(e => e.ErrorMessage);
+                foreach (var error in errors)
+                {
+                    Console.WriteLine(error); // Log the errors
+                }
                 return View(model);
             }
 
@@ -156,7 +162,7 @@ namespace KenyattaUniversity.Controllers
                 SchoolID = model.SchoolID,
                 Username = model.Username,
                 Email = model.Email,
-                Password = model.SchoolID // Set the default password to RegNo
+                Password = model.Password
             };
 
             // Add the student to the database

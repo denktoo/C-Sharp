@@ -51,7 +51,7 @@ namespace KenyattaUniversity.Controllers
             }
 
             // Determine user role
-            var role = user.Username == "admin" ? "Admin" : "User";
+            var role = user.Username == "admin" ? "Admin" : "Student";
 
             // Create claims for the user
             var claims = new List<Claim>
@@ -82,7 +82,7 @@ namespace KenyattaUniversity.Controllers
             await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, principal);
 
             // Redirect based on role
-            return role == "Admin" ? RedirectToAction("Dashboard", "Admin") : RedirectToAction("Dashboard", "User");
+            return role == "Admin" ? RedirectToAction("Dashboard", "Admin") : RedirectToAction("Dashboard", "Student");
         }
 
         // POST: /Account/Logout
