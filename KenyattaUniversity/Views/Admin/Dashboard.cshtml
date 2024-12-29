@@ -5,7 +5,7 @@
 
 <div>
     <h3>Overview</h3>
-    <p>Total Students: @Model.Users.Count()</p>
+    <p>Total Students: @Model.TotalStudents</p>
     <p>Total Courses: @Model.Courses.Count()</p>
     <p>Total Enrollments: @Model.Enrollments.Count()</p>
 </div>
@@ -23,16 +23,19 @@
     <tbody>
         @foreach (var student in Model.Users)
         {
-            <tr>
-                <td>@student.Username</td>
-                <td>@student.Email</td>
-                <td>
-                    <!-- Edit link -->
-                    <a asp-controller="Admin" asp-action="EditStudent" asp-route-id="@student.SchoolID">Edit</a> |
-                    <!-- Delete Link -->
-                    <a asp-controller="Admin" asp-action="DeleteStudent" asp-route-id="@student.SchoolID">Delete</a>
-                </td>
-            </tr>
+            @if (student.Role != "Admin")
+            {
+                <tr>
+                    <td>@student.Username</td>
+                    <td>@student.Email</td>
+                    <td>
+                        <!-- Edit link -->
+                        <a asp-controller="Admin" asp-action="EditStudent" asp-route-id="@student.SchoolID">Edit</a> |
+                        <!-- Delete Link -->
+                        <a asp-controller="Admin" asp-action="DeleteStudent" asp-route-id="@student.SchoolID">Delete</a>
+                    </td>
+                </tr>
+            }
         }
     </tbody>
 </table>

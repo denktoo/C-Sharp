@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Authentication.Cookies;
 using KenyattaUniversity.ViewModels;
 using KenyattaUniversity.Data;
 
-namespace FitTrack.Controllers
+namespace KenyattaUniversity.Controllers
 {
     public class AccountController : Controller
     {

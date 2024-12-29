@@ -34,7 +34,15 @@ namespace KenyattaUniversity.Controllers
         {
             var viewModel = new AdminDashboardViewModel
             {
-                Users = _context.Users.ToList(), // Ensure only students are retrieved
+                TotalStudents = _context.Users.Count(u => EF.Property<string>(u, "Role") != "Admin"),
+                Users = _context.Users.Select(u => new AdminDashboardViewModel.Students
+                {
+                    SchoolID = u.SchoolID,
+                    Username = u.Username,
+                    Email = u.Email,
+                    Role = EF.Property<string>(u, "Role"),
+                })
+                .ToList(),
                 Courses = _context.Courses.ToList(),
                 Enrollments = _context.Enrollments.ToList()
             };
