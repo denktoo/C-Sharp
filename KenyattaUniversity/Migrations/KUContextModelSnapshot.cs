@@ -21,43 +21,6 @@ namespace KenyattaUniversity.Migrations
 
             MySqlModelBuilderExtensions.AutoIncrementColumns(modelBuilder);
 
-            modelBuilder.Entity("KenyattaUniversity.Models.Admin", b =>
-                {
-                    b.Property<string>("EmpNo")
-                        .HasColumnType("varchar(255)");
-
-                    b.Property<string>("Email")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("varchar(50)");
-
-                    b.Property<string>("Password")
-                        .IsRequired()
-                        .HasColumnType("longtext");
-
-                    b.Property<string>("Role")
-                        .HasColumnType("longtext");
-
-                    b.Property<string>("Username")
-                        .IsRequired()
-                        .HasMaxLength(20)
-                        .HasColumnType("varchar(20)");
-
-                    b.HasKey("EmpNo");
-
-                    b.ToTable("Admins");
-
-                    b.HasData(
-                        new
-                        {
-                            EmpNo = "ADM0001",
-                            Email = "admin@gmail.com",
-                            Password = "admin#",
-                            Role = "Admin",
-                            Username = "admin"
-                        });
-                });
-
             modelBuilder.Entity("KenyattaUniversity.Models.Course", b =>
                 {
                     b.Property<int>("CourseID")
@@ -93,7 +56,7 @@ namespace KenyattaUniversity.Migrations
                         .IsRequired()
                         .HasColumnType("longtext");
 
-                    b.Property<string>("RegNo")
+                    b.Property<string>("SchoolID")
                         .IsRequired()
                         .HasColumnType("varchar(255)");
 
@@ -101,14 +64,14 @@ namespace KenyattaUniversity.Migrations
 
                     b.HasIndex("CourseID");
 
-                    b.HasIndex("RegNo");
+                    b.HasIndex("SchoolID");
 
                     b.ToTable("Enrollments");
                 });
 
-            modelBuilder.Entity("KenyattaUniversity.Models.Student", b =>
+            modelBuilder.Entity("KenyattaUniversity.Models.User", b =>
                 {
-                    b.Property<string>("RegNo")
+                    b.Property<string>("SchoolID")
                         .HasColumnType("varchar(255)");
 
                     b.Property<string>("Email")
@@ -119,13 +82,26 @@ namespace KenyattaUniversity.Migrations
                         .IsRequired()
                         .HasColumnType("longtext");
 
+                    b.Property<string>("Role")
+                        .HasColumnType("longtext");
+
                     b.Property<string>("Username")
                         .IsRequired()
                         .HasColumnType("longtext");
 
-                    b.HasKey("RegNo");
+                    b.HasKey("SchoolID");
 
-                    b.ToTable("Students");
+                    b.ToTable("Users");
+
+                    b.HasData(
+                        new
+                        {
+                            SchoolID = "ADM0001",
+                            Email = "admin@gmail.com",
+                            Password = "admin#",
+                            Role = "Admin",
+                            Username = "admin"
+                        });
                 });
 
             modelBuilder.Entity("KenyattaUniversity.Models.Enrollment", b =>
@@ -136,15 +112,15 @@ namespace KenyattaUniversity.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("KenyattaUniversity.Models.Student", "Student")
+                    b.HasOne("KenyattaUniversity.Models.User", "User")
                         .WithMany("Enrollments")
-                        .HasForeignKey("RegNo")
+                        .HasForeignKey("SchoolID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("Course");
 
-                    b.Navigation("Student");
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("KenyattaUniversity.Models.Course", b =>
@@ -152,7 +128,7 @@ namespace KenyattaUniversity.Migrations
                     b.Navigation("Enrollments");
                 });
 
-            modelBuilder.Entity("KenyattaUniversity.Models.Student", b =>
+            modelBuilder.Entity("KenyattaUniversity.Models.User", b =>
                 {
                     b.Navigation("Enrollments");
                 });

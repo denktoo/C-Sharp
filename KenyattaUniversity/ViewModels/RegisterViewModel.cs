@@ -5,7 +5,7 @@ namespace KenyattaUniversity.ViewModels
     public class RegisterViewModel
     {
         [Required]
-        public string RegNo { get; set; }
+        public string SchoolID { get; set; }
 
         [Required]
         public string Username { get; set; }

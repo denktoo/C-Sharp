@@ -17,7 +17,7 @@ using Microsoft.Extensions.Configuration;
 
 namespace KenyattaUniversity.Controllers
 {
-    //[Authorize(Roles = "Admin")]  // Ensure that only users with the 'Admin' role can access this controller
+    [Authorize(Roles = "Admin")]  // Ensure that only users with the 'Admin' role can access this controller
     public class AdminController : Controller
     {
         private readonly KUContext _context;
@@ -34,7 +34,7 @@ namespace KenyattaUniversity.Controllers
         {
             var viewModel = new AdminDashboardViewModel
             {
-                Students = _context.Students.ToList(), // Ensure only students are retrieved
+                Users = _context.Users.ToList(), // Ensure only students are retrieved
                 Courses = _context.Courses.ToList(),
                 Enrollments = _context.Enrollments.ToList()
             };
@@ -129,30 +129,30 @@ namespace KenyattaUniversity.Controllers
             }
 
             // Check if the registration number is already in use
-            if (_context.Students.Any(u => u.RegNo == model.RegNo))
+            if (_context.Users.Any(u => u.SchoolID == model.SchoolID))
             {
                 ModelState.AddModelError("RegNo", "The provided registration number is already in use.");
                 return View(model);
             }
 
             // Check if the email is already in use
-            if (_context.Students.Any(u => u.Email == model.Email))
+            if (_context.Users.Any(u => u.Email == model.Email))
             {
                 ModelState.AddModelError("Email", "The provided email is already in use.");
                 return View(model);
             }
 
             // Map the view model to the Student entity
-            var student = new Student
+            var student = new User
             {
-                RegNo = model.RegNo,
+                SchoolID = model.SchoolID,
                 Username = model.Username,
                 Email = model.Email,
-                Password = model.RegNo // Set the default password to RegNo
+                Password = model.SchoolID // Set the default password to RegNo
             };
 
             // Add the student to the database
-            _context.Students.Add(student);
+            _context.Users.Add(student);
             await _context.SaveChangesAsync();
 
             // Assign the default role to the student ("Student")
@@ -160,68 +160,6 @@ namespace KenyattaUniversity.Controllers
             await _context.SaveChangesAsync();
 
             return RedirectToAction("Dashboard");
-        }
-
-        // GET: Admin/Login
-        [HttpGet]
-        public IActionResult Login()
-        {
-            return View();
-        }
-
-        // POST: Admin/Login
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Login(AdminLoginViewModel model)
-        {
-            if (!ModelState.IsValid)
-                return View(model);
-
-            // Authenticate user
-            var admin = _context.Admins.FirstOrDefault(u => u.EmpNo == model.EmpNo && u.Password == model.Password);
-            if (admin == null)
-            {
-                ModelState.AddModelError("", "Invalid Employee No. or password.");
-                return View(model);
-            }
-
-            // Create claims for the user
-            var claims = new List<Claim>
-            {
-                new Claim(ClaimTypes.NameIdentifier, admin.EmpNo.ToString()),
-                new Claim(ClaimTypes.Name, admin.Username),
-                new Claim(ClaimTypes.Role, "Admin")
-            };
-
-            // Generate JWT token
-            var tokenHandler = new JwtSecurityTokenHandler();
-            var key = Encoding.ASCII.GetBytes(_configuration["Jwt:Key"]);
-            var tokenDescriptor = new SecurityTokenDescriptor
-            {
-                Subject = new ClaimsIdentity(claims),
-                Expires = DateTime.UtcNow.AddHours(1),
-                SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
-            };
-
-            var token = tokenHandler.CreateToken(tokenDescriptor);
-            var tokenString = tokenHandler.WriteToken(token);
-
-            // Claims-based sign-in (cookie authentication)
-            var identity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
-            var principal = new ClaimsPrincipal(identity);
-            await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, principal);
-
-            // Redirect to Admin Dashboard
-            return RedirectToAction("Dashboard", "Admin");
-        }
-
-        // POST: Admin/Logout
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Logout()
-        {
-            await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
-            return RedirectToAction("Index", "Home");
         }
     }
 }

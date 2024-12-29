@@ -1,4 +1,4 @@
-﻿@model KenyattaUniversity.ViewModels.AdminLoginViewModel
+﻿@model KenyattaUniversity.ViewModels.LoginViewModel
 @{
     ViewData["Title"] = "Login";
 }
@@ -10,9 +10,9 @@
 
             <form asp-action="Login" method="post">
                 <div class="form-group">
-                    <label asp-for="EmpNo"></label>
-                    <input asp-for="EmpNo" class="form-control" />
-                    <span asp-validation-for="EmpNo" class="text-danger"></span>
+                    <label asp-for="SchoolID"></label>
+                    <input asp-for="SchoolID" class="form-control" />
+                    <span asp-validation-for="SchoolID" class="text-danger"></span>
                 </div>
                 <div class="form-group">
                     <label asp-for="Password"></label>

@@ -1,10 +1,11 @@
-﻿@model KenyattaUniversity.ViewModels.AdminDashboardViewModel
+﻿@using Microsoft.EntityFrameworkCore
+@model KenyattaUniversity.ViewModels.AdminDashboardViewModel
 
 <h2>Admin Dashboard</h2>
 
 <div>
     <h3>Overview</h3>
-    <p>Total Students: @Model.Students.Count()</p>
+    <p>Total Students: @Model.Users.Count()</p>
     <p>Total Courses: @Model.Courses.Count()</p>
     <p>Total Enrollments: @Model.Enrollments.Count()</p>
 </div>
@@ -20,16 +21,16 @@
         </tr>
     </thead>
     <tbody>
-        @foreach (var student in Model.Students)
+        @foreach (var student in Model.Users)
         {
             <tr>
                 <td>@student.Username</td>
                 <td>@student.Email</td>
                 <td>
                     <!-- Edit link -->
-                    <a asp-controller="Admin" asp-action="EditStudent" asp-route-id="@student.RegNo">Edit</a> |
+                    <a asp-controller="Admin" asp-action="EditStudent" asp-route-id="@student.SchoolID">Edit</a> |
                     <!-- Delete Link -->
-                    <a asp-controller="Admin" asp-action="DeleteStudent" asp-route-id="@student.RegNo">Delete</a>
+                    <a asp-controller="Admin" asp-action="DeleteStudent" asp-route-id="@student.SchoolID">Delete</a>
                 </td>
             </tr>
         }
@@ -82,7 +83,7 @@
     <tbody>
         @foreach (var enrollment in Model.Enrollments)
         {
-            var student = Model.Students.FirstOrDefault(s => s.RegNo == enrollment.RegNo);
+            var student = Model.Users.FirstOrDefault(s => s.SchoolID == enrollment.SchoolID);
             var course = Model.Courses.FirstOrDefault(c => c.CourseID == enrollment.CourseID);
 
             if (student != null && course != null)

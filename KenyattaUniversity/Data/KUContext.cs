@@ -13,18 +13,14 @@ namespace KenyattaUniversity.Data
 
         public DbSet<Course> Courses { get; set; } // DbSet for Course entity
         public DbSet<Enrollment> Enrollments { get; set; } // DbSet for Enrollment entity
-        public DbSet<Student> Students { get; set; } // DbSet for Student entity
-        public DbSet<Admin> Admins { get; set; } // DbSet for Admin Entity
+        public DbSet<User> Users { get; set; } // DbSet for User entity
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
 
-            modelBuilder.Entity<Admin>()
-                .HasKey(a => a.EmpNo); // Explicitly configure RegNo as the primary key
-
-            modelBuilder.Entity<Student>()
-                .HasKey(s => s.RegNo); // Explicitly configure RegNo as the primary key
+            modelBuilder.Entity<User>()
+                .HasKey(s => s.SchoolID); // Explicitly configure SchoolID as the primary key
 
             modelBuilder.Entity<Course>()
                 .HasKey(c => c.CourseID); // Explicitly configure CourseID as the primary key
@@ -38,19 +34,14 @@ namespace KenyattaUniversity.Data
                 .HasForeignKey(e => e.CourseID);
 
             modelBuilder.Entity<Enrollment>()
-                .HasOne(e => e.Student)
+                .HasOne(e => e.User)
                 .WithMany(s => s.Enrollments)
-                .HasForeignKey(e => e.RegNo);
-
-            // Explicitly declare Role shadow property and set Role for the Student
-            //modelBuilder.Entity<Student>()
-            //    .Property<string>("Role")
-            //    .HasDefaultValue("Student");
+                .HasForeignKey(e => e.SchoolID);
 
             // Seed Data and Explicitly declare Role shadow property and set Role for the Admin
-            modelBuilder.Entity<Admin>().Property<string>("Role");
-            modelBuilder.Entity<Admin>().HasData(
-                new { EmpNo = "ADM0001", Username = "admin", Email = "admin@gmail.com", Password = "admin#", Role = "Admin" }
+            modelBuilder.Entity<User>().Property<string>("Role");
+            modelBuilder.Entity<User>().HasData(
+                new { SchoolID = "ADM0001", Username = "admin", Email = "admin@gmail.com", Password = "admin#", Role = "Admin" }
             );
         }
     }

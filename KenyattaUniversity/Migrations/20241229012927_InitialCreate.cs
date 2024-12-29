@@ -15,27 +15,6 @@ namespace KenyattaUniversity.Migrations
                 .Annotation("MySql:CharSet", "utf8mb4");
 
             migrationBuilder.CreateTable(
-                name: "Admins",
-                columns: table => new
-                {
-                    EmpNo = table.Column<string>(type: "varchar(255)", nullable: false)
-                        .Annotation("MySql:CharSet", "utf8mb4"),
-                    Username = table.Column<string>(type: "varchar(20)", maxLength: 20, nullable: false)
-                        .Annotation("MySql:CharSet", "utf8mb4"),
-                    Email = table.Column<string>(type: "varchar(50)", maxLength: 50, nullable: false)
-                        .Annotation("MySql:CharSet", "utf8mb4"),
-                    Password = table.Column<string>(type: "longtext", nullable: false)
-                        .Annotation("MySql:CharSet", "utf8mb4"),
-                    Role = table.Column<string>(type: "longtext", nullable: true)
-                        .Annotation("MySql:CharSet", "utf8mb4")
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Admins", x => x.EmpNo);
-                })
-                .Annotation("MySql:CharSet", "utf8mb4");
-
-            migrationBuilder.CreateTable(
                 name: "Courses",
                 columns: table => new
                 {
@@ -52,21 +31,23 @@ namespace KenyattaUniversity.Migrations
                 .Annotation("MySql:CharSet", "utf8mb4");
 
             migrationBuilder.CreateTable(
-                name: "Students",
+                name: "Users",
                 columns: table => new
                 {
-                    RegNo = table.Column<string>(type: "varchar(255)", nullable: false)
+                    SchoolID = table.Column<string>(type: "varchar(255)", nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
                     Username = table.Column<string>(type: "longtext", nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
                     Email = table.Column<string>(type: "longtext", nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
                     Password = table.Column<string>(type: "longtext", nullable: false)
+                        .Annotation("MySql:CharSet", "utf8mb4"),
+                    Role = table.Column<string>(type: "longtext", nullable: true)
                         .Annotation("MySql:CharSet", "utf8mb4")
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Students", x => x.RegNo);
+                    table.PrimaryKey("PK_Users", x => x.SchoolID);
                 })
                 .Annotation("MySql:CharSet", "utf8mb4");
 
@@ -77,7 +58,7 @@ namespace KenyattaUniversity.Migrations
                     EnrollmentID = table.Column<int>(type: "int", nullable: false)
                         .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
                     CourseID = table.Column<int>(type: "int", nullable: false),
-                    RegNo = table.Column<string>(type: "varchar(255)", nullable: false)
+                    SchoolID = table.Column<string>(type: "varchar(255)", nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
                     Grade = table.Column<string>(type: "longtext", nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4")
@@ -92,17 +73,17 @@ namespace KenyattaUniversity.Migrations
                         principalColumn: "CourseID",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_Enrollments_Students_RegNo",
-                        column: x => x.RegNo,
-                        principalTable: "Students",
-                        principalColumn: "RegNo",
+                        name: "FK_Enrollments_Users_SchoolID",
+                        column: x => x.SchoolID,
+                        principalTable: "Users",
+                        principalColumn: "SchoolID",
                         onDelete: ReferentialAction.Cascade);
                 })
                 .Annotation("MySql:CharSet", "utf8mb4");
 
             migrationBuilder.InsertData(
-                table: "Admins",
-                columns: new[] { "EmpNo", "Email", "Password", "Role", "Username" },
+                table: "Users",
+                columns: new[] { "SchoolID", "Email", "Password", "Role", "Username" },
                 values: new object[] { "ADM0001", "admin@gmail.com", "admin#", "Admin", "admin" });
 
             migrationBuilder.CreateIndex(
@@ -111,17 +92,14 @@ namespace KenyattaUniversity.Migrations
                 column: "CourseID");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Enrollments_RegNo",
+                name: "IX_Enrollments_SchoolID",
                 table: "Enrollments",
-                column: "RegNo");
+                column: "SchoolID");
         }
 
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.DropTable(
-                name: "Admins");
-
             migrationBuilder.DropTable(
                 name: "Enrollments");
 
@@ -129,7 +107,7 @@ namespace KenyattaUniversity.Migrations
                 name: "Courses");
 
             migrationBuilder.DropTable(
-                name: "Students");
+                name: "Users");
         }
     }
 }

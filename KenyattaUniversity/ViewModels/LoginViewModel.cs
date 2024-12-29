@@ -2,10 +2,10 @@
 
 namespace KenyattaUniversity.ViewModels
 {
-    public class AdminLoginViewModel
+    public class LoginViewModel
     {
         [Required]
-        public string EmpNo { get; set; }
+        public string SchoolID { get; set; }
 
         [Required(ErrorMessage = "Password is required.")]
         [DataType(DataType.Password)]
