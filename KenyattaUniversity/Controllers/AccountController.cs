@@ -21,13 +21,6 @@ namespace KenyattaUniversity.Controllers
             _configuration = configuration;
         }
 
-        // GET: /Account/Register
-        [HttpGet]
-        public IActionResult Register()
-        {
-            return View();
-        }
-
         // GET: /Account/Login
         [HttpGet]
         public IActionResult Login()
