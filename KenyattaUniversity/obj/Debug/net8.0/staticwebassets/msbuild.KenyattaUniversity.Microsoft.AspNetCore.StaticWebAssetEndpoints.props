@@ -27,14 +27,14 @@
     <StaticWebAssetEndpoint Include="_content/KenyattaUniversity/js/password.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\password.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-CV1yP4hUHy2pIL3x5pDE60MYbi1ouqJP/1BrwBKzDwg="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"323"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022CV1yP4hUHy2pIL3x5pDE60MYbi1ouqJP/1BrwBKzDwg=\u0022"},{"Name":"Last-Modified","Value":"Mon, 30 Dec 2024 06:29:23 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-YWhX/x4HMvPHPc0zxPaaWZV2Lbs6/J9udaELR552CQg="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"298"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022YWhX/x4HMvPHPc0zxPaaWZV2Lbs6/J9udaELR552CQg=\u0022"},{"Name":"Last-Modified","Value":"Mon, 30 Dec 2024 11:17:12 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/KenyattaUniversity/js/password.vabb5gnrsl.js">
+    <StaticWebAssetEndpoint Include="_content/KenyattaUniversity/js/password.r12dswruj6.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\password.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"vabb5gnrsl"},{"Name":"integrity","Value":"sha256-CV1yP4hUHy2pIL3x5pDE60MYbi1ouqJP/1BrwBKzDwg="},{"Name":"label","Value":"_content/KenyattaUniversity/js/password.js"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"323"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022CV1yP4hUHy2pIL3x5pDE60MYbi1ouqJP/1BrwBKzDwg=\u0022"},{"Name":"Last-Modified","Value":"Mon, 30 Dec 2024 06:29:23 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"r12dswruj6"},{"Name":"integrity","Value":"sha256-YWhX/x4HMvPHPc0zxPaaWZV2Lbs6/J9udaELR552CQg="},{"Name":"label","Value":"_content/KenyattaUniversity/js/password.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"298"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022YWhX/x4HMvPHPc0zxPaaWZV2Lbs6/J9udaELR552CQg=\u0022"},{"Name":"Last-Modified","Value":"Mon, 30 Dec 2024 11:17:12 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/KenyattaUniversity/js/site.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\site.js'))</AssetFile>

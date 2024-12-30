@@ -1,40 +1,61 @@
 ﻿@model KenyattaUniversity.ViewModels.StudentDashboardViewModel
 
-<h2>Welcome, @Model.User.Username!</h2>
+<div class="container mt-4">
+    <div class="card shadow-sm p-4">
+        <h2 class="text-primary text-center">Welcome, @Model.User.Username!</h2>
 
-<h3>Student's Details:</h3>
-<p><strong>Student ID:</strong> @Model.User.SchoolID</p>
-<p><strong>Email:</strong> @Model.User.Email</p>
+        <hr class="my-4">
 
-<h3>Your Enrollments</h3>
-<table class="table">
-    <thead>
-        <tr>
-            <th>Course ID</th>
-            <th>Course Title</th>
-            <th>Credits</th>
-        </tr>
-    </thead>
-    <tbody>
-        @if (Model.Enrollments != null && Model.Enrollments.Any())
-        {
-            foreach (var enrollment in Model.Enrollments)
-            {
-                <tr>
-                    <td>@enrollment.Course.CourseID</td>
-                    <td>@enrollment.Course.Title</td>
-                    <td>@enrollment.Course.Credits</td>
-                </tr>
-            }
-        }
-        else
-        {
-            <tr>
-                <td colspan="2">You are not enrolled in any courses.</td>
-            </tr>
-        }
-    </tbody>
-</table>
+        <h3 class="text-secondary">Your Information:</h3>
+        <div class="mt-3">
+            <h5><strong>Student ID:</strong> <span class="text-info">@Model.User.SchoolID</span></h5>
+            <h5><strong>Email:</strong> <span class="text-info">@Model.User.Email</span></h5>
+        </div>
+    </div>
+</div>
+
+
+<div class="row mt-4">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header bg-secondary text-black">
+                <h3>Your Enrollments</h3>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Course ID</th>
+                                <th>Course Title</th>
+                                <th>Credits</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @if (Model.Enrollments != null && Model.Enrollments.Any())
+                            {
+                                foreach (var enrollment in Model.Enrollments)
+                                {
+                                    <tr>
+                                        <td>@enrollment.Course.CourseID</td>
+                                        <td>@enrollment.Course.Title</td>
+                                        <td>@enrollment.Course.Credits</td>
+                                    </tr>
+                                }
+                            }
+                            else
+                            {
+                                <tr>
+                                    <td colspan="2">You are not enrolled in any courses.</td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 @section Scripts {
     @{

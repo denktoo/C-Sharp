@@ -1,8 +1,8 @@
 ﻿@model KenyattaUniversity.Models.Course
 
-<h2>Edit Course - @Model.Title</h2>
+<h2 class="ps-lg-5">Edit Course - @Model.Title</h2>
 
-<form asp-action="UpdateCourse" method="post" class="w-25">
+<form asp-action="UpdateCourse" method="post" class="w-50 ps-lg-5">
     @Html.HiddenFor(m => m.CourseID)
 
     <div class="form-group">
@@ -18,7 +18,7 @@
     <button type="submit" class="btn btn-primary">Update Course</button>
 </form>
 
-<div class="mt-3">
+<div class="mt-3 ps-lg-5">
     <a asp-action="Dashboard">Back to Dashboard</a>
 </div>
 
