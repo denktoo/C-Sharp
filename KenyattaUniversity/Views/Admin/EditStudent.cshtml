@@ -20,6 +20,9 @@
         <input asp-for="Email" class="form-control" />
     </div>
 
+    <!-- Hidden field for Password -->
+    <input type="hidden" asp-for="Password" id="Password" />
+
     <button type="submit" class="btn btn-primary">Update Student</button>
 </form>
 
@@ -32,3 +35,6 @@
         await Html.RenderPartialAsync("_ValidationScriptsPartial");
     }
 }
+
+<!-- JavaScript to dynamically set the Password field -->
+<script src="~/js/password.js"></script>

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "hCgpeYhjkKDXtaSVF3uAnJJhCUMTEzi34QOR55aLLPQ=",
+  "Hash": "3PhkvpF54eO+mA2cYacXA03aRJspC4XACpvjmO93pcA=",
   "Source": "KenyattaUniversity",
   "BasePath": "_content/KenyattaUniversity",
   "Mode": "Default",
@@ -99,6 +99,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\Denis\\source\\C-Sharp\\KenyattaUniversity\\wwwroot\\js\\password.js",
+      "SourceId": "KenyattaUniversity",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Denis\\source\\C-Sharp\\KenyattaUniversity\\wwwroot\\",
+      "BasePath": "_content/KenyattaUniversity",
+      "RelativePath": "js/password#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "vabb5gnrsl",
+      "Integrity": "CV1yP4hUHy2pIL3x5pDE60MYbi1ouqJP/1BrwBKzDwg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\password.js"
     },
     {
       "Identity": "C:\\Users\\Denis\\source\\C-Sharp\\KenyattaUniversity\\wwwroot\\js\\site.js",
@@ -1481,6 +1502,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM="
+        }
+      ]
+    },
+    {
+      "Route": "js/password.js",
+      "AssetFile": "C:\\Users\\Denis\\source\\C-Sharp\\KenyattaUniversity\\wwwroot\\js\\password.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "323"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CV1yP4hUHy2pIL3x5pDE60MYbi1ouqJP/1BrwBKzDwg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 30 Dec 2024 06:29:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-CV1yP4hUHy2pIL3x5pDE60MYbi1ouqJP/1BrwBKzDwg="
+        }
+      ]
+    },
+    {
+      "Route": "js/password.vabb5gnrsl.js",
+      "AssetFile": "C:\\Users\\Denis\\source\\C-Sharp\\KenyattaUniversity\\wwwroot\\js\\password.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "323"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CV1yP4hUHy2pIL3x5pDE60MYbi1ouqJP/1BrwBKzDwg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 30 Dec 2024 06:29:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vabb5gnrsl"
+        },
+        {
+          "Name": "label",
+          "Value": "js/password.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-CV1yP4hUHy2pIL3x5pDE60MYbi1ouqJP/1BrwBKzDwg="
         }
       ]
     },

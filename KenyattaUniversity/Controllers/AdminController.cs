@@ -97,7 +97,6 @@ namespace KenyattaUniversity.Controllers
         }
 
         // GET: Admin/DeleteCourse
-        [HttpGet]
         public IActionResult DeleteCourse(int id)
         {
             var course = _context.Courses.Find(id);
@@ -105,21 +104,9 @@ namespace KenyattaUniversity.Controllers
             {
                 return NotFound();
             }
-            return View(course); // Return the EditCourse view with the course model
-        }
-
-        // POST: Admin/DeleteCourse
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteCourse(Course course)
-        {
-            if (ModelState.IsValid)
-            {
-                _context.Courses.Remove(course);
-                await _context.SaveChangesAsync();
-                return RedirectToAction("Dashboard"); // Redirect back to the dashboard after deletion
-            }
-            return View(course);
+            _context.Courses.Remove(course);
+            _context.SaveChanges();
+            return RedirectToAction("Dashboard"); // Redirect back to the dashboard after deletion
         }
 
         // GET: Admin/CreateStudent
@@ -205,7 +192,6 @@ namespace KenyattaUniversity.Controllers
         }
 
         // GET: Admin/DeleteCourse
-        [HttpGet]
         public IActionResult DeleteStudent(string id)
         {
             var student = _context.Users.Find(id);
@@ -213,21 +199,10 @@ namespace KenyattaUniversity.Controllers
             {
                 return NotFound();
             }
-            return View(student); // Return the view with the model
-        }
 
-        // POST: Admin/DeleteCourse
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteStudent(User user)
-        {
-            if (ModelState.IsValid)
-            {
-                _context.Users.Remove(user);
-                await _context.SaveChangesAsync();
-                return RedirectToAction("Dashboard"); // Redirect back to the dashboard after deletion
-            }
-            return View(user);
+            _context.Users.Remove(student);
+            _context.SaveChanges();
+            return RedirectToAction("Dashboard"); // Redirect back to the dashboard after deletion
         }
     }
 }
