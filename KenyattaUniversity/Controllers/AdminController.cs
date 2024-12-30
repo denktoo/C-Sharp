@@ -71,6 +71,7 @@ namespace KenyattaUniversity.Controllers
         }
 
         // GET: Admin/EditCourse
+        [HttpGet]
         public IActionResult EditCourse(int id)
         {
             var course = _context.Courses.Find(id);
@@ -96,6 +97,7 @@ namespace KenyattaUniversity.Controllers
         }
 
         // GET: Admin/DeleteCourse
+        [HttpGet]
         public IActionResult DeleteCourse(int id)
         {
             var course = _context.Courses.Find(id);
@@ -174,6 +176,58 @@ namespace KenyattaUniversity.Controllers
             await _context.SaveChangesAsync();
 
             return RedirectToAction("Dashboard");
+        }
+
+        // GET: Admin/EditCourse
+        [HttpGet]
+        public IActionResult EditStudent(string id)
+        {
+            var student = _context.Users.Find(id);
+            if (student == null)
+            {
+                return NotFound();
+            }
+            return View(student); // Return the view with the model
+        }
+
+        // POST: Admin/UpdateCourse
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> UpdateStudent(User user)
+        {
+            if (ModelState.IsValid)
+            {
+                _context.Update(user);
+                await _context.SaveChangesAsync();
+                return RedirectToAction("Dashboard"); // Redirect back to the dashboard after update
+            }
+            return View(user); // Return to the view with current user model if validation fails
+        }
+
+        // GET: Admin/DeleteCourse
+        [HttpGet]
+        public IActionResult DeleteStudent(string id)
+        {
+            var student = _context.Users.Find(id);
+            if (student == null)
+            {
+                return NotFound();
+            }
+            return View(student); // Return the view with the model
+        }
+
+        // POST: Admin/DeleteCourse
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DeleteStudent(User user)
+        {
+            if (ModelState.IsValid)
+            {
+                _context.Users.Remove(user);
+                await _context.SaveChangesAsync();
+                return RedirectToAction("Dashboard"); // Redirect back to the dashboard after deletion
+            }
+            return View(user);
         }
     }
 }

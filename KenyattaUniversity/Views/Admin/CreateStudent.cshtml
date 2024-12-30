@@ -37,6 +37,12 @@
     </div>
 </div>
 
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
+
 <!-- JavaScript to dynamically set the Password field -->
 <script>
     document.getElementById('SchoolID').addEventListener('input', function () {

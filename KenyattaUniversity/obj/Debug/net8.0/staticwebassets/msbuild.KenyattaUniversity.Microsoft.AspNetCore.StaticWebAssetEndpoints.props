@@ -1,16 +1,16 @@
 ﻿<Project>
   <ItemGroup>
-    <StaticWebAssetEndpoint Include="_content/KenyattaUniversity/css/site.7eypgr9vqg.css">
+    <StaticWebAssetEndpoint Include="_content/KenyattaUniversity/css/site.bb9t6drgcz.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"7eypgr9vqg"},{"Name":"integrity","Value":"sha256-Xybnp5ODk1te8kTnLwqB3nW9WfWBISmv8MIe3EJB768="},{"Name":"label","Value":"_content/KenyattaUniversity/css/site.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"607"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022Xybnp5ODk1te8kTnLwqB3nW9WfWBISmv8MIe3EJB768=\u0022"},{"Name":"Last-Modified","Value":"Sun, 29 Dec 2024 15:05:52 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"bb9t6drgcz"},{"Name":"integrity","Value":"sha256-Z56r3V1O1FItR1YeXBo36O/bJUvc/7V68TStJcCcEdA="},{"Name":"label","Value":"_content/KenyattaUniversity/css/site.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"571"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022Z56r3V1O1FItR1YeXBo36O/bJUvc/7V68TStJcCcEdA=\u0022"},{"Name":"Last-Modified","Value":"Sun, 29 Dec 2024 15:43:04 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/KenyattaUniversity/css/site.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Xybnp5ODk1te8kTnLwqB3nW9WfWBISmv8MIe3EJB768="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"607"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022Xybnp5ODk1te8kTnLwqB3nW9WfWBISmv8MIe3EJB768=\u0022"},{"Name":"Last-Modified","Value":"Sun, 29 Dec 2024 15:05:52 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Z56r3V1O1FItR1YeXBo36O/bJUvc/7V68TStJcCcEdA="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"571"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022Z56r3V1O1FItR1YeXBo36O/bJUvc/7V68TStJcCcEdA=\u0022"},{"Name":"Last-Modified","Value":"Sun, 29 Dec 2024 15:43:04 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/KenyattaUniversity/favicon.61n19gt1b8.ico">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\favicon.ico'))</AssetFile>
