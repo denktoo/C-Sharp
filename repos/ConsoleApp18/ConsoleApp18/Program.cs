@@ -36,8 +36,8 @@ public class Program
         ApiCaller caller = new ApiCaller();
 
         // Fetch data from multiple APIs asynchronously
-        Task<string> task1 = caller.FetchDataAsync("https://swapi.dev/api/planets/");
-        Task<string> task2 = caller.FetchDataAsync("https://swapi.dev/api/people/");
+        Task<string> task1 = caller.FetchDataAsync("https://swapi.py4e.com/api/planets/");
+        Task<string> task2 = caller.FetchDataAsync("https://swapi.py4e.com/api/people/");
 
         // Process the results when they become available
         string data1 = await task1;

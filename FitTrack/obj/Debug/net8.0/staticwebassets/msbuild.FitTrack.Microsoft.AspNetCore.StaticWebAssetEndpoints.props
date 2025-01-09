@@ -40,13 +40,13 @@
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\Login.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"3rxr3uylvp"},{"Name":"integrity","Value":"sha256-YaGBqkEbbOKwtnjfyT32PyQEZh64AL\u002Bqu94KuX6Jisg="},{"Name":"label","Value":"_content/FitTrack/js/Login.js"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1319"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022YaGBqkEbbOKwtnjfyT32PyQEZh64AL\u002Bqu94KuX6Jisg=\u0022"},{"Name":"Last-Modified","Value":"Thu, 09 Jan 2025 11:00:19 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1319"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022YaGBqkEbbOKwtnjfyT32PyQEZh64AL\u002Bqu94KuX6Jisg=\u0022"},{"Name":"Last-Modified","Value":"Thu, 09 Jan 2025 11:57:31 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/FitTrack/js/Login.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\Login.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-YaGBqkEbbOKwtnjfyT32PyQEZh64AL\u002Bqu94KuX6Jisg="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1319"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022YaGBqkEbbOKwtnjfyT32PyQEZh64AL\u002Bqu94KuX6Jisg=\u0022"},{"Name":"Last-Modified","Value":"Thu, 09 Jan 2025 11:00:19 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1319"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022YaGBqkEbbOKwtnjfyT32PyQEZh64AL\u002Bqu94KuX6Jisg=\u0022"},{"Name":"Last-Modified","Value":"Thu, 09 Jan 2025 11:57:31 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/FitTrack/js/Register.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\Register.js'))</AssetFile>
