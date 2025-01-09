@@ -1,4 +1,5 @@
 wwwroot\css\site.css
+wwwroot\js\Register.js
 wwwroot\js\script.js
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css

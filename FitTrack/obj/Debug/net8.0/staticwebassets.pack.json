@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
+      "Id": "C:\\Users\\Denis\\source\\C-Sharp\\FitTrack\\wwwroot\\js\\Register.js",
+      "PackagePath": "staticwebassets\\js\\Register.js"
+    },
+    {
       "Id": "C:\\Users\\Denis\\source\\C-Sharp\\FitTrack\\wwwroot\\js\\script.js",
       "PackagePath": "staticwebassets\\js\\script.js"
     },
