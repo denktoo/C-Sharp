@@ -124,3 +124,5 @@ C:\Users\Denis\source\C-Sharp\FitTrack\obj\Debug\net8.0\refint\FitTrack.dll
 C:\Users\Denis\source\C-Sharp\FitTrack\obj\Debug\net8.0\FitTrack.pdb
 C:\Users\Denis\source\C-Sharp\FitTrack\obj\Debug\net8.0\FitTrack.genruntimeconfig.cache
 C:\Users\Denis\source\C-Sharp\FitTrack\obj\Debug\net8.0\ref\FitTrack.dll
+C:\Users\Denis\source\C-Sharp\FitTrack\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\Denis\source\C-Sharp\FitTrack\obj\Debug\net8.0\scopedcss\projectbundle\FitTrack.bundle.scp.css

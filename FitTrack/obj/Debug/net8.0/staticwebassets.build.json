@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "LbF+2NeFK5yN4oZcNLvGO0SoVpFUZ+VQ4yYdiE38Gac=",
+  "Hash": "WCaPSX+H3l3WVNzxTdwjtzG053rWFXlHgp2Z1143TFg=",
   "Source": "FitTrack",
   "BasePath": "_content/FitTrack",
   "Mode": "Default",
@@ -16,6 +16,48 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "C:\\Users\\Denis\\source\\C-Sharp\\FitTrack\\obj\\Debug\\net8.0\\scopedcss\\bundle\\FitTrack.styles.css",
+      "SourceId": "FitTrack",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\Denis\\source\\C-Sharp\\FitTrack\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "BasePath": "_content/FitTrack",
+      "RelativePath": "FitTrack#[.{fingerprint}]?.styles.css",
+      "AssetKind": "All",
+      "AssetMode": "CurrentProject",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ApplicationBundle",
+      "Fingerprint": "wvl0ts686a",
+      "Integrity": "zPsrYVHDLnFMuKGDZBNN4wV+bX4hS3zd8BFCYvLLlWM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\Denis\\source\\C-Sharp\\FitTrack\\obj\\Debug\\net8.0\\scopedcss\\bundle\\FitTrack.styles.css"
+    },
+    {
+      "Identity": "C:\\Users\\Denis\\source\\C-Sharp\\FitTrack\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\FitTrack.bundle.scp.css",
+      "SourceId": "FitTrack",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\Denis\\source\\C-Sharp\\FitTrack\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "BasePath": "_content/FitTrack",
+      "RelativePath": "FitTrack#[.{fingerprint}]!.bundle.scp.css",
+      "AssetKind": "All",
+      "AssetMode": "Reference",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ProjectBundle",
+      "Fingerprint": "wvl0ts686a",
+      "Integrity": "zPsrYVHDLnFMuKGDZBNN4wV+bX4hS3zd8BFCYvLLlWM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\Denis\\source\\C-Sharp\\FitTrack\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\FitTrack.bundle.scp.css"
+    },
     {
       "Identity": "C:\\Users\\Denis\\source\\C-Sharp\\FitTrack\\wwwroot\\css\\site.css",
       "SourceId": "FitTrack",
@@ -36,6 +78,48 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "C:\\Users\\Denis\\source\\C-Sharp\\FitTrack\\wwwroot\\favicon.ico",
+      "SourceId": "FitTrack",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Denis\\source\\C-Sharp\\FitTrack\\wwwroot\\",
+      "BasePath": "_content/FitTrack",
+      "RelativePath": "favicon#[.{fingerprint}]?.ico",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "61n19gt1b8",
+      "Integrity": "Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\Denis\\source\\C-Sharp\\FitTrack\\wwwroot\\js\\Login.js",
+      "SourceId": "FitTrack",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Denis\\source\\C-Sharp\\FitTrack\\wwwroot\\",
+      "BasePath": "_content/FitTrack",
+      "RelativePath": "js/Login#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "3rxr3uylvp",
+      "Integrity": "YaGBqkEbbOKwtnjfyT32PyQEZh64AL+qu94KuX6Jisg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\Login.js"
     },
     {
       "Identity": "C:\\Users\\Denis\\source\\C-Sharp\\FitTrack\\wwwroot\\js\\Register.js",
@@ -1382,6 +1466,334 @@
       ]
     },
     {
+      "Route": "favicon.61n19gt1b8.ico",
+      "AssetFile": "C:\\Users\\Denis\\source\\C-Sharp\\FitTrack\\wwwroot\\favicon.ico",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5430"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 09 Jan 2025 09:16:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "61n19gt1b8"
+        },
+        {
+          "Name": "label",
+          "Value": "favicon.ico"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM="
+        }
+      ]
+    },
+    {
+      "Route": "favicon.ico",
+      "AssetFile": "C:\\Users\\Denis\\source\\C-Sharp\\FitTrack\\wwwroot\\favicon.ico",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5430"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 09 Jan 2025 09:16:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM="
+        }
+      ]
+    },
+    {
+      "Route": "FitTrack.bundle.scp.css",
+      "AssetFile": "C:\\Users\\Denis\\source\\C-Sharp\\FitTrack\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\FitTrack.bundle.scp.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1126"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zPsrYVHDLnFMuKGDZBNN4wV+bX4hS3zd8BFCYvLLlWM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 09 Jan 2025 10:29:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-zPsrYVHDLnFMuKGDZBNN4wV+bX4hS3zd8BFCYvLLlWM="
+        }
+      ]
+    },
+    {
+      "Route": "FitTrack.styles.css",
+      "AssetFile": "C:\\Users\\Denis\\source\\C-Sharp\\FitTrack\\obj\\Debug\\net8.0\\scopedcss\\bundle\\FitTrack.styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1126"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zPsrYVHDLnFMuKGDZBNN4wV+bX4hS3zd8BFCYvLLlWM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 09 Jan 2025 10:29:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-zPsrYVHDLnFMuKGDZBNN4wV+bX4hS3zd8BFCYvLLlWM="
+        }
+      ]
+    },
+    {
+      "Route": "FitTrack.wvl0ts686a.bundle.scp.css",
+      "AssetFile": "C:\\Users\\Denis\\source\\C-Sharp\\FitTrack\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\FitTrack.bundle.scp.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1126"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zPsrYVHDLnFMuKGDZBNN4wV+bX4hS3zd8BFCYvLLlWM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 09 Jan 2025 10:29:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "wvl0ts686a"
+        },
+        {
+          "Name": "label",
+          "Value": "FitTrack.bundle.scp.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-zPsrYVHDLnFMuKGDZBNN4wV+bX4hS3zd8BFCYvLLlWM="
+        }
+      ]
+    },
+    {
+      "Route": "FitTrack.wvl0ts686a.styles.css",
+      "AssetFile": "C:\\Users\\Denis\\source\\C-Sharp\\FitTrack\\obj\\Debug\\net8.0\\scopedcss\\bundle\\FitTrack.styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1126"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zPsrYVHDLnFMuKGDZBNN4wV+bX4hS3zd8BFCYvLLlWM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 09 Jan 2025 10:29:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "wvl0ts686a"
+        },
+        {
+          "Name": "label",
+          "Value": "FitTrack.styles.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-zPsrYVHDLnFMuKGDZBNN4wV+bX4hS3zd8BFCYvLLlWM="
+        }
+      ]
+    },
+    {
+      "Route": "js/Login.3rxr3uylvp.js",
+      "AssetFile": "C:\\Users\\Denis\\source\\C-Sharp\\FitTrack\\wwwroot\\js\\Login.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1319"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YaGBqkEbbOKwtnjfyT32PyQEZh64AL+qu94KuX6Jisg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 09 Jan 2025 11:00:19 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "3rxr3uylvp"
+        },
+        {
+          "Name": "label",
+          "Value": "js/Login.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-YaGBqkEbbOKwtnjfyT32PyQEZh64AL+qu94KuX6Jisg="
+        }
+      ]
+    },
+    {
+      "Route": "js/Login.js",
+      "AssetFile": "C:\\Users\\Denis\\source\\C-Sharp\\FitTrack\\wwwroot\\js\\Login.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1319"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YaGBqkEbbOKwtnjfyT32PyQEZh64AL+qu94KuX6Jisg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 09 Jan 2025 11:00:19 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-YaGBqkEbbOKwtnjfyT32PyQEZh64AL+qu94KuX6Jisg="
+        }
+      ]
+    },
+    {
       "Route": "js/Register.js",
       "AssetFile": "C:\\Users\\Denis\\source\\C-Sharp\\FitTrack\\wwwroot\\js\\Register.js",
       "Selectors": [],
@@ -1404,7 +1816,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 09 Jan 2025 10:27:26 GMT"
+          "Value": "Thu, 09 Jan 2025 09:49:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1441,7 +1853,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 09 Jan 2025 10:27:26 GMT"
+          "Value": "Thu, 09 Jan 2025 09:49:13 GMT"
         },
         {
           "Name": "Cache-Control",

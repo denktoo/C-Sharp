@@ -1,6 +1,22 @@
 [
   {
     "ContainingType": "FitTrack.Controllers.AccountApiController",
+    "Method": "Login",
+    "RelativePath": "api/AccountApi/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "FitTrack.ViewModels.LoginViewModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FitTrack.Controllers.AccountApiController",
     "Method": "Register",
     "RelativePath": "api/AccountApi/register",
     "HttpMethod": "POST",

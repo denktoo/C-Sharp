@@ -1,8 +1,20 @@
 {
   "Files": [
     {
+      "Id": "C:\\Users\\Denis\\source\\C-Sharp\\FitTrack\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\FitTrack.bundle.scp.css",
+      "PackagePath": "staticwebassets\\FitTrack.wvl0ts686a.bundle.scp.css"
+    },
+    {
       "Id": "C:\\Users\\Denis\\source\\C-Sharp\\FitTrack\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\Denis\\source\\C-Sharp\\FitTrack\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\Denis\\source\\C-Sharp\\FitTrack\\wwwroot\\js\\Login.js",
+      "PackagePath": "staticwebassets\\js\\Login.js"
     },
     {
       "Id": "C:\\Users\\Denis\\source\\C-Sharp\\FitTrack\\wwwroot\\js\\Register.js",
