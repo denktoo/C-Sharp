@@ -1,0 +1,86 @@
+﻿@using System.Security.Claims
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - FitTrack</title>
+
+    <!-- Disable Caching -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm">
+            <div class="container-fluid">
+                @if (!User.Identity.IsAuthenticated)
+                {
+                    <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">FitTrack</a>
+                }
+
+                <!-- Hamburger Button (Appears on smaller screens) -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            <!-- Display the username -->
+                            <li class="nav-item">
+                                <span class="navbar-text">Hello, @User.FindFirst(ClaimTypes.Name)?.Value!</span>
+                            </li>
+
+                            <!-- Logout form -->
+                            <li class="nav-item">
+                                <form asp-controller="Account" asp-action="Logout" method="post" style="display:inline;">
+                                    <button type="submit" class="navbar-text btn custom-button nav-link">Logout</button>
+                                </form>
+                            </li>
+                        }
+
+                        else
+                        {
+                            <li class="nav-item me-1">
+                                <a class="nav-link btn custom-button" asp-controller="Home" asp-action="Index">Home</a>
+                            </li>
+                            <li class="nav-item me-1">
+                                <a class="nav-link btn custom-button" asp-controller="Home" asp-action="About">About</a>
+                            </li>
+                            <li class="nav-item me-1">
+                                <a class="nav-link btn custom-button" asp-controller="Account" asp-action="Register">Register</a>
+                            </li>
+                            <li class="nav-item me-1">
+                                <a class="nav-link btn custom-button" asp-controller="Account" asp-action="Login">Login</a>
+                            </li>
+                        }
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer">
+        &copy; FitTrack
+    </footer>
+
+    <!-- Scripts -->
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

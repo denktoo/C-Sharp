@@ -1,0 +1,76 @@
+﻿html {
+    position: relative;
+    font-size: 14px;
+}
+
+body {
+    background-color: #D3D3D3;
+    color: #000000;
+}
+
+.container {
+    min-height: calc(100vh - 30px);
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    flex: 1;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem darkgray, 0 0 0 0.25rem darkgray;
+}
+
+.navbar {
+    background-color: #343a40;
+}
+
+.navbar-brand, .nav-link {
+    color: #ffffff;
+}
+
+    .nav-link:hover {
+        color: #D3D3D3;
+    }
+
+    .nav-link.btn.custom-button {
+        padding: 0px 25px; /* Add spacing for a balanced look */
+        border: none;
+        height: 100%;
+        display: flex;
+        font-size: 1.1rem;
+        letter-spacing: 1px;
+        transition: all 0.3s ease-in-out;
+    }
+
+/* Hamburger Button - Default Bootstrap Styling */
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28128, 128, 128, 1%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 20px; /* Adjust icon size */
+    height: 25px;
+}
+
+.footer {
+    background-color: #808080;
+    color: #FFFFFF;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    line-height: 30px;
+    height: 30px;
+    padding-left: 10%;
+    border-top: 2px solid black;
+    margin: 0;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
