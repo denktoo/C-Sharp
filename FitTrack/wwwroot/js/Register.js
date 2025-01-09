@@ -37,4 +37,4 @@
 window.registerViewModel = new RegisterViewModel();
 
 // Apply Knockout bindings
-ko.applyBindings(new RegisterViewModel());
+ko.applyBindings(registerViewModel);

@@ -249,8 +249,45 @@
       ]
     },
     {
-      "Route": "js/Register.5rolyfrs68.js",
-      "AssetFile": "js/Register.js",
+      "Route": "js/Login.js",
+      "AssetFile": "js/Login.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "193"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9DCcsIUPvxoj9RL3i/cdONpZirdmZ70y9LL0W5Jz9c4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 09 Jan 2025 09:49:13 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-9DCcsIUPvxoj9RL3i/cdONpZirdmZ70y9LL0W5Jz9c4="
+        }
+      ]
+    },
+    {
+      "Route": "js/Login.sqzg8cqfqr.js",
+      "AssetFile": "js/Login.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -263,7 +300,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1238"
+          "Value": "193"
         },
         {
           "Name": "Content-Type",
@@ -271,25 +308,25 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"kR6ykY49ULgM3wZyHDeGs0/9Sbra8/dhJhz4TiSQXT0=\""
+          "Value": "\"9DCcsIUPvxoj9RL3i/cdONpZirdmZ70y9LL0W5Jz9c4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 09 Jan 2025 09:04:56 GMT"
+          "Value": "Thu, 09 Jan 2025 09:49:13 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "5rolyfrs68"
+          "Value": "sqzg8cqfqr"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-kR6ykY49ULgM3wZyHDeGs0/9Sbra8/dhJhz4TiSQXT0="
+          "Value": "sha256-9DCcsIUPvxoj9RL3i/cdONpZirdmZ70y9LL0W5Jz9c4="
         },
         {
           "Name": "label",
-          "Value": "js/Register.js"
+          "Value": "js/Login.js"
         }
       ]
     },
@@ -308,7 +345,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1238"
+          "Value": "1232"
         },
         {
           "Name": "Content-Type",
@@ -316,17 +353,62 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"kR6ykY49ULgM3wZyHDeGs0/9Sbra8/dhJhz4TiSQXT0=\""
+          "Value": "\"8XSdeEh2JIIOj63KkYJuH8k/ebwKIY3sB4rF5z3+/YA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 09 Jan 2025 09:04:56 GMT"
+          "Value": "Thu, 09 Jan 2025 09:49:13 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-kR6ykY49ULgM3wZyHDeGs0/9Sbra8/dhJhz4TiSQXT0="
+          "Value": "sha256-8XSdeEh2JIIOj63KkYJuH8k/ebwKIY3sB4rF5z3+/YA="
+        }
+      ]
+    },
+    {
+      "Route": "js/Register.t9l957chhd.js",
+      "AssetFile": "js/Register.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1232"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8XSdeEh2JIIOj63KkYJuH8k/ebwKIY3sB4rF5z3+/YA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 09 Jan 2025 09:49:13 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "t9l957chhd"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-8XSdeEh2JIIOj63KkYJuH8k/ebwKIY3sB4rF5z3+/YA="
+        },
+        {
+          "Name": "label",
+          "Value": "js/Register.js"
         }
       ]
     },

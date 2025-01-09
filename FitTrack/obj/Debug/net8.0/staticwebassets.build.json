@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "jkSXz0TQaX7oEKlK/SxE1gUYFf14O/lGj2gNIZqEtRQ=",
+  "Hash": "SQZYL388bN7ixC61WPfZX/oDZkohGOZ55OzNq7UOC24=",
   "Source": "FitTrack",
   "BasePath": "_content/FitTrack",
   "Mode": "Default",
@@ -101,6 +101,27 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
+      "Identity": "C:\\Users\\Denis\\source\\C-Sharp\\FitTrack\\wwwroot\\js\\Login.js",
+      "SourceId": "FitTrack",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Denis\\source\\C-Sharp\\FitTrack\\wwwroot\\",
+      "BasePath": "_content/FitTrack",
+      "RelativePath": "js/Login#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "sqzg8cqfqr",
+      "Integrity": "9DCcsIUPvxoj9RL3i/cdONpZirdmZ70y9LL0W5Jz9c4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\Login.js"
+    },
+    {
       "Identity": "C:\\Users\\Denis\\source\\C-Sharp\\FitTrack\\wwwroot\\js\\Register.js",
       "SourceId": "FitTrack",
       "SourceType": "Discovered",
@@ -115,8 +136,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "5rolyfrs68",
-      "Integrity": "kR6ykY49ULgM3wZyHDeGs0/9Sbra8/dhJhz4TiSQXT0=",
+      "Fingerprint": "t9l957chhd",
+      "Integrity": "8XSdeEh2JIIOj63KkYJuH8k/ebwKIY3sB4rF5z3+/YA=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\Register.js"
@@ -1691,8 +1712,8 @@
       ]
     },
     {
-      "Route": "js/Register.5rolyfrs68.js",
-      "AssetFile": "C:\\Users\\Denis\\source\\C-Sharp\\FitTrack\\wwwroot\\js\\Register.js",
+      "Route": "js/Login.js",
+      "AssetFile": "C:\\Users\\Denis\\source\\C-Sharp\\FitTrack\\wwwroot\\js\\Login.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1701,7 +1722,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1238"
+          "Value": "193"
         },
         {
           "Name": "Content-Type",
@@ -1709,11 +1730,48 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"kR6ykY49ULgM3wZyHDeGs0/9Sbra8/dhJhz4TiSQXT0=\""
+          "Value": "\"9DCcsIUPvxoj9RL3i/cdONpZirdmZ70y9LL0W5Jz9c4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 09 Jan 2025 09:04:56 GMT"
+          "Value": "Thu, 09 Jan 2025 09:49:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-9DCcsIUPvxoj9RL3i/cdONpZirdmZ70y9LL0W5Jz9c4="
+        }
+      ]
+    },
+    {
+      "Route": "js/Login.sqzg8cqfqr.js",
+      "AssetFile": "C:\\Users\\Denis\\source\\C-Sharp\\FitTrack\\wwwroot\\js\\Login.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "193"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9DCcsIUPvxoj9RL3i/cdONpZirdmZ70y9LL0W5Jz9c4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 09 Jan 2025 09:49:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1723,15 +1781,15 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "5rolyfrs68"
+          "Value": "sqzg8cqfqr"
         },
         {
           "Name": "label",
-          "Value": "js/Register.js"
+          "Value": "js/Login.js"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-kR6ykY49ULgM3wZyHDeGs0/9Sbra8/dhJhz4TiSQXT0="
+          "Value": "sha256-9DCcsIUPvxoj9RL3i/cdONpZirdmZ70y9LL0W5Jz9c4="
         }
       ]
     },
@@ -1746,7 +1804,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1238"
+          "Value": "1232"
         },
         {
           "Name": "Content-Type",
@@ -1754,11 +1812,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"kR6ykY49ULgM3wZyHDeGs0/9Sbra8/dhJhz4TiSQXT0=\""
+          "Value": "\"8XSdeEh2JIIOj63KkYJuH8k/ebwKIY3sB4rF5z3+/YA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 09 Jan 2025 09:04:56 GMT"
+          "Value": "Thu, 09 Jan 2025 09:49:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1768,7 +1826,52 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-kR6ykY49ULgM3wZyHDeGs0/9Sbra8/dhJhz4TiSQXT0="
+          "Value": "sha256-8XSdeEh2JIIOj63KkYJuH8k/ebwKIY3sB4rF5z3+/YA="
+        }
+      ]
+    },
+    {
+      "Route": "js/Register.t9l957chhd.js",
+      "AssetFile": "C:\\Users\\Denis\\source\\C-Sharp\\FitTrack\\wwwroot\\js\\Register.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1232"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8XSdeEh2JIIOj63KkYJuH8k/ebwKIY3sB4rF5z3+/YA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 09 Jan 2025 09:49:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "t9l957chhd"
+        },
+        {
+          "Name": "label",
+          "Value": "js/Register.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-8XSdeEh2JIIOj63KkYJuH8k/ebwKIY3sB4rF5z3+/YA="
         }
       ]
     },
