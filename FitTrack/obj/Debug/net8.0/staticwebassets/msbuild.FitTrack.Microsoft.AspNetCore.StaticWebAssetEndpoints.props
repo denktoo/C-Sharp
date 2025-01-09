@@ -36,6 +36,18 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"wvl0ts686a"},{"Name":"integrity","Value":"sha256-zPsrYVHDLnFMuKGDZBNN4wV\u002BbX4hS3zd8BFCYvLLlWM="},{"Name":"label","Value":"_content/FitTrack/FitTrack.bundle.scp.css"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1126"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022zPsrYVHDLnFMuKGDZBNN4wV\u002BbX4hS3zd8BFCYvLLlWM=\u0022"},{"Name":"Last-Modified","Value":"Thu, 09 Jan 2025 09:19:50 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/FitTrack/js/Register.5rolyfrs68.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\Register.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"5rolyfrs68"},{"Name":"integrity","Value":"sha256-kR6ykY49ULgM3wZyHDeGs0/9Sbra8/dhJhz4TiSQXT0="},{"Name":"label","Value":"_content/FitTrack/js/Register.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1238"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022kR6ykY49ULgM3wZyHDeGs0/9Sbra8/dhJhz4TiSQXT0=\u0022"},{"Name":"Last-Modified","Value":"Thu, 09 Jan 2025 09:04:56 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/FitTrack/js/Register.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\Register.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-kR6ykY49ULgM3wZyHDeGs0/9Sbra8/dhJhz4TiSQXT0="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1238"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022kR6ykY49ULgM3wZyHDeGs0/9Sbra8/dhJhz4TiSQXT0=\u0022"},{"Name":"Last-Modified","Value":"Thu, 09 Jan 2025 09:04:56 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/FitTrack/js/script.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\script.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>

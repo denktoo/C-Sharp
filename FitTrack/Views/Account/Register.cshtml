@@ -1,28 +1,24 @@
-﻿@model FitTrack.ViewModels.RegisterViewModel
-@{
+﻿@{
     ViewData["Title"] = "Register";
 }
 
-<div class="container mt-4">
+<div class="container mt-4" data-bind="with: registerViewModel">
     <div class="row justify-content-center">
         <div class="col-md-6">
             <h2 class="text-center">Register</h2>
 
-            <form asp-action="Register" method="post" >
+            <form data-bind="submit: function(data, event) { register(event) }">
                 <div class="form-group">
-                    <label asp-for="Username"></label>
-                    <input asp-for="Username" class="form-control" />
-                    <span asp-validation-for="Username" class="text-danger"></span>
+                    <label for="username">Username</label>
+                    <input id="username" class="form-control" type="text" data-bind="value: username" />
                 </div>
                 <div class="form-group">
-                    <label asp-for="Email"></label>
-                    <input asp-for="Email" class="form-control" />
-                    <span asp-validation-for="Email" class="text-danger"></span>
+                    <label for="email">Email</label>
+                    <input id="email" class="form-control" type="email" data-bind="value: email" />
                 </div>
                 <div class="form-group">
-                    <label asp-for="Password"></label>
-                    <input asp-for="Password" class="form-control" type="password" />
-                    <span asp-validation-for="Password" class="text-danger"></span>
+                    <label for="password">Password</label>
+                    <input id="password" class="form-control" type="password" data-bind="value: password" />
                 </div>
                 <div class="mt-3">
                     <button type="submit" class="btn btn-primary btn-block">Register</button>
@@ -30,8 +26,11 @@
             </form>
 
             <div class="text-center mt-3">
-                <a asp-controller="Account" asp-action="Login">Already have an account? Login</a>
+                <a href="/Account/Login">Already have an account? Login</a>
             </div>
         </div>
     </div>
 </div>
+
+<script src="https://cdn.jsdelivr.net/npm/knockout/build/output/knockout-latest.js"></script>
+<script src="~/js/Register.js" asp-append-version="true"></script>

@@ -1,5 +1,21 @@
 [
   {
+    "ContainingType": "FitTrack.Controllers.AccountApiController",
+    "Method": "Register",
+    "RelativePath": "api/AccountApi/register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "FitTrack.ViewModels.RegisterViewModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "FitTrack.Controllers.GoalsController",
     "Method": "GetGoals",
     "RelativePath": "api/Goals",
