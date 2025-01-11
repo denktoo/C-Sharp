@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Ov/KOuRtjogDwP9Wxb9nbKg+1tmdKxqSih9rciWkB4U=",
+  "Hash": "f8g/XoCjdrSsKbtO/Su7YBerdQwldpn/pM6ikTePGtg=",
   "Source": "FitTrack",
   "BasePath": "_content/FitTrack",
   "Mode": "Default",
@@ -99,6 +99,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\Denis\\source\\C-Sharp\\FitTrack\\wwwroot\\js\\Admin.js",
+      "SourceId": "FitTrack",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Denis\\source\\C-Sharp\\FitTrack\\wwwroot\\",
+      "BasePath": "_content/FitTrack",
+      "RelativePath": "js/Admin#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "nwnhhsj54s",
+      "Integrity": "uVss0LgpT8b93DTX9/A/GN8W8DbI7AoAVSFD49kMN+8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\Admin.js"
     },
     {
       "Identity": "C:\\Users\\Denis\\source\\C-Sharp\\FitTrack\\wwwroot\\js\\Login.js",
@@ -1708,6 +1729,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-zPsrYVHDLnFMuKGDZBNN4wV+bX4hS3zd8BFCYvLLlWM="
+        }
+      ]
+    },
+    {
+      "Route": "js/Admin.js",
+      "AssetFile": "C:\\Users\\Denis\\source\\C-Sharp\\FitTrack\\wwwroot\\js\\Admin.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4534"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"uVss0LgpT8b93DTX9/A/GN8W8DbI7AoAVSFD49kMN+8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 10 Jan 2025 20:36:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-uVss0LgpT8b93DTX9/A/GN8W8DbI7AoAVSFD49kMN+8="
+        }
+      ]
+    },
+    {
+      "Route": "js/Admin.nwnhhsj54s.js",
+      "AssetFile": "C:\\Users\\Denis\\source\\C-Sharp\\FitTrack\\wwwroot\\js\\Admin.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4534"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"uVss0LgpT8b93DTX9/A/GN8W8DbI7AoAVSFD49kMN+8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 10 Jan 2025 20:36:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "nwnhhsj54s"
+        },
+        {
+          "Name": "label",
+          "Value": "js/Admin.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-uVss0LgpT8b93DTX9/A/GN8W8DbI7AoAVSFD49kMN+8="
         }
       ]
     },

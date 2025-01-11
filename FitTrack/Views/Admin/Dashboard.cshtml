@@ -11,7 +11,7 @@
             <div class="card text-white bg-primary">
                 <div class="card-body">
                     <h5>Total Users</h5>
-                    <h3>@Model.TotalUsers</h3>
+                    <h3 data-bind="text: totalUsers"></h3>
                 </div>
             </div>
         </div>
@@ -19,7 +19,7 @@
             <div class="card text-white bg-success">
                 <div class="card-body">
                     <h5>Workouts Logged</h5>
-                    <h3>@Model.TotalWorkouts</h3>
+                    <h3 data-bind="text: totalWorkouts"></h3>
                 </div>
             </div>
         </div>
@@ -27,7 +27,7 @@
             <div class="card text-white bg-warning">
                 <div class="card-body">
                     <h5>Goals Achieved</h5>
-                    <h3>@Model.GoalsAchieved</h3>
+                    <h3 data-bind="text: goalsAchieved"></h3>
                 </div>
             </div>
         </div>
@@ -35,7 +35,7 @@
             <div class="card text-white bg-danger">
                 <div class="card-body">
                     <h5>Pending Goals</h5>
-                    <h3>@Model.PendingGoals</h3>
+                    <h3 data-bind="text: pendingGoals"></h3>
                 </div>
             </div>
         </div>
@@ -61,25 +61,18 @@
                                     <th>Actions</th>
                                 </tr>
                             </thead>
-                            <tbody>
-                                @foreach (var user in Model.Users)
-                                {
-                                    @if (user.Role != "Admin")
-                                    {
-                                        <tr>
-                                            <td>@user.Id</td>
-                                            <td>@user.Name</td>
-                                            <td>@user.Email</td>
-                                            <td>@user.WorkoutsCount</td>
-                                            <td>@user.GoalsAchievedCount</td>
-                                            <td>
-                                                <a asp-controller="Admin" asp-action="ViewUser" asp-route-id="@user.Id" class="btn btn-primary btn-sm">View</a>
-                                                <a asp-controller="Admin" asp-action="DeleteUser" asp-route-id="@user.Id" class="btn btn-danger btn-sm">Delete</a>
-                                            </td>
-
-                                        </tr>
-                                    }
-                                }
+                            <tbody data-bind="foreach: users">
+                                <tr>
+                                    <td data-bind="text: id"></td>
+                                    <td data-bind="text: name"></td>
+                                    <td data-bind="text: email"></td>
+                                    <td data-bind="text: workoutsCount"></td>
+                                    <td data-bind="text: goalsAchievedCount"></td>
+                                <td>
+                                    @* <a href="#" data-bind="click: function() { $parent.fetchUserDetails(id); }" class="btn btn-primary btn-sm">View</a> *@
+                                    @* <a data-bind="attr: { href: '/Admin/DeleteUser/' + id }" class="btn btn-danger btn-sm">Delete</a> *@
+                                </td>
+                                </tr>
                             </tbody>
                         </table>
                     </div>
@@ -104,15 +97,12 @@
                                 <th>Duration (mins)</th>
                             </tr>
                         </thead>
-                        <tbody>
-                            @foreach (var workout in Model.RecentWorkouts)
-                            {
-                                <tr>
-                                    <td>@workout.UserName</td>
-                                    <td>@workout.Date.ToShortDateString()</td>
-                                    <td>@workout.Duration</td>
-                                </tr>
-                            }
+                        <tbody data-bind="foreach: recentWorkouts">
+                            <tr>
+                                <td data-bind="text: userName"></td>
+                                <td data-bind="text: date"></td>
+                                <td data-bind="text: duration"></td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
@@ -132,15 +122,12 @@
                                 <th>Target Date</th>
                             </tr>
                         </thead>
-                        <tbody>
-                            @foreach (var goal in Model.RecentGoals)
-                            {
-                                <tr>
-                                    <td>@goal.UserName</td>
-                                    <td>@goal.Description</td>
-                                    <td>@goal.TargetDate.ToShortDateString()</td>
-                                </tr>
-                            }
+                        <tbody data-bind="foreach: recentGoals">
+                            <tr>
+                                <td data-bind="text: userName"></td>
+                                <td data-bind="text: description"></td>
+                                <td data-bind="text: targetDate"></td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
@@ -148,3 +135,6 @@
         </div>
     </div>
 </div>
+
+<script src="https://cdn.jsdelivr.net/npm/knockout/build/output/knockout-latest.js"></script>
+<script src="~/js/Admin.js" asp-append-version="true"></script>

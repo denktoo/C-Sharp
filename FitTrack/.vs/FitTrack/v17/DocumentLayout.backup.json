@@ -3,28 +3,76 @@
   "WorkspaceRootPath": "C:\\Users\\Denis\\source\\C-Sharp\\FitTrack\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CA732FCF-DBE6-4A88-BD27-F516FD4D490F}|FitTrack.csproj|c:\\users\\denis\\source\\c-sharp\\fittrack\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CA732FCF-DBE6-4A88-BD27-F516FD4D490F}|FitTrack.csproj|solutionrelative:views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{CA732FCF-DBE6-4A88-BD27-F516FD4D490F}|FitTrack.csproj|c:\\users\\denis\\source\\c-sharp\\fittrack\\views\\admin\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CA732FCF-DBE6-4A88-BD27-F516FD4D490F}|FitTrack.csproj|solutionrelative:views\\admin\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA732FCF-DBE6-4A88-BD27-F516FD4D490F}|FitTrack.csproj|c:\\users\\denis\\source\\c-sharp\\fittrack\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA732FCF-DBE6-4A88-BD27-F516FD4D490F}|FitTrack.csproj|solutionrelative:controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA732FCF-DBE6-4A88-BD27-F516FD4D490F}|FitTrack.csproj|c:\\users\\denis\\source\\c-sharp\\fittrack\\wwwroot\\js\\admin.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{CA732FCF-DBE6-4A88-BD27-F516FD4D490F}|FitTrack.csproj|solutionrelative:wwwroot\\js\\admin.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA732FCF-DBE6-4A88-BD27-F516FD4D490F}|FitTrack.csproj|c:\\users\\denis\\source\\c-sharp\\fittrack\\controllers\\adminapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA732FCF-DBE6-4A88-BD27-F516FD4D490F}|FitTrack.csproj|solutionrelative:controllers\\adminapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CA732FCF-DBE6-4A88-BD27-F516FD4D490F}|FitTrack.csproj|c:\\users\\denis\\source\\c-sharp\\fittrack\\controllers\\accountapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CA732FCF-DBE6-4A88-BD27-F516FD4D490F}|FitTrack.csproj|solutionrelative:controllers\\accountapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{CA732FCF-DBE6-4A88-BD27-F516FD4D490F}|FitTrack.csproj|c:\\users\\denis\\source\\c-sharp\\fittrack\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CA732FCF-DBE6-4A88-BD27-F516FD4D490F}|FitTrack.csproj|solutionrelative:views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{CA732FCF-DBE6-4A88-BD27-F516FD4D490F}|FitTrack.csproj|c:\\users\\denis\\source\\c-sharp\\fittrack\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{CA732FCF-DBE6-4A88-BD27-F516FD4D490F}|FitTrack.csproj|solutionrelative:views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CA732FCF-DBE6-4A88-BD27-F516FD4D490F}|FitTrack.csproj|c:\\users\\denis\\source\\c-sharp\\fittrack\\wwwroot\\js\\register.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{CA732FCF-DBE6-4A88-BD27-F516FD4D490F}|FitTrack.csproj|solutionrelative:wwwroot\\js\\register.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{CA732FCF-DBE6-4A88-BD27-F516FD4D490F}|FitTrack.csproj|c:\\users\\denis\\source\\c-sharp\\fittrack\\views\\admin\\viewuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CA732FCF-DBE6-4A88-BD27-F516FD4D490F}|FitTrack.csproj|solutionrelative:views\\admin\\viewuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA732FCF-DBE6-4A88-BD27-F516FD4D490F}|FitTrack.csproj|c:\\users\\denis\\source\\c-sharp\\fittrack\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{CA732FCF-DBE6-4A88-BD27-F516FD4D490F}|FitTrack.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CA732FCF-DBE6-4A88-BD27-F516FD4D490F}|FitTrack.csproj|c:\\users\\denis\\source\\c-sharp\\fittrack\\wwwroot\\js\\login.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{CA732FCF-DBE6-4A88-BD27-F516FD4D490F}|FitTrack.csproj|solutionrelative:wwwroot\\js\\login.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{CA732FCF-DBE6-4A88-BD27-F516FD4D490F}|FitTrack.csproj|c:\\users\\denis\\source\\c-sharp\\fittrack\\models\\goal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA732FCF-DBE6-4A88-BD27-F516FD4D490F}|FitTrack.csproj|solutionrelative:models\\goal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA732FCF-DBE6-4A88-BD27-F516FD4D490F}|FitTrack.csproj|c:\\users\\denis\\source\\c-sharp\\fittrack\\data\\fittrackcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA732FCF-DBE6-4A88-BD27-F516FD4D490F}|FitTrack.csproj|solutionrelative:data\\fittrackcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{CA732FCF-DBE6-4A88-BD27-F516FD4D490F}|FitTrack.csproj|c:\\users\\denis\\source\\c-sharp\\fittrack\\views\\user\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{CA732FCF-DBE6-4A88-BD27-F516FD4D490F}|FitTrack.csproj|solutionrelative:views\\user\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA732FCF-DBE6-4A88-BD27-F516FD4D490F}|FitTrack.csproj|c:\\users\\denis\\source\\c-sharp\\fittrack\\wwwroot\\js\\register.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{CA732FCF-DBE6-4A88-BD27-F516FD4D490F}|FitTrack.csproj|solutionrelative:wwwroot\\js\\register.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA732FCF-DBE6-4A88-BD27-F516FD4D490F}|FitTrack.csproj|c:\\users\\denis\\source\\c-sharp\\fittrack\\repositories\\goalrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA732FCF-DBE6-4A88-BD27-F516FD4D490F}|FitTrack.csproj|solutionrelative:repositories\\goalrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA732FCF-DBE6-4A88-BD27-F516FD4D490F}|FitTrack.csproj|c:\\users\\denis\\source\\c-sharp\\fittrack\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA732FCF-DBE6-4A88-BD27-F516FD4D490F}|FitTrack.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA732FCF-DBE6-4A88-BD27-F516FD4D490F}|FitTrack.csproj|c:\\users\\denis\\source\\c-sharp\\fittrack\\controllers\\goalscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA732FCF-DBE6-4A88-BD27-F516FD4D490F}|FitTrack.csproj|solutionrelative:controllers\\goalscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA732FCF-DBE6-4A88-BD27-F516FD4D490F}|FitTrack.csproj|c:\\users\\denis\\source\\c-sharp\\fittrack\\repositories\\igoalrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA732FCF-DBE6-4A88-BD27-F516FD4D490F}|FitTrack.csproj|solutionrelative:repositories\\igoalrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CA732FCF-DBE6-4A88-BD27-F516FD4D490F}|FitTrack.csproj|c:\\users\\denis\\source\\c-sharp\\fittrack\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -42,25 +90,12 @@
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
-      "VerticalTabListWidth": 256,
+      "VerticalTabListWidth": 226,
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 17,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Register.cshtml",
-              "DocumentMoniker": "C:\\Users\\Denis\\source\\C-Sharp\\FitTrack\\Views\\Account\\Register.cshtml",
-              "RelativeDocumentMoniker": "Views\\Account\\Register.cshtml",
-              "ToolTip": "C:\\Users\\Denis\\source\\C-Sharp\\FitTrack\\Views\\Account\\Register.cshtml",
-              "RelativeToolTip": "Views\\Account\\Register.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-09T11:44:23.02Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
@@ -87,20 +122,179 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Dashboard.cshtml",
-              "DocumentMoniker": "C:\\Users\\Denis\\source\\C-Sharp\\FitTrack\\Views\\User\\Dashboard.cshtml",
-              "RelativeDocumentMoniker": "Views\\User\\Dashboard.cshtml",
-              "ToolTip": "C:\\Users\\Denis\\source\\C-Sharp\\FitTrack\\Views\\User\\Dashboard.cshtml",
-              "RelativeToolTip": "Views\\User\\Dashboard.cshtml",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 8,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Denis\\source\\C-Sharp\\FitTrack\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\Denis\\source\\C-Sharp\\FitTrack\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-01-11T20:53:53.56Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "FitTrackContext.cs",
+              "DocumentMoniker": "C:\\Users\\Denis\\source\\C-Sharp\\FitTrack\\Data\\FitTrackContext.cs",
+              "RelativeDocumentMoniker": "Data\\FitTrackContext.cs",
+              "ToolTip": "C:\\Users\\Denis\\source\\C-Sharp\\FitTrack\\Data\\FitTrackContext.cs",
+              "RelativeToolTip": "Data\\FitTrackContext.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAowAsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-10T10:32:03.507Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ViewUser.cshtml",
+              "DocumentMoniker": "C:\\Users\\Denis\\source\\C-Sharp\\FitTrack\\Views\\Admin\\ViewUser.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\ViewUser.cshtml",
+              "ToolTip": "C:\\Users\\Denis\\source\\C-Sharp\\FitTrack\\Views\\Admin\\ViewUser.cshtml",
+              "RelativeToolTip": "Views\\Admin\\ViewUser.cshtml",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAADMAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-09T11:44:29.073Z",
+              "WhenOpened": "2025-01-10T07:50:28.108Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\Denis\\source\\C-Sharp\\FitTrack\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\Denis\\source\\C-Sharp\\FitTrack\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "Controllers\\AdminController.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAIwB4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-10T06:08:43.351Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AdminApiController.cs",
+              "DocumentMoniker": "C:\\Users\\Denis\\source\\C-Sharp\\FitTrack\\Controllers\\AdminApiController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AdminApiController.cs",
+              "ToolTip": "C:\\Users\\Denis\\source\\C-Sharp\\FitTrack\\Controllers\\AdminApiController.cs",
+              "RelativeToolTip": "Controllers\\AdminApiController.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAcwGwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-10T06:11:52.437Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\Denis\\source\\C-Sharp\\FitTrack\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Models\\User.cs",
+              "ToolTip": "C:\\Users\\Denis\\source\\C-Sharp\\FitTrack\\Models\\User.cs",
+              "RelativeToolTip": "Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-10T04:55:00.882Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Admin.js",
+              "DocumentMoniker": "C:\\Users\\Denis\\source\\C-Sharp\\FitTrack\\wwwroot\\js\\Admin.js",
+              "RelativeDocumentMoniker": "wwwroot\\js\\Admin.js",
+              "ToolTip": "C:\\Users\\Denis\\source\\C-Sharp\\FitTrack\\wwwroot\\js\\Admin.js",
+              "RelativeToolTip": "wwwroot\\js\\Admin.js",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAwFMAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-01-10T04:15:12.943Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "IGoalRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Denis\\source\\C-Sharp\\FitTrack\\Repositories\\IGoalRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\IGoalRepository.cs",
+              "ToolTip": "C:\\Users\\Denis\\source\\C-Sharp\\FitTrack\\Repositories\\IGoalRepository.cs",
+              "RelativeToolTip": "Repositories\\IGoalRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-10T04:10:24.792Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "GoalRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Denis\\source\\C-Sharp\\FitTrack\\Repositories\\GoalRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\GoalRepository.cs",
+              "ToolTip": "C:\\Users\\Denis\\source\\C-Sharp\\FitTrack\\Repositories\\GoalRepository.cs",
+              "RelativeToolTip": "Repositories\\GoalRepository.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAAABMAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-10T04:09:40.52Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Goal.cs",
+              "DocumentMoniker": "C:\\Users\\Denis\\source\\C-Sharp\\FitTrack\\Models\\Goal.cs",
+              "RelativeDocumentMoniker": "Models\\Goal.cs",
+              "ToolTip": "C:\\Users\\Denis\\source\\C-Sharp\\FitTrack\\Models\\Goal.cs",
+              "RelativeToolTip": "Models\\Goal.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-10T04:09:01.487Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "GoalsController.cs",
+              "DocumentMoniker": "C:\\Users\\Denis\\source\\C-Sharp\\FitTrack\\Controllers\\GoalsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\GoalsController.cs",
+              "ToolTip": "C:\\Users\\Denis\\source\\C-Sharp\\FitTrack\\Controllers\\GoalsController.cs",
+              "RelativeToolTip": "Controllers\\GoalsController.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAswDgAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-10T04:07:44.907Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Dashboard.cshtml",
+              "DocumentMoniker": "C:\\Users\\Denis\\source\\C-Sharp\\FitTrack\\Views\\Admin\\Dashboard.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\Dashboard.cshtml",
+              "ToolTip": "C:\\Users\\Denis\\source\\C-Sharp\\FitTrack\\Views\\Admin\\Dashboard.cshtml",
+              "RelativeToolTip": "Views\\Admin\\Dashboard.cshtml",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAAEwAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-09T13:37:11.155Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\Denis\\source\\C-Sharp\\FitTrack\\Views\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "Views\\Account\\Register.cshtml",
+              "ToolTip": "C:\\Users\\Denis\\source\\C-Sharp\\FitTrack\\Views\\Account\\Register.cshtml",
+              "RelativeToolTip": "Views\\Account\\Register.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAACMAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-09T11:44:23.02Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Dashboard.cshtml",
+              "DocumentMoniker": "C:\\Users\\Denis\\source\\C-Sharp\\FitTrack\\Views\\User\\Dashboard.cshtml",
+              "RelativeDocumentMoniker": "Views\\User\\Dashboard.cshtml",
+              "ToolTip": "C:\\Users\\Denis\\source\\C-Sharp\\FitTrack\\Views\\User\\Dashboard.cshtml",
+              "RelativeToolTip": "Views\\User\\Dashboard.cshtml",
+              "ViewState": "AgIAAGkAAAAAAAAAAAAAAEEAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-09T11:44:29.073Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
               "Title": "_ViewImports.cshtml",
               "DocumentMoniker": "C:\\Users\\Denis\\source\\C-Sharp\\FitTrack\\Views\\_ViewImports.cshtml",
               "RelativeDocumentMoniker": "Views\\_ViewImports.cshtml",
@@ -108,25 +302,23 @@
               "RelativeToolTip": "Views\\_ViewImports.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-09T11:44:25.077Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-09T11:44:25.077Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
               "Title": "Login.js",
               "DocumentMoniker": "C:\\Users\\Denis\\source\\C-Sharp\\FitTrack\\wwwroot\\js\\Login.js",
               "RelativeDocumentMoniker": "wwwroot\\js\\Login.js",
               "ToolTip": "C:\\Users\\Denis\\source\\C-Sharp\\FitTrack\\wwwroot\\js\\Login.js",
               "RelativeToolTip": "wwwroot\\js\\Login.js",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAwBcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-01-09T10:47:33.467Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-09T10:47:33.467Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "Login.cshtml",
               "DocumentMoniker": "C:\\Users\\Denis\\source\\C-Sharp\\FitTrack\\Views\\Account\\Login.cshtml",
               "RelativeDocumentMoniker": "Views\\Account\\Login.cshtml",
@@ -139,33 +331,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 13,
               "Title": "Register.js",
               "DocumentMoniker": "C:\\Users\\Denis\\source\\C-Sharp\\FitTrack\\wwwroot\\js\\Register.js",
               "RelativeDocumentMoniker": "wwwroot\\js\\Register.js",
               "ToolTip": "C:\\Users\\Denis\\source\\C-Sharp\\FitTrack\\wwwroot\\js\\Register.js",
               "RelativeToolTip": "wwwroot\\js\\Register.js",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBoAAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-01-09T10:27:00.362Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-09T10:27:00.362Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "AccountApiController.cs",
               "DocumentMoniker": "C:\\Users\\Denis\\source\\C-Sharp\\FitTrack\\Controllers\\AccountApiController.cs",
               "RelativeDocumentMoniker": "Controllers\\AccountApiController.cs",
               "ToolTip": "C:\\Users\\Denis\\source\\C-Sharp\\FitTrack\\Controllers\\AccountApiController.cs",
               "RelativeToolTip": "Controllers\\AccountApiController.cs",
-              "ViewState": "AgIAADsAAAAAAAAAAAAgwGkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAmwG0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-09T10:26:39.2Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 19,
               "Title": "20250109102222_InitialCreate.cs",
               "DocumentMoniker": "C:\\Users\\Denis\\source\\C-Sharp\\FitTrack\\Migrations\\20250109102222_InitialCreate.cs",
               "RelativeDocumentMoniker": "Migrations\\20250109102222_InitialCreate.cs",
@@ -177,7 +368,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 20,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\Denis\\source\\C-Sharp\\FitTrack\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "Properties\\launchSettings.json",
