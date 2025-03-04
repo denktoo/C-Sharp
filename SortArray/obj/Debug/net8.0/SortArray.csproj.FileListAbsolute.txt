@@ -1,0 +1,15 @@
+C:\Users\Denis\source\C-Sharp\SortArray\bin\Debug\net8.0\SortArray.exe
+C:\Users\Denis\source\C-Sharp\SortArray\bin\Debug\net8.0\SortArray.deps.json
+C:\Users\Denis\source\C-Sharp\SortArray\bin\Debug\net8.0\SortArray.runtimeconfig.json
+C:\Users\Denis\source\C-Sharp\SortArray\bin\Debug\net8.0\SortArray.dll
+C:\Users\Denis\source\C-Sharp\SortArray\bin\Debug\net8.0\SortArray.pdb
+C:\Users\Denis\source\C-Sharp\SortArray\obj\Debug\net8.0\SortArray.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Denis\source\C-Sharp\SortArray\obj\Debug\net8.0\SortArray.AssemblyInfoInputs.cache
+C:\Users\Denis\source\C-Sharp\SortArray\obj\Debug\net8.0\SortArray.AssemblyInfo.cs
+C:\Users\Denis\source\C-Sharp\SortArray\obj\Debug\net8.0\SortArray.csproj.CoreCompileInputs.cache
+C:\Users\Denis\source\C-Sharp\SortArray\obj\Debug\net8.0\SortArray.sourcelink.json
+C:\Users\Denis\source\C-Sharp\SortArray\obj\Debug\net8.0\SortArray.dll
+C:\Users\Denis\source\C-Sharp\SortArray\obj\Debug\net8.0\refint\SortArray.dll
+C:\Users\Denis\source\C-Sharp\SortArray\obj\Debug\net8.0\SortArray.pdb
+C:\Users\Denis\source\C-Sharp\SortArray\obj\Debug\net8.0\SortArray.genruntimeconfig.cache
+C:\Users\Denis\source\C-Sharp\SortArray\obj\Debug\net8.0\ref\SortArray.dll

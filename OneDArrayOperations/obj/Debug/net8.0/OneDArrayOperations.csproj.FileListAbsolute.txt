@@ -1,0 +1,15 @@
+C:\Users\Denis\source\C-Sharp\OneDArrayOperations\bin\Debug\net8.0\OneDArrayOperations.exe
+C:\Users\Denis\source\C-Sharp\OneDArrayOperations\bin\Debug\net8.0\OneDArrayOperations.deps.json
+C:\Users\Denis\source\C-Sharp\OneDArrayOperations\bin\Debug\net8.0\OneDArrayOperations.runtimeconfig.json
+C:\Users\Denis\source\C-Sharp\OneDArrayOperations\bin\Debug\net8.0\OneDArrayOperations.dll
+C:\Users\Denis\source\C-Sharp\OneDArrayOperations\bin\Debug\net8.0\OneDArrayOperations.pdb
+C:\Users\Denis\source\C-Sharp\OneDArrayOperations\obj\Debug\net8.0\OneDArrayOperations.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Denis\source\C-Sharp\OneDArrayOperations\obj\Debug\net8.0\OneDArrayOperations.AssemblyInfoInputs.cache
+C:\Users\Denis\source\C-Sharp\OneDArrayOperations\obj\Debug\net8.0\OneDArrayOperations.AssemblyInfo.cs
+C:\Users\Denis\source\C-Sharp\OneDArrayOperations\obj\Debug\net8.0\OneDArrayOperations.csproj.CoreCompileInputs.cache
+C:\Users\Denis\source\C-Sharp\OneDArrayOperations\obj\Debug\net8.0\OneDArrayOperations.sourcelink.json
+C:\Users\Denis\source\C-Sharp\OneDArrayOperations\obj\Debug\net8.0\OneDArrayOperations.dll
+C:\Users\Denis\source\C-Sharp\OneDArrayOperations\obj\Debug\net8.0\refint\OneDArrayOperations.dll
+C:\Users\Denis\source\C-Sharp\OneDArrayOperations\obj\Debug\net8.0\OneDArrayOperations.pdb
+C:\Users\Denis\source\C-Sharp\OneDArrayOperations\obj\Debug\net8.0\OneDArrayOperations.genruntimeconfig.cache
+C:\Users\Denis\source\C-Sharp\OneDArrayOperations\obj\Debug\net8.0\ref\OneDArrayOperations.dll
