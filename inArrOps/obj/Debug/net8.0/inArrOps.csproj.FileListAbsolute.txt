@@ -1,0 +1,15 @@
+C:\Users\Denis\source\C-Sharp\inArrOps\bin\Debug\net8.0\inArrOps.exe
+C:\Users\Denis\source\C-Sharp\inArrOps\bin\Debug\net8.0\inArrOps.deps.json
+C:\Users\Denis\source\C-Sharp\inArrOps\bin\Debug\net8.0\inArrOps.runtimeconfig.json
+C:\Users\Denis\source\C-Sharp\inArrOps\bin\Debug\net8.0\inArrOps.dll
+C:\Users\Denis\source\C-Sharp\inArrOps\bin\Debug\net8.0\inArrOps.pdb
+C:\Users\Denis\source\C-Sharp\inArrOps\obj\Debug\net8.0\inArrOps.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Denis\source\C-Sharp\inArrOps\obj\Debug\net8.0\inArrOps.AssemblyInfoInputs.cache
+C:\Users\Denis\source\C-Sharp\inArrOps\obj\Debug\net8.0\inArrOps.AssemblyInfo.cs
+C:\Users\Denis\source\C-Sharp\inArrOps\obj\Debug\net8.0\inArrOps.csproj.CoreCompileInputs.cache
+C:\Users\Denis\source\C-Sharp\inArrOps\obj\Debug\net8.0\inArrOps.sourcelink.json
+C:\Users\Denis\source\C-Sharp\inArrOps\obj\Debug\net8.0\inArrOps.dll
+C:\Users\Denis\source\C-Sharp\inArrOps\obj\Debug\net8.0\refint\inArrOps.dll
+C:\Users\Denis\source\C-Sharp\inArrOps\obj\Debug\net8.0\inArrOps.pdb
+C:\Users\Denis\source\C-Sharp\inArrOps\obj\Debug\net8.0\inArrOps.genruntimeconfig.cache
+C:\Users\Denis\source\C-Sharp\inArrOps\obj\Debug\net8.0\ref\inArrOps.dll
