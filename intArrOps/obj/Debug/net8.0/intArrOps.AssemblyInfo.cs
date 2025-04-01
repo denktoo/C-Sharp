@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("intArrOps")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+102ddb5011caa6796370f440ce3599f999697556")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+46942224429fb18994d84c24cfc5ee93156a196e")]
 [assembly: System.Reflection.AssemblyProductAttribute("intArrOps")]
 [assembly: System.Reflection.AssemblyTitleAttribute("intArrOps")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Leets.Leizam
+namespace intArrOps
 {
     public class IntArrayOperations
     {
@@ -16,7 +16,7 @@ namespace Leets.Leizam
             Random rnd = new Random();
             int size = 20;
             int[] nums20 = new int[size];
-            int count = 0, temp = 0;
+            int count = 0;
             int n = nums20.Length, index = 0, smallest = int.MinValue;
             int[] ints = nums20, arr = new int[nums20.Length];
             #endregion
@@ -51,7 +51,8 @@ namespace Leets.Leizam
 
             display(arr);
             Console.WriteLine(IsSorted(arr) ? "\nNew array is sorted" : "\nNew array is not sorted");
-            //Console.ReadLine();
+            
+            Console.ReadKey();
 
         }
         public class twoInts
